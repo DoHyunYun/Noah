@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Noah.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{3FB8631D-0BB2-49C5-9E03-63DA337CACDF}</UniqueIdentifier>
+			<UniqueIdentifier>{FFE418C4-2DF8-409D-9D0E-9595D6B2CA58}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Noah.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{CBBD87A6-4EF7-451B-87F1-25C20EF8AC07}</UniqueIdentifier>
+			<UniqueIdentifier>{82F9EE75-D3FA-4413-A314-A34326361ED5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Noah">
-			<UniqueIdentifier>{7EB26A5A-5448-4D77-B2E8-6623E2AFCCEA}</UniqueIdentifier>
+			<UniqueIdentifier>{917DFC3E-9D32-407C-9325-4CF4D53CFEA5}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\Noah\Inventory.cpp">
+			<Filter>Source\Noah</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Noah\Inventory.h">
+			<Filter>Source\Noah</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\Noah\Noah.Build.cs">
 			<Filter>Source\Noah</Filter>
 		</None >

@@ -6,6 +6,9 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef NOAH_Inventory_generated_h
+	#include "Inventory.h"
+#endif
 #ifndef NOAH_NoahCharacter_generated_h
 	#include "NoahCharacter.h"
 #endif

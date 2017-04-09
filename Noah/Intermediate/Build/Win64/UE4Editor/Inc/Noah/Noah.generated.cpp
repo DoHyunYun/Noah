@@ -11,6 +11,34 @@
 PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1Noah() {}
+class UScriptStruct* FItemStruct::StaticStruct()
+{
+	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FItemStruct();
+		extern NOAH_API uint32 Get_Z_Construct_UScriptStruct_FItemStruct_CRC();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FItemStruct, Z_Construct_UPackage__Script_Noah(), TEXT("ItemStruct"), sizeof(FItemStruct), Get_Z_Construct_UScriptStruct_FItemStruct_CRC());
+	}
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FItemStruct(FItemStruct::StaticStruct, TEXT("/Script/Noah"), TEXT("ItemStruct"), false, nullptr, nullptr);
+static struct FScriptStruct_Noah_StaticRegisterNativesFItemStruct
+{
+	FScriptStruct_Noah_StaticRegisterNativesFItemStruct()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ItemStruct")),new UScriptStruct::TCppStructOps<FItemStruct>);
+	}
+} ScriptStruct_Noah_StaticRegisterNativesFItemStruct;
+	void AInventory::StaticRegisterNativesAInventory()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AInventory::StaticClass(), "AddItem",(Native)&AInventory::execAddItem);
+		FNativeFunctionRegistrar::RegisterFunction(AInventory::StaticClass(), "RemoveItem",(Native)&AInventory::execRemoveItem);
+		FNativeFunctionRegistrar::RegisterFunction(AInventory::StaticClass(), "SortInventory",(Native)&AInventory::execSortInventory);
+		FNativeFunctionRegistrar::RegisterFunction(AInventory::StaticClass(), "SwapItemIndex",(Native)&AInventory::execSwapItemIndex);
+	}
+	IMPLEMENT_CLASS(AInventory, 1145189180);
 	void ANoahCharacter::StaticRegisterNativesANoahCharacter()
 	{
 	}
@@ -21,16 +49,191 @@ void EmptyLinkFunctionForGeneratedCode1Noah() {}
 	IMPLEMENT_CLASS(ANoahGameMode, 3161086883);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
+	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FItemStruct();
+	NOAH_API class UFunction* Z_Construct_UFunction_AInventory_AddItem();
+	NOAH_API class UFunction* Z_Construct_UFunction_AInventory_RemoveItem();
+	NOAH_API class UFunction* Z_Construct_UFunction_AInventory_SortInventory();
+	NOAH_API class UFunction* Z_Construct_UFunction_AInventory_SwapItemIndex();
+	NOAH_API class UClass* Z_Construct_UClass_AInventory_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_AInventory();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameMode_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameMode();
 	NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
+	UScriptStruct* Z_Construct_UScriptStruct_FItemStruct()
+	{
+		UPackage* Outer = Z_Construct_UPackage__Script_Noah();
+		extern uint32 Get_Z_Construct_UScriptStruct_FItemStruct_CRC();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ItemStruct"), sizeof(FItemStruct), Get_Z_Construct_UScriptStruct_FItemStruct_CRC(), false);
+		if (!ReturnStruct)
+		{
+			ReturnStruct = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ItemStruct"), RF_Public|RF_Transient|RF_MarkAsNative) UScriptStruct(FObjectInitializer(), NULL, new UScriptStruct::TCppStructOps<FItemStruct>, EStructFlags(0x00000001));
+			UProperty* NewProp_number = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("number"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(number, FItemStruct), 0x0010000000000005);
+			UProperty* NewProp_itemIndex = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("itemIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(itemIndex, FItemStruct), 0x0010000000000005);
+			ReturnStruct->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnStruct->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnStruct, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnStruct, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(NewProp_number, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(NewProp_number, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(NewProp_itemIndex, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(NewProp_itemIndex, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+#endif
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FItemStruct_CRC() { return 3825204258U; }
+	UFunction* Z_Construct_UFunction_AInventory_AddItem()
+	{
+		struct Inventory_eventAddItem_Parms
+		{
+			FItemStruct _item;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AInventory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AddItem"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Inventory_eventAddItem_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Inventory_eventAddItem_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Inventory_eventAddItem_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Inventory_eventAddItem_Parms), sizeof(bool), true);
+			UProperty* NewProp__item = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_item"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(_item, Inventory_eventAddItem_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FItemStruct());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("input"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AInventory_RemoveItem()
+	{
+		struct Inventory_eventRemoveItem_Parms
+		{
+			int32 _arrayIndex;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AInventory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RemoveItem"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Inventory_eventRemoveItem_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Inventory_eventRemoveItem_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Inventory_eventRemoveItem_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Inventory_eventRemoveItem_Parms), sizeof(bool), true);
+			UProperty* NewProp__arrayIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_arrayIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(_arrayIndex, Inventory_eventRemoveItem_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?????? ?\x07f0?"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AInventory_SortInventory()
+	{
+		UObject* Outer=Z_Construct_UClass_AInventory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SortInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?????? ??\x0121??\x022f"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AInventory_SwapItemIndex()
+	{
+		struct Inventory_eventSwapItemIndex_Parms
+		{
+			int32 _index;
+			int32 _swapIndex;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AInventory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SwapItemIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Inventory_eventSwapItemIndex_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Inventory_eventSwapItemIndex_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Inventory_eventSwapItemIndex_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Inventory_eventSwapItemIndex_Parms), sizeof(bool), true);
+			UProperty* NewProp__swapIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_swapIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(_swapIndex, Inventory_eventSwapItemIndex_Parms), 0x0010000000000080);
+			UProperty* NewProp__index = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_index"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(_index, Inventory_eventSwapItemIndex_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AInventory_NoRegister()
+	{
+		return AInventory::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AInventory()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = AInventory::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AInventory_AddItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_AInventory_RemoveItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_AInventory_SortInventory());
+				OuterClass->LinkChild(Z_Construct_UFunction_AInventory_SwapItemIndex());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_m_myInventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("m_myInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(m_myInventory, AInventory), 0x0010000000000015);
+				UProperty* NewProp_m_myInventory_Inner = new(EC_InternalUseOnlyConstructor, NewProp_m_myInventory, TEXT("m_myInventory"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FItemStruct());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AInventory_AddItem(), "AddItem"); // 3193209824
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AInventory_RemoveItem(), "RemoveItem"); // 2569535893
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AInventory_SortInventory(), "SortInventory"); // 1846895608
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AInventory_SwapItemIndex(), "SwapItemIndex"); // 2064200137
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Inventory.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+				MetaData->SetValue(NewProp_m_myInventory, TEXT("Category"), TEXT("Inventory"));
+				MetaData->SetValue(NewProp_m_myInventory, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AInventory(Z_Construct_UClass_AInventory, &AInventory::StaticClass, TEXT("AInventory"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AInventory);
 	UClass* Z_Construct_UClass_ANoahCharacter_NoRegister()
 	{
 		return ANoahCharacter::StaticClass();
@@ -127,8 +330,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Noah")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xA7DF2E05;
-			Guid.B = 0x6065C73B;
+			Guid.A = 0x1FF7806F;
+			Guid.B = 0x6C99570A;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

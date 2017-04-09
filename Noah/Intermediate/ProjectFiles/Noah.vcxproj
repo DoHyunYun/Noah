@@ -18,22 +18,6 @@
 			<Configuration>DebugGame_Editor</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_DebugGame_Game|Win32">
-			<Configuration>Android_DebugGame_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_DebugGame_Game|x64">
-			<Configuration>Android_DebugGame_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_DebugGame_Editor|Win32">
-			<Configuration>Android_DebugGame_Editor</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_DebugGame_Editor|x64">
-			<Configuration>Android_DebugGame_Editor</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_DebugGame_Game|Win32">
 			<Configuration>HTML5_DebugGame_Game</Configuration>
 			<Platform>Win32</Platform>
@@ -66,22 +50,6 @@
 			<Configuration>Development_Editor</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Development_Game|Win32">
-			<Configuration>Android_Development_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Development_Game|x64">
-			<Configuration>Android_Development_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Development_Editor|Win32">
-			<Configuration>Android_Development_Editor</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Development_Editor|x64">
-			<Configuration>Android_Development_Editor</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_Development_Game|Win32">
 			<Configuration>HTML5_Development_Game</Configuration>
 			<Platform>Win32</Platform>
@@ -104,14 +72,6 @@
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="Shipping_Game|x64">
 			<Configuration>Shipping_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Shipping_Game|Win32">
-			<Configuration>Android_Shipping_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Android_Shipping_Game|x64">
-			<Configuration>Android_Shipping_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_Shipping_Game|Win32">
@@ -148,22 +108,6 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Game|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Game|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Editor|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Editor|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -196,22 +140,6 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Game|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Game|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Editor|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Editor|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -233,14 +161,6 @@
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Game|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v140</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Game|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
@@ -316,34 +236,6 @@
 		<NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" NoahEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
 		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" NoahEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
 		<NMakeOutput>C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Game|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Game|Win32'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" Noah Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" Noah Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" Noah Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Android\Noah-Android-DebugGame.so</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Editor|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Editor|Win32'">
-		<OutDir>C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Unused\</OutDir>
-		<IntDir>C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
-		<NMakeOutput/>
 	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Game|Win32'" Label="PropertySheets">
 		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -435,34 +327,6 @@
 		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" NoahEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
 		<NMakeOutput>C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
 	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Game|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Game|Win32'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" Noah Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" Noah Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" Noah Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Android\Noah.so</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Editor|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Editor|Win32'">
-		<OutDir>C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Unused\</OutDir>
-		<IntDir>C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>@echo Android is not a supported platform for NoahEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
-		<NMakeOutput/>
-	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Win32'" Label="PropertySheets">
 		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
 	</ImportGroup>
@@ -525,23 +389,6 @@
 		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" Noah Win64 Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
 		<NMakeOutput>..\..\Binaries\Win64\Noah-Win64-Shipping.exe</NMakeOutput>
 	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Game|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Game|Win32'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" Noah Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" Noah Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" Noah Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Android\Noah-Android-Shipping.so</NMakeOutput>
-	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|Win32'" Label="PropertySheets">
 		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
 	</ImportGroup>
@@ -568,6 +415,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\Noah\Inventory.cpp" />
+		<ClInclude Include="..\..\Source\Noah\Inventory.h" />
 		<None Include="..\..\Source\Noah\Noah.Build.cs" />
 		<ClCompile Include="..\..\Source\Noah\Noah.cpp" />
 		<ClInclude Include="..\..\Source\Noah\Noah.h" />
