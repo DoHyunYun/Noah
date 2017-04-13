@@ -6,18 +6,22 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FItemStruct;
+class AItem;
 #ifdef NOAH_Inventory_generated_h
 #error "Inventory.generated.h already included, missing '#pragma once' in Inventory.h"
 #endif
 #define NOAH_Inventory_generated_h
 
-#define Noah_Source_Noah_Inventory_h_11_GENERATED_BODY \
-	friend NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FItemStruct(); \
-	NOAH_API static class UScriptStruct* StaticStruct();
-
-
-#define Noah_Source_Noah_Inventory_h_36_RPC_WRAPPERS \
+#define Noah_Source_Noah_Inventory_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetItemNumberInfo) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param__itemIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetItemNumberInfo(Z_Param__itemIndex); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSortInventory) \
 	{ \
@@ -29,34 +33,44 @@ struct FItemStruct;
  \
 	DECLARE_FUNCTION(execSwapItemIndex) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param__index); \
-		P_GET_PROPERTY(UIntProperty,Z_Param__swapIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_left); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_right); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->SwapItemIndex(Z_Param__index,Z_Param__swapIndex); \
+		*(bool*)Z_Param__Result=this->SwapItemIndex(Z_Param_left,Z_Param_right); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execRemoveItem) \
+	DECLARE_FUNCTION(execRemoveItemNumber) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param__arrayIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_number); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->RemoveItem(Z_Param__arrayIndex); \
+		*(bool*)Z_Param__Result=this->RemoveItemNumber(Z_Param_index,Z_Param_number); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execAddItem) \
 	{ \
-		P_GET_STRUCT(FItemStruct,Z_Param__item); \
+		P_GET_OBJECT(AItem,Z_Param_item); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->AddItem(Z_Param__item); \
+		*(bool*)Z_Param__Result=this->AddItem(Z_Param_item); \
 		P_NATIVE_END; \
 	}
 
 
-#define Noah_Source_Noah_Inventory_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Noah_Source_Noah_Inventory_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetItemNumberInfo) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param__itemIndex); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->GetItemNumberInfo(Z_Param__itemIndex); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSortInventory) \
 	{ \
@@ -68,99 +82,100 @@ struct FItemStruct;
  \
 	DECLARE_FUNCTION(execSwapItemIndex) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param__index); \
-		P_GET_PROPERTY(UIntProperty,Z_Param__swapIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_left); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_right); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->SwapItemIndex(Z_Param__index,Z_Param__swapIndex); \
+		*(bool*)Z_Param__Result=this->SwapItemIndex(Z_Param_left,Z_Param_right); \
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execRemoveItem) \
+	DECLARE_FUNCTION(execRemoveItemNumber) \
 	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param__arrayIndex); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_number); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->RemoveItem(Z_Param__arrayIndex); \
+		*(bool*)Z_Param__Result=this->RemoveItemNumber(Z_Param_index,Z_Param_number); \
 		P_NATIVE_END; \
 	} \
  \
 	DECLARE_FUNCTION(execAddItem) \
 	{ \
-		P_GET_STRUCT(FItemStruct,Z_Param__item); \
+		P_GET_OBJECT(AItem,Z_Param_item); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->AddItem(Z_Param__item); \
+		*(bool*)Z_Param__Result=this->AddItem(Z_Param_item); \
 		P_NATIVE_END; \
 	}
 
 
-#define Noah_Source_Noah_Inventory_h_36_INCLASS_NO_PURE_DECLS \
+#define Noah_Source_Noah_Inventory_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
-	static void StaticRegisterNativesAInventory(); \
-	friend NOAH_API class UClass* Z_Construct_UClass_AInventory(); \
+	static void StaticRegisterNativesUInventory(); \
+	friend NOAH_API class UClass* Z_Construct_UClass_UInventory(); \
 	public: \
-	DECLARE_CLASS(AInventory, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Noah"), NO_API) \
-	DECLARE_SERIALIZER(AInventory) \
+	DECLARE_CLASS(UInventory, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Noah"), NO_API) \
+	DECLARE_SERIALIZER(UInventory) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_Inventory_h_36_INCLASS \
+#define Noah_Source_Noah_Inventory_h_13_INCLASS \
 	private: \
-	static void StaticRegisterNativesAInventory(); \
-	friend NOAH_API class UClass* Z_Construct_UClass_AInventory(); \
+	static void StaticRegisterNativesUInventory(); \
+	friend NOAH_API class UClass* Z_Construct_UClass_UInventory(); \
 	public: \
-	DECLARE_CLASS(AInventory, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Noah"), NO_API) \
-	DECLARE_SERIALIZER(AInventory) \
+	DECLARE_CLASS(UInventory, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Noah"), NO_API) \
+	DECLARE_SERIALIZER(UInventory) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_Inventory_h_36_STANDARD_CONSTRUCTORS \
+#define Noah_Source_Noah_Inventory_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AInventory(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AInventory) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AInventory); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInventory); \
+	NO_API UInventory(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInventory) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UInventory); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventory); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API AInventory(AInventory&&); \
-	NO_API AInventory(const AInventory&); \
+	NO_API UInventory(UInventory&&); \
+	NO_API UInventory(const UInventory&); \
 public:
 
 
-#define Noah_Source_Noah_Inventory_h_36_ENHANCED_CONSTRUCTORS \
+#define Noah_Source_Noah_Inventory_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API AInventory(AInventory&&); \
-	NO_API AInventory(const AInventory&); \
+	NO_API UInventory(UInventory&&); \
+	NO_API UInventory(const UInventory&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AInventory); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInventory); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInventory)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UInventory); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventory); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UInventory)
 
 
-#define Noah_Source_Noah_Inventory_h_36_PRIVATE_PROPERTY_OFFSET
-#define Noah_Source_Noah_Inventory_h_33_PROLOG
-#define Noah_Source_Noah_Inventory_h_36_GENERATED_BODY_LEGACY \
+#define Noah_Source_Noah_Inventory_h_13_PRIVATE_PROPERTY_OFFSET
+#define Noah_Source_Noah_Inventory_h_10_PROLOG
+#define Noah_Source_Noah_Inventory_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_Inventory_h_36_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_Inventory_h_36_RPC_WRAPPERS \
-	Noah_Source_Noah_Inventory_h_36_INCLASS \
-	Noah_Source_Noah_Inventory_h_36_STANDARD_CONSTRUCTORS \
+	Noah_Source_Noah_Inventory_h_13_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_Inventory_h_13_RPC_WRAPPERS \
+	Noah_Source_Noah_Inventory_h_13_INCLASS \
+	Noah_Source_Noah_Inventory_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Noah_Source_Noah_Inventory_h_36_GENERATED_BODY \
+#define Noah_Source_Noah_Inventory_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_Inventory_h_36_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_Inventory_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
-	Noah_Source_Noah_Inventory_h_36_INCLASS_NO_PURE_DECLS \
-	Noah_Source_Noah_Inventory_h_36_ENHANCED_CONSTRUCTORS \
+	Noah_Source_Noah_Inventory_h_13_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_Inventory_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	Noah_Source_Noah_Inventory_h_13_INCLASS_NO_PURE_DECLS \
+	Noah_Source_Noah_Inventory_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

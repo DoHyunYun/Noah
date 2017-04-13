@@ -1,4 +1,4 @@
-// PCH for C:\Users\ModernKim\Desktop\Noah\Noah\Source\Noah\Noah.h
+// PCH for C:\Users\DohyunYun\Desktop\Noah\Noah\Source\Noah\Noah.h
 #define UE_EDITOR 1
 #define IS_PROGRAM 0
 #define WITH_DEV_AUTOMATION_TESTS 1
@@ -94,7 +94,7 @@
 #define SETTINGS_API 
 #define USERFEEDBACK_API 
 #define INTROTUTORIALS_API 
-#define HEADMOUNTEDDISPLAY_API DLLIMPORT
+#define HEADMOUNTEDDISPLAY_API 
 #define VREDITOR_API 
 #define WITH_PHYSX 1
 #define WITH_APEX 1
@@ -116,4 +116,4 @@
 #define MESHUTILITIES_API 
 #define KISMET_API DLLIMPORT
 #define NETWORKREPLAYSTREAMING_API 
-#include "C:\Users\ModernKim\Desktop\Noah\Noah\Source\Noah\Noah.h"
+#include "C:\Users\DohyunYun\Desktop\Noah\Noah\Source\Noah\Noah.h"

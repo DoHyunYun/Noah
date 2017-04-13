@@ -6,12 +6,30 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef NOAH_Item_generated_h
+	#include "Item.h"
+#endif
+#ifndef NOAH_Craft_generated_h
+	#include "Craft.h"
+#endif
 #ifndef NOAH_Inventory_generated_h
 	#include "Inventory.h"
 #endif
 #ifndef NOAH_NoahCharacter_generated_h
 	#include "NoahCharacter.h"
 #endif
-#ifndef NOAH_NoahGameMode_generated_h
-	#include "NoahGameMode.h"
+#ifndef NOAH_NoahGameModeBase_generated_h
+	#include "NoahGameModeBase.h"
+#endif
+#ifndef NOAH_NoahGameState_generated_h
+	#include "NoahGameState.h"
+#endif
+#ifndef NOAH_NoahHUD_generated_h
+	#include "NoahHUD.h"
+#endif
+#ifndef NOAH_NoahPlayerController_generated_h
+	#include "NoahPlayerController.h"
+#endif
+#ifndef NOAH_NoahPlayerState_generated_h
+	#include "NoahPlayerState.h"
 #endif
