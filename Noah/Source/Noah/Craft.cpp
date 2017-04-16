@@ -52,10 +52,13 @@ void UCraft::BeginPlay()
 		FString ItemCodeString = "";
 		FString NumberString = "";
 
-		for (int j = 0; j < RecipeString.Len(); j++) {
-
-			if (RecipeString[j] == 'x') Type = 2;
-			else if (RecipeString[j] == '_') Type = 3;
+		for (int j = 0; j < RecipeString.Len() + 1; j++) {
+			//마지막 루프
+			if (j == RecipeString.Len()) Type = 3;
+			else {
+				if (RecipeString[j] == 'x') Type = 2;
+				else if (RecipeString[j] == '_') Type = 3;
+			}
 
 			switch (Type)
 			{

@@ -39,6 +39,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory")
 		bool RemoveItemNumber(int32 index, int32 number); //인벤토리에 아이템 제거. 아이템 인덱스, 갯수
 	UFUNCTION(BlueprintCallable, Category = "Inventory")
+		bool RemoveItemInventorySlot(int32 index, int32 number); //인벤토리에 아이템 제거. 인벤토리 인덱스, 갯수
+	UFUNCTION(BlueprintCallable, Category = "Inventory")
 		bool SwapItemIndex(int32 left, int32 right); //아이템 교체
 	UFUNCTION(BlueprintCallable, Category = "Inventory")
 		void SortInventory(); //아이템 정렬

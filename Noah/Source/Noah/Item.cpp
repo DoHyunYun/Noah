@@ -10,6 +10,10 @@ AItem::AItem() : Number(0), CurrentDurability(-1), ItemCode(-1)
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	InitItem(-1);
+
+	ItemMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ItemMesh"));
+	RootComponent = ItemMeshComponent;
+
 	UE_LOG(LogClass, Log, TEXT("Noah:AItem Init"));
 }
 
@@ -31,7 +35,7 @@ void AItem::Tick(float DeltaTime)
 AItem* AItem::InitItem(int32 itemCode, int32 number /*= 1*/)
 {
 	if (itemCode == 0) return nullptr;
-
+	
 
 	if (itemCode == -1) {
 		this->ItemCode = itemCode;
@@ -73,7 +77,34 @@ AItem* AItem::InitItem(int32 itemCode, int32 number /*= 1*/)
 UTexture2D* AItem::GetItemImage(FString imageName)
 {
 	FString FileName = "/Game/Resource/Img/";
-	FString FullName = FileName + imageName+ "." + imageName;
+	FString FullName = FileName + imageName + "." + imageName;
 
 	return LoadObject<UTexture2D>(nullptr, FullName.GetCharArray().GetData());
+}
+
+void AItem::SetMesh()
+{
+	//抗寇贸府
+	if (ItemCode <= 0) return;
+
+	FString FileName = "/Game/Resource/Mesh/";
+	FString FullName = FileName + ThisItem.WorldImgCode + "." + ThisItem.WorldImgCode;
+
+	//Mesh积己 棺 技泼
+	ItemMeshComponent->SetStaticMesh(LoadObject<UStaticMesh>(nullptr, FullName.GetCharArray().GetData()));
+	ItemMeshComponent->SetVisibility(true);
+	ItemMeshComponent->RegisterComponent();
+
+	ItemMeshComponent->CreationMethod = EComponentCreationMethod::UserConstructionScript;
+	ItemMeshComponent->SetMobility(EComponentMobility::Movable);
+	ItemMeshComponent->SetRelativeLocation(FVector(0, 0, 0));
+	ItemMeshComponent->SetRelativeRotation(FRotator::ZeroRotator);
+	ItemMeshComponent->SetRelativeScale3D(FVector(1, 1, 1));
+	//ItemMeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	ItemMeshComponent->SetCollisionProfileName(TEXT("BlockAll"));
+	ItemMeshComponent->SetSimulatePhysics(true);
+	ItemMeshComponent->SetEnableGravity(true);
+	ItemMeshComponent->bGenerateOverlapEvents = true;
+
+	UE_LOG(LogClass, Log, TEXT("adsf %s"), FullName.GetCharArray().GetData());
 }

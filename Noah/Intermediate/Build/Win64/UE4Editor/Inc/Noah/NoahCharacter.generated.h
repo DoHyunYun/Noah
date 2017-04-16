@@ -6,13 +6,70 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef NOAH_NoahCharacter_generated_h
 #error "NoahCharacter.generated.h already included, missing '#pragma once' in NoahCharacter.h"
 #endif
 #define NOAH_NoahCharacter_generated_h
 
-#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS
-#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFindNearItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->FindNearItem(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMissObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_missedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->MissObject(Z_Param_missedObject); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDetectObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_detectedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->DetectObject(Z_Param_detectedObject); \
+		P_NATIVE_END; \
+	}
+
+
+#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFindNearItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->FindNearItem(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMissObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_missedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->MissObject(Z_Param_missedObject); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDetectObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_detectedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->DetectObject(Z_Param_detectedObject); \
+		P_NATIVE_END; \
+	}
+
+
 #define Noah_Source_Noah_NoahCharacter_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesANoahCharacter(); \

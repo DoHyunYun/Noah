@@ -62,6 +62,8 @@ public:
 		AItem* InitItem(int32 itemCode, int32 number = 1);
 	UFUNCTION(BlueprintCallable, Category = "ItemClass")
 		UTexture2D* GetItemImage(FString imageName);
+	UFUNCTION(BlueprintCallable, Category = "ItemClass")
+		void SetMesh();
 
 public:
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
@@ -73,5 +75,6 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
 	int32 ItemCode; //데이터 테이블의 아이템 코드.
 
-	
+	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
+	class UStaticMeshComponent* ItemMeshComponent;
 };

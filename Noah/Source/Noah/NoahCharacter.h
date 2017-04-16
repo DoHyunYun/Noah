@@ -47,6 +47,19 @@ protected:
 	void LookUpAtRate(float Rate);
 	void TurnAtRate(float Rate);
 	void CameraZoomRate(float Rate);
+	void Attack();
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	//Object Detect
+public:
+	TArray<AActor*> DetectedObject;
+
+public:
+	UFUNCTION(BlueprintCallable, Category = "NoahCharacter")
+		bool DetectObject(AActor* detectedObject); //탐색 오브젝트 입력
+	UFUNCTION(BlueprintCallable, Category = "NoahCharacter")
+		bool MissObject(AActor* missedObject); //오브젝트 제거
+	UFUNCTION(BlueprintCallable, Category = "NoahCharacter")
+		AActor* FindNearItem(); //가장 가까운 아이템 검색
 };

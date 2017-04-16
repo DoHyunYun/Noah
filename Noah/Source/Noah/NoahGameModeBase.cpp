@@ -32,4 +32,11 @@ ANoahGameModeBase::ANoahGameModeBase()
 	{
 		HUDClass = HUD.Class;
 	}
+	//GameMode -> GameStateBase Setting
+	static ConstructorHelpers::FClassFinder<AGameStateBase>
+		GameStateBase(TEXT("Blueprint'/Game/GameMode/BP_NoahGameStateBase'"));
+	if (GameStateBase.Succeeded())
+	{
+		GameStateClass = GameStateBase.Class;
+	}
 }

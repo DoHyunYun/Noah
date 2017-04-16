@@ -35,8 +35,9 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFItemStruct
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AItem::StaticClass(), "GetItemImage",(Native)&AItem::execGetItemImage);
 		FNativeFunctionRegistrar::RegisterFunction(AItem::StaticClass(), "InitItem",(Native)&AItem::execInitItem);
+		FNativeFunctionRegistrar::RegisterFunction(AItem::StaticClass(), "SetMesh",(Native)&AItem::execSetMesh);
 	}
-	IMPLEMENT_CLASS(AItem, 3114595915);
+	IMPLEMENT_CLASS(AItem, 1089038993);
 class UScriptStruct* FCraftItemStruct::StaticStruct()
 {
 	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
@@ -82,27 +83,35 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 		FNativeFunctionRegistrar::RegisterFunction(UCraft::StaticClass(), "GetCraftApiSet",(Native)&UCraft::execGetCraftApiSet);
 	}
 	IMPLEMENT_CLASS(UCraft, 1138783078);
+	void ADate::StaticRegisterNativesADate()
+	{
+	}
+	IMPLEMENT_CLASS(ADate, 3897156652);
 	void UInventory::StaticRegisterNativesUInventory()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "AddItem",(Native)&UInventory::execAddItem);
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "GetItemNumberInfo",(Native)&UInventory::execGetItemNumberInfo);
+		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "RemoveItemInventorySlot",(Native)&UInventory::execRemoveItemInventorySlot);
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "RemoveItemNumber",(Native)&UInventory::execRemoveItemNumber);
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "SortInventory",(Native)&UInventory::execSortInventory);
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "SwapItemIndex",(Native)&UInventory::execSwapItemIndex);
 	}
-	IMPLEMENT_CLASS(UInventory, 3505170055);
+	IMPLEMENT_CLASS(UInventory, 1135534170);
 	void ANoahCharacter::StaticRegisterNativesANoahCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(ANoahCharacter::StaticClass(), "DetectObject",(Native)&ANoahCharacter::execDetectObject);
+		FNativeFunctionRegistrar::RegisterFunction(ANoahCharacter::StaticClass(), "FindNearItem",(Native)&ANoahCharacter::execFindNearItem);
+		FNativeFunctionRegistrar::RegisterFunction(ANoahCharacter::StaticClass(), "MissObject",(Native)&ANoahCharacter::execMissObject);
 	}
-	IMPLEMENT_CLASS(ANoahCharacter, 2745846756);
+	IMPLEMENT_CLASS(ANoahCharacter, 1697606645);
 	void ANoahGameModeBase::StaticRegisterNativesANoahGameModeBase()
 	{
 	}
 	IMPLEMENT_CLASS(ANoahGameModeBase, 2246478573);
-	void ANoahGameState::StaticRegisterNativesANoahGameState()
+	void ANoahGameStateBase::StaticRegisterNativesANoahGameStateBase()
 	{
 	}
-	IMPLEMENT_CLASS(ANoahGameState, 2296014027);
+	IMPLEMENT_CLASS(ANoahGameStateBase, 4055615687);
 	void ANoahHUD::StaticRegisterNativesANoahHUD()
 	{
 	}
@@ -120,12 +129,14 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 	ENGINE_API class UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
-	ENGINE_API class UClass* Z_Construct_UClass_AGameState();
+	ENGINE_API class UClass* Z_Construct_UClass_AGameStateBase();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerState();
@@ -133,6 +144,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FItemStruct();
 	NOAH_API class UFunction* Z_Construct_UFunction_AItem_GetItemImage();
 	NOAH_API class UFunction* Z_Construct_UFunction_AItem_InitItem();
+	NOAH_API class UFunction* Z_Construct_UFunction_AItem_SetMesh();
 	NOAH_API class UClass* Z_Construct_UClass_AItem_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_AItem();
 	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FCraftItemStruct();
@@ -140,19 +152,25 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UFunction* Z_Construct_UFunction_UCraft_GetCraftApiSet();
 	NOAH_API class UClass* Z_Construct_UClass_UCraft_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_UCraft();
+	NOAH_API class UClass* Z_Construct_UClass_ADate_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_ADate();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_AddItem();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_GetItemNumberInfo();
+	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_RemoveItemInventorySlot();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_RemoveItemNumber();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_SortInventory();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_SwapItemIndex();
 	NOAH_API class UClass* Z_Construct_UClass_UInventory_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_UInventory();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_DetectObject();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_FindNearItem();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_MissObject();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameModeBase_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameModeBase();
-	NOAH_API class UClass* Z_Construct_UClass_ANoahGameState_NoRegister();
-	NOAH_API class UClass* Z_Construct_UClass_ANoahGameState();
+	NOAH_API class UClass* Z_Construct_UClass_ANoahGameStateBase_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_ANoahGameStateBase();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahHUD_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahHUD();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerController_NoRegister();
@@ -271,6 +289,23 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AItem_SetMesh()
+	{
+		UObject* Outer=Z_Construct_UClass_AItem();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("ItemClass"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Item.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AItem_NoRegister()
 	{
 		return AItem::StaticClass();
@@ -290,8 +325,10 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 
 				OuterClass->LinkChild(Z_Construct_UFunction_AItem_GetItemImage());
 				OuterClass->LinkChild(Z_Construct_UFunction_AItem_InitItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_AItem_SetMesh());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_ItemMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ItemMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ItemMeshComponent, AItem), 0x001000000008000c, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				UProperty* NewProp_ItemCode = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ItemCode"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(ItemCode, AItem), 0x0010000000000004);
 				UProperty* NewProp_CurrentDurability = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentDurability"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(CurrentDurability, AItem), 0x0010000000000004);
 				UProperty* NewProp_Number = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Number"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(Number, AItem), 0x0010000000000004);
@@ -299,11 +336,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_GetItemImage(), "GetItemImage"); // 1183534821
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_InitItem(), "InitItem"); // 14583039
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_SetMesh(), "SetMesh"); // 851018382
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Item.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Item.h"));
+				MetaData->SetValue(NewProp_ItemMeshComponent, TEXT("Category"), TEXT("ItemClass"));
+				MetaData->SetValue(NewProp_ItemMeshComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_ItemMeshComponent, TEXT("ModuleRelativePath"), TEXT("Item.h"));
+				MetaData->SetValue(NewProp_ItemMeshComponent, TEXT("ToolTip"), TEXT("?????? ???\x033a??? ?????? ?\x06b5?."));
 				MetaData->SetValue(NewProp_ItemCode, TEXT("Category"), TEXT("ItemClass"));
 				MetaData->SetValue(NewProp_ItemCode, TEXT("ModuleRelativePath"), TEXT("Item.h"));
 				MetaData->SetValue(NewProp_CurrentDurability, TEXT("Category"), TEXT("ItemClass"));
@@ -442,6 +484,57 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UCraft(Z_Construct_UClass_UCraft, &UCraft::StaticClass, TEXT("UCraft"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UCraft);
+	UClass* Z_Construct_UClass_ADate_NoRegister()
+	{
+		return ADate::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ADate()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = ADate::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_AmbLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("AmbLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(AmbLight, ADate), 0x0010000000000005, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_SkySphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SkySphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SkySphere, ADate), 0x0010000000000005, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_SunLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SunLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SunLight, ADate), 0x0010000000000005, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_MaxSunHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxSunHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MaxSunHeight, ADate), 0x0010000000000005);
+				UProperty* NewProp_DayDuration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DayDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DayDuration, ADate), 0x0010000000000005);
+				UProperty* NewProp_SunDrive = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SunDrive"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SunDrive, ADate), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Date.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_AmbLight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_AmbLight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_SkySphere, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SkySphere, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_SunLight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SunLight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_DayDuration, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_DayDuration, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+				MetaData->SetValue(NewProp_SunDrive, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SunDrive, TEXT("ModuleRelativePath"), TEXT("Date.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ADate(Z_Construct_UClass_ADate, &ADate::StaticClass, TEXT("ADate"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ADate);
 	UFunction* Z_Construct_UFunction_UInventory_AddItem()
 	{
 		struct Inventory_eventAddItem_Parms
@@ -488,6 +581,34 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UInventory_RemoveItemInventorySlot()
+	{
+		struct Inventory_eventRemoveItemInventorySlot_Parms
+		{
+			int32 index;
+			int32 number;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UInventory();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RemoveItemInventorySlot"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Inventory_eventRemoveItemInventorySlot_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Inventory_eventRemoveItemInventorySlot_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Inventory_eventRemoveItemInventorySlot_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Inventory_eventRemoveItemInventorySlot_Parms), sizeof(bool), true);
+			UProperty* NewProp_number = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("number"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(number, Inventory_eventRemoveItemInventorySlot_Parms), 0x0010000000000080);
+			UProperty* NewProp_index = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("index"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(index, Inventory_eventRemoveItemInventorySlot_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?\x03ba??\x4e2e?? ?????? ????. ?????? ?\x03b5???, ????"));
 #endif
 		}
 		return ReturnFunction;
@@ -561,7 +682,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Inventory"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?\x03ba??\x4e2e?? ?????? ????. ?????? ?\x03b5???, ????"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?\x03ba??\x4e2e?? ?????? ????. ?\x03ba??\x4e2e ?\x03b5???, ????"));
 #endif
 		}
 		return ReturnFunction;
@@ -585,6 +706,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_AddItem());
 				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_GetItemNumberInfo());
+				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_RemoveItemInventorySlot());
 				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_RemoveItemNumber());
 				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_SortInventory());
 				OuterClass->LinkChild(Z_Construct_UFunction_UInventory_SwapItemIndex());
@@ -597,9 +719,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_AddItem(), "AddItem"); // 1515463663
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_GetItemNumberInfo(), "GetItemNumberInfo"); // 418720785
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_RemoveItemInventorySlot(), "RemoveItemInventorySlot"); // 2917999021
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_RemoveItemNumber(), "RemoveItemNumber"); // 1576198494
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_SortInventory(), "SortInventory"); // 3654584780
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_SwapItemIndex(), "SwapItemIndex"); // 2983057661
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_SwapItemIndex(), "SwapItemIndex"); // 711732774
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -621,6 +744,80 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UInventory(Z_Construct_UClass_UInventory, &UInventory::StaticClass, TEXT("UInventory"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UInventory);
+	UFunction* Z_Construct_UFunction_ANoahCharacter_DetectObject()
+	{
+		struct NoahCharacter_eventDetectObject_Parms
+		{
+			AActor* detectedObject;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ANoahCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DetectObject"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(NoahCharacter_eventDetectObject_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, NoahCharacter_eventDetectObject_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, NoahCharacter_eventDetectObject_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, NoahCharacter_eventDetectObject_Parms), sizeof(bool), true);
+			UProperty* NewProp_detectedObject = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("detectedObject"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(detectedObject, NoahCharacter_eventDetectObject_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("NoahCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NoahCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANoahCharacter_FindNearItem()
+	{
+		struct NoahCharacter_eventFindNearItem_Parms
+		{
+			AActor* ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ANoahCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FindNearItem"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(NoahCharacter_eventFindNearItem_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReturnValue, NoahCharacter_eventFindNearItem_Parms), 0x0010000000000580, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("NoahCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NoahCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("??????\x01ae ????"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANoahCharacter_MissObject()
+	{
+		struct NoahCharacter_eventMissObject_Parms
+		{
+			AActor* missedObject;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ANoahCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MissObject"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(NoahCharacter_eventMissObject_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, NoahCharacter_eventMissObject_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, NoahCharacter_eventMissObject_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, NoahCharacter_eventMissObject_Parms), sizeof(bool), true);
+			UProperty* NewProp_missedObject = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("missedObject"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(missedObject, NoahCharacter_eventMissObject_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("NoahCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NoahCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("\x017d?? ??????\x01ae ?\x0537?"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ANoahCharacter_NoRegister()
 	{
 		return ANoahCharacter::StaticClass();
@@ -638,6 +835,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ANoahCharacter_DetectObject());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANoahCharacter_FindNearItem());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANoahCharacter_MissObject());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_BaseLookUpRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseLookUpRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseLookUpRate, ANoahCharacter), 0x0010000000020015);
@@ -647,6 +847,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_Craft = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Craft"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Craft, ANoahCharacter), 0x001000000008000c, Z_Construct_UClass_UCraft_NoRegister());
 				UProperty* NewProp_Inventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Inventory, ANoahCharacter), 0x001000000008000c, Z_Construct_UClass_UInventory_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANoahCharacter_DetectObject(), "DetectObject"); // 4203781911
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANoahCharacter_FindNearItem(), "FindNearItem"); // 1478268146
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANoahCharacter_MissObject(), "MissObject"); // 1928759667
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -712,18 +915,18 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ANoahGameModeBase(Z_Construct_UClass_ANoahGameModeBase, &ANoahGameModeBase::StaticClass, TEXT("ANoahGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ANoahGameModeBase);
-	UClass* Z_Construct_UClass_ANoahGameState_NoRegister()
+	UClass* Z_Construct_UClass_ANoahGameStateBase_NoRegister()
 	{
-		return ANoahGameState::StaticClass();
+		return ANoahGameStateBase::StaticClass();
 	}
-	UClass* Z_Construct_UClass_ANoahGameState()
+	UClass* Z_Construct_UClass_ANoahGameStateBase()
 	{
 		static UClass* OuterClass = NULL;
 		if (!OuterClass)
 		{
-			Z_Construct_UClass_AGameState();
+			Z_Construct_UClass_AGameStateBase();
 			Z_Construct_UPackage__Script_Noah();
-			OuterClass = ANoahGameState::StaticClass();
+			OuterClass = ANoahGameStateBase::StaticClass();
 			if (!(OuterClass->ClassFlags & CLASS_Constructed))
 			{
 				UObjectForceRegistration(OuterClass);
@@ -734,8 +937,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Input Movement Collision Rendering Utilities|Transformation"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("NoahGameState.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("NoahGameState.h"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("NoahGameStateBase.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("NoahGameStateBase.h"));
 				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
 #endif
 			}
@@ -743,8 +946,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ANoahGameState(Z_Construct_UClass_ANoahGameState, &ANoahGameState::StaticClass, TEXT("ANoahGameState"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ANoahGameState);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ANoahGameStateBase(Z_Construct_UClass_ANoahGameStateBase, &ANoahGameStateBase::StaticClass, TEXT("ANoahGameStateBase"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ANoahGameStateBase);
 	UClass* Z_Construct_UClass_ANoahHUD_NoRegister()
 	{
 		return ANoahHUD::StaticClass();
@@ -853,8 +1056,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Noah")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x5DDBAA4F;
-			Guid.B = 0xA6583EC2;
+			Guid.A = 0x889B959F;
+			Guid.B = 0xDFE08983;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

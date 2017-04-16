@@ -84,6 +84,27 @@ bool UInventory::RemoveItemNumber(int32 index, int32 number)
 
 	return false;
 }
+
+bool UInventory::RemoveItemInventorySlot(int32 index, int32 number)
+{
+	//抗寇贸府
+	if (index < 0 || index >= MaxInvenSize) return false;
+
+	if (ItemList[index]->Number > number) {
+		ItemList[index]->Number -= number;
+		return true;
+	}
+	else {
+		ItemList[index]->Number = 0;
+		ItemList[index]->ItemCode = -1;
+		ItemList[index]->InitItem(-1);
+		return true;
+	}
+
+	return false;
+}
+
+
 bool UInventory::SwapItemIndex(int32 left, int32 right)
 {
 	//抗寇贸府

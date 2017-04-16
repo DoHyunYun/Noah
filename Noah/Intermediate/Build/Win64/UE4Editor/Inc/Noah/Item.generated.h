@@ -21,6 +21,14 @@ class AItem;
 
 #define Noah_Source_Noah_Item_h_48_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetMesh) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetMesh(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetItemImage) \
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_imageName); \
@@ -42,6 +50,14 @@ class AItem;
 
 
 #define Noah_Source_Noah_Item_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetMesh) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetMesh(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetItemImage) \
 	{ \

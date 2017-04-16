@@ -65,6 +65,8 @@ void ANoahCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ANoahCharacter::Attack);
+
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANoahCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANoahCharacter::MoveRight);
 
@@ -73,6 +75,11 @@ void ANoahCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ANoahCharacter::LookUpAtRate);
 	PlayerInputComponent->BindAxis("CameraZoom", this, &ANoahCharacter::CameraZoomRate);
+}
+
+void ANoahCharacter::Attack()
+{
+	//PlayAnimMontage();
 }
 
 void ANoahCharacter::TurnAtRate(float Rate)
@@ -109,6 +116,7 @@ void ANoahCharacter::MoveRight(float Value)
 	}
 }
 
+
 void ANoahCharacter::CameraZoomRate(float Rate)
 {
 	CameraBoom->TargetArmLength += Rate;
@@ -119,4 +127,45 @@ void ANoahCharacter::CameraZoomRate(float Rate)
 	else if (CameraBoom->TargetArmLength <= m_zoomMin) {
 		CameraBoom->TargetArmLength = m_zoomMin;
 	}
+}
+bool ANoahCharacter::DetectObject(AActor* detectedObject)
+{
+	UE_LOG(LogClass, Log, TEXT("asdffdssfdasadfsdfa %d"), DetectedObject.Num());
+
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (DetectedObject[i] == detectedObject) return false;
+	}
+
+	DetectedObject.Add(detectedObject);
+
+	return true;
+}
+
+bool ANoahCharacter::MissObject(AActor* missedObject)
+{
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (DetectedObject[i] == missedObject) {
+			DetectedObject.RemoveSingle(missedObject);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+AActor* ANoahCharacter::FindNearItem()
+{
+	//예외처리
+	if (DetectedObject.Num() <= 0) return nullptr;
+
+	AActor* near = DetectedObject[0]; //가장 가까운 Actor
+	FVector playerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation(); //캐릭터 위치
+
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (FVector::Dist(DetectedObject[i]->GetActorLocation(), playerLocation) < FVector::Dist(near->GetActorLocation(), playerLocation)) {
+			near = DetectedObject[i];
+		}
+	}
+
+	return near;
 }

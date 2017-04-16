@@ -41,6 +41,16 @@ class AItem;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execRemoveItemInventorySlot) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_number); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->RemoveItemInventorySlot(Z_Param_index,Z_Param_number); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRemoveItemNumber) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
@@ -87,6 +97,16 @@ class AItem;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=this->SwapItemIndex(Z_Param_left,Z_Param_right); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execRemoveItemInventorySlot) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_number); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->RemoveItemInventorySlot(Z_Param_index,Z_Param_number); \
 		P_NATIVE_END; \
 	} \
  \

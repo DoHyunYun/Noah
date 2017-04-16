@@ -50,12 +50,6 @@
     <ClInclude Include="..\..\Source\Noah\NoahGameModeBase.h">
       <Filter>Source\Noah</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Noah\NoahGameState.cpp">
-      <Filter>Source\Noah</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Noah\NoahGameState.h">
-      <Filter>Source\Noah</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\Noah\NoahPlayerController.cpp">
       <Filter>Source\Noah</Filter>
     </ClCompile>
@@ -82,6 +76,12 @@
     <ClInclude Include="..\..\Source\Noah\Craft.h">
       <Filter>Source\Noah</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\NoahGameStateBase.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\Date.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Noah\Inventory.cpp">
@@ -94,6 +94,12 @@
       <Filter>Source\Noah</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Noah\Craft.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\NoahGameStateBase.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\Date.cpp">
       <Filter>Source\Noah</Filter>
     </ClCompile>
   </ItemGroup>

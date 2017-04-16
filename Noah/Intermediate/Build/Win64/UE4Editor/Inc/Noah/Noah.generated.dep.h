@@ -12,6 +12,9 @@
 #ifndef NOAH_Craft_generated_h
 	#include "Craft.h"
 #endif
+#ifndef NOAH_Date_generated_h
+	#include "Date.h"
+#endif
 #ifndef NOAH_Inventory_generated_h
 	#include "Inventory.h"
 #endif
@@ -21,8 +24,8 @@
 #ifndef NOAH_NoahGameModeBase_generated_h
 	#include "NoahGameModeBase.h"
 #endif
-#ifndef NOAH_NoahGameState_generated_h
-	#include "NoahGameState.h"
+#ifndef NOAH_NoahGameStateBase_generated_h
+	#include "NoahGameStateBase.h"
 #endif
 #ifndef NOAH_NoahHUD_generated_h
 	#include "NoahHUD.h"

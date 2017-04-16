@@ -568,10 +568,12 @@
     <None Include="..\..\Config\DefaultInput.ini" />
     <None Include="..\..\Source\Noah\Noah.Build.cs" />
     <ClCompile Include="..\..\Source\Noah\Craft.cpp" />
+    <ClCompile Include="..\..\Source\Noah\Date.cpp" />
     <ClCompile Include="..\..\Source\Noah\Inventory.cpp" />
     <ClCompile Include="..\..\Source\Noah\Item.cpp" />
     <ClCompile Include="..\..\Source\Noah\Noah.cpp" />
     <ClInclude Include="..\..\Source\Noah\Craft.h" />
+    <ClInclude Include="..\..\Source\Noah\Date.h" />
     <ClInclude Include="..\..\Source\Noah\Inventory.h" />
     <ClInclude Include="..\..\Source\Noah\Item.h" />
     <ClInclude Include="..\..\Source\Noah\Noah.h" />
@@ -579,10 +581,10 @@
     <ClInclude Include="..\..\Source\Noah\NoahCharacter.h" />
     <ClCompile Include="..\..\Source\Noah\NoahGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\Noah\NoahGameModeBase.h" />
-    <ClCompile Include="..\..\Source\Noah\NoahGameState.cpp" />
-    <ClInclude Include="..\..\Source\Noah\NoahGameState.h" />
+    <ClCompile Include="..\..\Source\Noah\NoahGameStateBase.cpp" />
     <ClCompile Include="..\..\Source\Noah\NoahHUD.cpp" />
     <ClCompile Include="..\..\Source\Noah\NoahPlayerController.cpp" />
+    <ClInclude Include="..\..\Source\Noah\NoahGameStateBase.h" />
     <ClInclude Include="..\..\Source\Noah\NoahHUD.h" />
     <ClInclude Include="..\..\Source\Noah\NoahPlayerController.h" />
     <ClCompile Include="..\..\Source\Noah\NoahPlayerState.cpp" />

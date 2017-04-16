@@ -1,107 +1,43 @@
-<<<<<<< HEAD
-﻿  Target is up to date
-  Deploying NoahEditor Win64 Development...
-  Total build time: 0.52 seconds (NoActionsToExecute executor: 0.00 seconds)
-=======
 ﻿  Creating makefile for NoahEditor (no existing makefile)
   Parsing headers for NoahEditor
-    Running UnrealHeaderTool "E:\NoahProject\GP 170413\Noah\Noah\Noah.uproject" "E:\NoahProject\GP 170413\Noah\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for NoahEditor in 3.297432 seconds
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1222-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1222-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1253-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1253-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1424-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1424-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-151-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-151-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1551-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1551-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1846-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1846-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1932-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1932-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-237-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-237-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-250-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-250-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2548-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2548-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2885-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2885-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2910-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2910-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2990-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-2990-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3119-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3119-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3325-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3325-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3432-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3432-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3732-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3732-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3778-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3778-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3847-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3847-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3871-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3871-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3906-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3906-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4288-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4288-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4316-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4316-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4558-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4558-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5216-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5216-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5648-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5648-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-570-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-570-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5938-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5938-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-6136-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-6136-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-680-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-680-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7022-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7022-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7811-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7811-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8213-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8213-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8499-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8499-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8553-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8553-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9056-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9056-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-923-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-923-Win64-DebugGame.pdb".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-960-Win64-DebugGame.dll".
-  Deleting old hot reload file: "E:\NoahProject\GP 170413\Noah\Noah\Binaries\Win64\UE4Editor-Noah-960-Win64-DebugGame.pdb".
-  Performing 14 actions (4 in parallel)
-  PCH.Noah.cpp
-  Craft.cpp
-  Inventory.cpp
-  Item.cpp
-  Noah.cpp
+    Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for NoahEditor in 2.8873819 seconds
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1058-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1058-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1312-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1312-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1569-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1569-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1688-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-1688-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3782-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-3782-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4726-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-4726-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5556-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5556-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5859-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-5859-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-6529-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-6529-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7329-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7329-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7756-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-7756-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8144-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8144-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8781-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-8781-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9013-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9013-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9070-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Binaries\Win64\UE4Editor-Noah-9070-Win64-DebugGame.pdb".
+  Performing 4 actions (4 in parallel)
   NoahCharacter.cpp
-  NoahGameModeBase.cpp
-  NoahGameState.cpp
-  NoahHUD.cpp
-  NoahPlayerController.cpp
-  NoahPlayerState.cpp
   Noah.generated.cpp
-  [13/14] Link UE4Editor-Noah-Win64-DebugGame.dll
-  [14/14] Link UE4Editor-Noah-Win64-DebugGame.lib
-     E:\NoahProject\GP 170413\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib ���̺귯�� �� E:\NoahProject\GP 170413\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp ��ü�� �����ϰ� �ֽ��ϴ�.
-     E:\NoahProject\GP 170413\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib ���̺귯�� �� E:\NoahProject\GP 170413\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp ��ü�� �����ϰ� �ֽ��ϴ�.
+  [3/4] Link UE4Editor-Noah-Win64-DebugGame.dll
+  [4/4] Link UE4Editor-Noah-Win64-DebugGame.lib
+     C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp 개체를 생성하고 있습니다.
+     C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp 개체를 생성하고 있습니다.
   Deploying NoahEditor Win64 DebugGame...
-  Failed to write dependency cache: 'C:\Users\Godgyu\Desktop\GP 170412\Noah\Noah\Intermediate\Build\Win64\NoahEditor' 경로에 대한 액세스가 거부되었습니다.
-  Failed to write FlatCPPIncludeDependencyCache: 'C:\Users\Godgyu\Desktop\GP 170412\Noah\Noah\Intermediate\Build\Win64\NoahEditor' 경로에 대한 액세스가 거부되었습니다.
-  Total build time: 55.68 seconds (Local executor: 44.11 seconds)
->>>>>>> 4deca9da746122cacfe8a2f6b904469e13602237
+  Total build time: 9.57 seconds (Local executor: 3.12 seconds)
