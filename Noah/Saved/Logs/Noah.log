@@ -1,9 +1,9 @@
-﻿Log file open, 03/28/17 21:26:56
+﻿Log file open, 03/28/17 22:47:12
 LogInit:Display: Running engine for game: Noah
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(1900535293) SRandInit(1900535293).
+LogInit:Display: RandInit(294539925) SRandInit(294539925).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.169132
+LogStats: Stats thread started at 0.164746
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -48,306 +48,341 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.03.28-12.26.58:974][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.28-12.26.58:979][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.03.28-12.26.58:988][  0]LogInit: Computer: DOHYUNYUNPC
-[2017.03.28-12.26.58:990][  0]LogInit: User: DohyunYun
-[2017.03.28-12.26.58:990][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.03.28-12.26.58:991][  0]LogInit: High frequency timer resolution =3.234372 MHz
-[2017.03.28-12.26.58:995][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.03.28-12.26.58:998][  0]LogMemory: Platform Memory Stats for Windows
-[2017.03.28-12.26.59:000][  0]LogMemory: Process Physical Memory: 262.84 MB used, 262.84 MB peak
-[2017.03.28-12.26.59:001][  0]LogMemory: Process Virtual Memory: 262.59 MB used, 262.59 MB peak
-[2017.03.28-12.26.59:001][  0]LogMemory: Physical Memory: 4524.96 MB used,  11770.81 MB free, 16295.77 MB total
-[2017.03.28-12.26.59:002][  0]LogMemory: Virtual Memory: 643.98 MB used,  11770.81 MB free, 134217728.00 MB total
-[2017.03.28-12.26.59:358][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
-[2017.03.28-12.26.59:415][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+[2017.03.28-13.47.14:763][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.28-13.47.14:763][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.28-13.47.14:770][  0]LogInit: Computer: DOHYUNYUNPC
+[2017.03.28-13.47.14:770][  0]LogInit: User: DohyunYun
+[2017.03.28-13.47.14:770][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.28-13.47.14:770][  0]LogInit: High frequency timer resolution =3.234372 MHz
+[2017.03.28-13.47.14:770][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.03.28-13.47.14:770][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.28-13.47.14:770][  0]LogMemory: Process Physical Memory: 262.80 MB used, 262.80 MB peak
+[2017.03.28-13.47.14:770][  0]LogMemory: Process Virtual Memory: 262.55 MB used, 262.55 MB peak
+[2017.03.28-13.47.14:770][  0]LogMemory: Physical Memory: 4602.92 MB used,  11692.85 MB free, 16295.77 MB total
+[2017.03.28-13.47.14:770][  0]LogMemory: Virtual Memory: 643.98 MB used,  11692.85 MB free, 134217728.00 MB total
+[2017.03.28-13.47.14:987][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.03.28-13.47.15:034][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+[2017.03.28-13.47.15:034][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+[2017.03.28-13.47.15:034][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
  )
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
 이 노드를 무시합니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
  )
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+[2017.03.28-13.47.15:034][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
 기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
 디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
-[2017.03.28-12.26.59:416][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
 루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
 반복하면 1회전 후 0.f 부터 시작됩니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+[2017.03.28-13.47.15:035][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+[2017.03.28-13.47.15:036][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+[2017.03.28-13.47.15:036][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+[2017.03.28-13.47.15:036][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+[2017.03.28-13.47.15:036][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
 반복하면, 1회전 후 0.f 부터 시작됩니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
 루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
-[2017.03.28-12.26.59:420][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+[2017.03.28-13.47.15:036][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
-[2017.03.28-12.26.59:872][  0]LogD3D11RHI: D3D11 adapters:
-[2017.03.28-12.26.59:913][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
-[2017.03.28-12.26.59:914][  0]LogD3D11RHI:       4061/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.03.28-12.26.59:927][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.03.28-12.26.59:928][  0]LogD3D11RHI:       0/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.03.28-12.26.59:928][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.03.28-12.26.59:932][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.03.28-12.26.59:932][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
-[2017.03.28-12.26.59:933][  0]LogWindows: EnumDisplayDevices:
-[2017.03.28-12.26.59:933][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
-[2017.03.28-12.26.59:933][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
-[2017.03.28-12.26.59:934][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
-[2017.03.28-12.26.59:934][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
-[2017.03.28-12.26.59:935][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.03.28-12.26.59:935][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
-[2017.03.28-12.26.59:935][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
-[2017.03.28-12.26.59:935][  0]LogD3D11RHI:      Driver Date: 12-29-2016
-[2017.03.28-12.26.59:935][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.03.28-12.26.59:951][  0]LogD3D11RHI: Async texture creation enabled
-[2017.03.28-12.26.59:961][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.03.28-12.27.00:059][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Intermediate/Shaders/WorkingDirectory/9120/).
-[2017.03.28-12.27.00:059][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DohyunYun/AppData/Local/Temp/UnrealShaderWorkingDir/58B4CBFD4E6A605291B3308BAF3C2C7E/'.
-[2017.03.28-12.27.00:059][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.03.28-12.27.01:108][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.03.28-12.27.01:179][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.03.28-12.27.01:247][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.03.28-12.27.01:317][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.03.28-12.27.01:388][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.03.28-12.27.01:459][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.03.28-12.27.01:536][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.03.28-12.27.01:609][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.03.28-12.27.01:669][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.03.28-12.27.01:734][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.03.28-12.27.01:801][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.03.28-12.27.01:874][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.03.28-12.27.01:942][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.03.28-12.27.02:013][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.03.28-12.27.02:084][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.03.28-12.27.02:227][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.03.28-12.27.02:227][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.03.28-12.27.02:281][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.03.28-12.27.02:414][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.03.28-12.27.02:461][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.03.28-12.27.02:536][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.03.28-12.27.02:605][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.03.28-12.27.02:675][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.03.28-12.27.02:746][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.03.28-12.27.02:746][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.03.28-12.27.03:426][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache: Loaded boot cache 0.04s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.03.28-12.27.03:470][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.03.28-12.27.03:487][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.03.28-12.27.03:501][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DohyunYun/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.03.28-12.27.03:509][  0]LogSlate: Using Freetype 2.6.0
-[2017.03.28-12.27.03:510][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.28-12.27.03:510][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.03.28-12.27.03:744][  0]LogInit: Selected Device Profile: [Windows]
-[2017.03.28-12.27.03:746][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.03.28-12.27.04:010][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.03.28-12.27.04:079][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.03.28-12.27.04:165][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.03.28-12.27.04:165][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.03.28-12.27.04:165][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.03.28-12.27.04:754][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: noah, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3984355841
-[2017.03.28-12.27.04:822][  0]LogAssetRegistry: FAssetRegistry took 0.0233 seconds to start up
-[2017.03.28-12.27.04:871][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.018402 seconds
-[2017.03.28-12.27.04:877][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
-[2017.03.28-12.27.04:879][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
-[2017.03.28-12.27.04:881][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.03.28-12.27.04:979][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.03.28-12.27.07:592][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.03.28-12.27.07:656][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.03.28-12.27.08:485][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.03.28-12.27.09:020][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.28-12.27.09:177][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.28-12.27.09:247][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.28-12.27.09:329][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.28-12.27.11:202][  0]LogEngine: Initializing Engine...
-[2017.03.28-12.27.11:208][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.03.28-12.27.11:497][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.03.28-12.27.11:543][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.03.28-12.27.11:592][  0]LogInit: FAudioDevice initialized.
-[2017.03.28-12.27.11:613][  0]LogDerivedDataCache: Saved boot cache 0.02s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.03.28-12.27.11:617][  0]LogInit: Texture streaming: Enabled
-[2017.03.28-12.27.11:775][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.03.28-12.27.11:908][  0]LogInit: Transaction tracking system initialized
-[2017.03.28-12.27.12:452][  0]BlueprintLog: New page: 에디터 로드
-[2017.03.28-12.27.13:908][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
-[2017.03.28-12.27.15:292][  0]LogConsoleResponse:Display: 
-[2017.03.28-12.27.15:448][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.03.28-12.27.15:448][  0]LogCook:Display: Mobile HDR setting 1
-[2017.03.28-12.27.16:166][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/' took 0.01s
-[2017.03.28-12.27.17:092][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.03.28-12.27.17:092][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.03.28-12.27.17:093][  0]LightingResults: New page: 라이팅 빌드
-[2017.03.28-12.27.17:151][  0]MapCheck: New page: 맵 체크
-[2017.03.28-12.27.17:151][  0]LightingResults: New page: 라이팅 빌드
-[2017.03.28-12.27.17:351][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2017.03.28-12.27.18:135][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.03.28-12.27.18:135][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.03.28-12.27.18:211][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 75.197ms.
-[2017.03.28-12.27.18:211][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.119
-[2017.03.28-12.27.18:298][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.03.28-12.27.18:440][  0]LogCollectionManager: Loaded 0 collections in 0.001537 seconds
-[2017.03.28-12.27.18:550][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Collections/' took 0.01s
-[2017.03.28-12.27.18:550][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Developers/DohyunYun/Collections/' took 0.01s
-[2017.03.28-12.27.18:550][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Collections/' took 0.01s
-[2017.03.28-12.27.18:550][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2017.03.28-12.27.18:559][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2247 classes and 455 folders.
-[2017.03.28-12.27.18:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.03.28-12.27.18:562][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.03.28-12.27.18:652][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0014 seconds. Added 0 classes and 0 folders.
-[2017.03.28-12.27.18:694][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
-[2017.03.28-12.27.18:797][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
-[2017.03.28-12.27.18:921][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.03.28-12.27.18:928][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
-[2017.03.28-12.27.19:036][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
-[2017.03.28-12.27.19:036][  0]LogLoad: (Engine Initialization) Total time: 23.47 seconds
-[2017.03.28-12.27.19:036][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.12 seconds
-[2017.03.28-12.27.19:036][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.03.28-12.27.19:036][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.03.28-12.27.19:049][  0]LogOcInput: OculusInput pre-init called
-[2017.03.28-12.27.19:065][  0]LogAssetRegistry: Asset discovery search completed in 14.2659 seconds
-[2017.03.28-12.27.19:065][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
-[2017.03.28-12.27.19:065][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000064 seconds (updated 0 objects)
-[2017.03.28-12.27.19:067][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.03.28-12.27.19:075][  0]LogSlate: Took 0.000239 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.03.28-12.27.19:081][  0]LogSlate: Took 0.002755 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
-[2017.03.28-12.27.19:082][  0]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.03.28-12.27.19:088][  0]LogSlate: Took 0.000224 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.03.28-12.27.19:166][  0]LogSlate: Took 0.000206 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.03.28-12.27.19:221][  0]LogRenderer: Reallocating scene render targets to support 1228x628 NumSamples 1 (Frame:2).
-[2017.03.28-12.27.37:612][131]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Plugins/. Error: 지정된 파일을 찾을 수 없습니다. (0x00000002)
-[2017.03.28-12.27.39:112][303]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
-[2017.03.28-12.27.40:065][415]LogTemp: Repeting last play command: 선택된 뷰포트
-[2017.03.28-12.27.40:071][415]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2017.03.28-12.27.40:072][415]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.03.28-12.27.40:072][415]PIE: New page: PIE 세션: ThirdPersonExampleMap (2017. 3. 29. 오전 6:27:40)
-[2017.03.28-12.27.40:073][415]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2017.03.28-12.27.40:095][415]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021604s)
-[2017.03.28-12.27.40:096][415]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2017.03.28-12.27.40:096][415]LogPlayLevel: PIE: World Init took: (0.000968s)
-[2017.03.28-12.27.40:096][415]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.023512s)
-[2017.03.28-12.27.40:130][415]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.03.28-12.27.40:148][415]LogInit: FAudioDevice initialized.
-[2017.03.28-12.27.40:197][415]LogLoad: Game class is 'NoahGameMode'
-[2017.03.28-12.27.40:200][415]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.03.28-21.27.40
-[2017.03.28-12.27.40:201][415]LogWorld: Bringing up level for play took: 0.001979
-[2017.03.28-12.27.40:261][415]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
-[2017.03.28-12.27.40:262][415]PIE: 정보 /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 에 대한 에디터에서 플레이 시작 시간: -0.153
-[2017.03.28-12.27.40:262][415]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2017.03.28-12.27.49:628][516]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2017.03.28-12.27.49:667][516]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2017.03.28-12.27.53:058][894]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.03.28-12.27.53:250][895]Cmd: QUIT_EDITOR
-[2017.03.28-12.27.53:926][895]LogExit: Preparing to exit.
-[2017.03.28-12.27.54:623][895]LogDirectoryWatcher: A directory notification for 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/' was aborted.
-[2017.03.28-12.27.54:646][895]LogExit: Editor shut down
-[2017.03.28-12.27.54:646][895]LogExit: Transaction tracking system shut down
-[2017.03.28-12.27.54:700][895]LogObj: Freed 0b from 0 cluster array pools.
-[2017.03.28-12.27.54:701][895]LogExit: Object subsystem successfully closed.
-[2017.03.28-12.27.54:731][895]LogD3D11RHI: Shutdown
-[2017.03.28-12.27.54:731][895]LogD3D11RHI: CleanupD3DDevice
-[2017.03.28-12.27.54:811][895]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.03.28-12.27.54:836][895]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (502)
-[2017.03.28-12.27.54:837][895]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
-[2017.03.28-12.27.54:842][895]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
-[2017.03.28-12.27.54:847][895]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
-[2017.03.28-12.27.54:848][895]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
-[2017.03.28-12.27.54:852][895]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
-[2017.03.28-12.27.54:853][895]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
-[2017.03.28-12.27.54:853][895]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
-[2017.03.28-12.27.54:853][895]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
-[2017.03.28-12.27.54:854][895]LogDirectoryWatcher: A directory notification for 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Collections/' was aborted.
-[2017.03.28-12.27.54:855][895]LogDirectoryWatcher: A directory notification for 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Developers/DohyunYun/Collections/' was aborted.
-[2017.03.28-12.27.54:855][895]LogDirectoryWatcher: A directory notification for 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Collections/' was aborted.
-[2017.03.28-12.27.54:857][895]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
-[2017.03.28-12.27.54:857][895]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
-[2017.03.28-12.27.54:858][895]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
-[2017.03.28-12.27.54:858][895]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
-[2017.03.28-12.27.54:858][895]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
-[2017.03.28-12.27.54:858][895]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module BspMode (472)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
-[2017.03.28-12.27.54:859][895]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
-[2017.03.28-12.27.54:860][895]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
-[2017.03.28-12.27.54:860][895]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
-[2017.03.28-12.27.54:860][895]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
-[2017.03.28-12.27.54:860][895]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
-[2017.03.28-12.27.54:860][895]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
-[2017.03.28-12.27.54:861][895]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
-[2017.03.28-12.27.54:861][895]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
-[2017.03.28-12.27.54:861][895]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
-[2017.03.28-12.27.54:861][895]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
-[2017.03.28-12.27.54:862][895]LogModuleManager: Shutting down and abandoning module Media (445)
-[2017.03.28-12.27.54:862][895]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
-[2017.03.28-12.27.54:862][895]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
-[2017.03.28-12.27.54:862][895]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
-[2017.03.28-12.27.54:862][895]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
-[2017.03.28-12.27.54:863][895]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
-[2017.03.28-12.27.54:863][895]LogModuleManager: Shutting down and abandoning module SessionServices (432)
-[2017.03.28-12.27.54:863][895]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
-[2017.03.28-12.27.54:863][895]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
-[2017.03.28-12.27.54:863][895]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
-[2017.03.28-12.27.54:864][895]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
-[2017.03.28-12.27.54:864][895]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
-[2017.03.28-12.27.54:864][895]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
-[2017.03.28-12.27.54:864][895]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
-[2017.03.28-12.27.54:864][895]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
-[2017.03.28-12.27.54:865][895]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
-[2017.03.28-12.27.54:865][895]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2017.03.28-13.47.15:472][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.28-13.47.15:513][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2017.03.28-13.47.15:513][  0]LogD3D11RHI:       4061/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.03.28-13.47.15:520][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.28-13.47.15:521][  0]LogD3D11RHI:       0/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.28-13.47.15:521][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.28-13.47.15:526][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.28-13.47.15:527][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.28-13.47.15:527][  0]LogWindows: EnumDisplayDevices:
+[2017.03.28-13.47.15:527][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2017.03.28-13.47.15:528][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2017.03.28-13.47.15:529][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.03.28-13.47.15:529][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.03.28-13.47.15:530][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.03.28-13.47.15:530][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2017.03.28-13.47.15:530][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.03.28-13.47.15:530][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.03.28-13.47.15:530][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.28-13.47.15:545][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.28-13.47.15:555][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.28-13.47.15:655][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Intermediate/Shaders/WorkingDirectory/1244/).
+[2017.03.28-13.47.15:660][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DohyunYun/AppData/Local/Temp/UnrealShaderWorkingDir/6C6F07D44839EE9A08668AA87816A2DF/'.
+[2017.03.28-13.47.15:661][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.28-13.47.16:786][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.28-13.47.16:866][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.28-13.47.16:937][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.28-13.47.17:011][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.28-13.47.17:098][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.28-13.47.17:195][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.28-13.47.17:295][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.28-13.47.17:410][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.28-13.47.17:492][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.28-13.47.17:577][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.28-13.47.17:646][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.28-13.47.17:727][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.28-13.47.17:802][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.28-13.47.17:880][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.28-13.47.17:962][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.28-13.47.18:104][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.28-13.47.18:105][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.28-13.47.18:161][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.28-13.47.18:306][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.28-13.47.18:354][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.28-13.47.18:431][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.28-13.47.18:532][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.28-13.47.18:622][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.28-13.47.18:722][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.28-13.47.18:723][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.28-13.47.19:467][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.28-13.47.19:513][  0]LogDerivedDataCache: Loaded boot cache 0.05s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.28-13.47.19:514][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.03.28-13.47.19:514][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.28-13.47.19:515][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.28-13.47.19:515][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.28-13.47.19:516][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.28-13.47.19:532][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.28-13.47.19:547][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DohyunYun/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.28-13.47.19:556][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.28-13.47.19:556][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.28-13.47.19:556][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.28-13.47.19:826][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.28-13.47.19:831][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.28-13.47.20:147][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.28-13.47.20:324][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.28-13.47.20:415][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.28-13.47.20:415][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.28-13.47.20:415][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.28-13.47.21:067][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: noah, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3984355841
+[2017.03.28-13.47.21:141][  0]LogAssetRegistry: FAssetRegistry took 0.0332 seconds to start up
+[2017.03.28-13.47.21:201][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.030273 seconds
+[2017.03.28-13.47.21:205][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.03.28-13.47.21:206][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.03.28-13.47.21:206][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.28-13.47.21:309][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.28-13.47.24:080][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.28-13.47.24:153][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.28-13.47.25:268][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.28-13.47.26:072][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.03.28-13.47.26:223][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.03.28-13.47.26:303][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.03.28-13.47.26:380][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.03.28-13.47.28:888][  0]LogEngine: Initializing Engine...
+[2017.03.28-13.47.28:889][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.03.28-13.47.29:185][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.28-13.47.29:240][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-13.47.29:287][  0]LogInit: FAudioDevice initialized.
+[2017.03.28-13.47.29:311][  0]LogDerivedDataCache: Saved boot cache 0.02s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.28-13.47.29:314][  0]LogInit: Texture streaming: Enabled
+[2017.03.28-13.47.29:481][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.03.28-13.47.29:631][  0]LogInit: Transaction tracking system initialized
+[2017.03.28-13.47.30:280][  0]BlueprintLog: New page: 에디터 로드
+[2017.03.28-13.47.32:034][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.03.28-13.47.34:095][  0]LogConsoleResponse:Display: 
+[2017.03.28-13.47.34:350][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.28-13.47.34:350][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.28-13.47.35:209][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/' took 0.02s
+[2017.03.28-13.47.36:469][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.03.28-13.47.36:469][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.28-13.47.36:469][  0]LightingResults: New page: 라이팅 빌드
+[2017.03.28-13.47.36:534][  0]MapCheck: New page: 맵 체크
+[2017.03.28-13.47.36:534][  0]LightingResults: New page: 라이팅 빌드
+[2017.03.28-13.47.36:729][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.03.28-13.47.37:834][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.28-13.47.37:834][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.28-13.47.37:894][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 58.957ms.
+[2017.03.28-13.47.37:894][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.425
+[2017.03.28-13.47.37:980][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.03.28-13.47.38:117][  0]LogCollectionManager: Loaded 0 collections in 0.001315 seconds
+[2017.03.28-13.47.38:229][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Collections/' took 0.02s
+[2017.03.28-13.47.38:229][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Developers/DohyunYun/Collections/' took 0.02s
+[2017.03.28-13.47.38:229][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Collections/' took 0.01s
+[2017.03.28-13.47.38:229][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.03.28-13.47.38:238][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 2247 classes and 455 folders.
+[2017.03.28-13.47.38:241][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.28-13.47.38:241][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.28-13.47.38:328][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.03.28-13.47.38:372][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.03.28-13.47.38:431][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.03.28-13.47.38:560][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.28-13.47.38:566][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.03.28-13.47.38:713][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.03.28-13.47.38:713][  0]LogLoad: (Engine Initialization) Total time: 28.03 seconds
+[2017.03.28-13.47.38:713][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.12 seconds
+[2017.03.28-13.47.38:713][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.28-13.47.38:713][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.28-13.47.38:723][  0]LogOcInput: OculusInput pre-init called
+[2017.03.28-13.47.38:739][  0]LogAssetRegistry: Asset discovery search completed in 17.6317 seconds
+[2017.03.28-13.47.38:740][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000004 seconds (found 0 objects)
+[2017.03.28-13.47.38:740][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000058 seconds (updated 0 objects)
+[2017.03.28-13.47.38:744][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.28-13.47.38:752][  0]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.28-13.47.38:758][  0]LogSlate: Took 0.002609 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.03.28-13.47.38:759][  0]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.03.28-13.47.38:764][  0]LogSlate: Took 0.000160 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.03.28-13.47.38:887][  0]LogSlate: Took 0.000182 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-13.47.38:941][  0]LogRenderer: Reallocating scene render targets to support 1228x628 NumSamples 1 (Frame:2).
+[2017.03.28-13.48.34:115][526]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.03.28-13.48.34:814][585]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.03.28-13.48.34:821][585]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.48.34:821][585]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-13.48.34:822][585]PIE: New page: PIE 세션: ThirdPersonExampleMap (2017. 3. 29. 오전 7:48:34)
+[2017.03.28-13.48.34:822][585]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.03.28-13.48.34:845][585]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023759s)
+[2017.03.28-13.48.34:847][585]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.03.28-13.48.34:847][585]LogPlayLevel: PIE: World Init took: (0.000941s)
+[2017.03.28-13.48.34:848][585]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.026503s)
+[2017.03.28-13.48.34:893][585]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-13.48.34:913][585]LogInit: FAudioDevice initialized.
+[2017.03.28-13.48.34:984][585]LogLoad: Game class is 'NoahGameMode'
+[2017.03.28-13.48.34:987][585]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.03.28-22.48.34
+[2017.03.28-13.48.34:987][585]LogWorld: Bringing up level for play took: 0.001780
+[2017.03.28-13.48.35:048][585]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
+[2017.03.28-13.48.35:051][585]PIE: 정보 /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 에 대한 에디터에서 플레이 시작 시간: 0.636
+[2017.03.28-13.48.35:054][585]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.48.57:272][173]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.48.57:346][173]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.49.37:635][908]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.37:642][908]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.03.28-13.49.39:058][ 73]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.39:065][ 73]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.41:436][353]LogEditorActor: Deleted Actor: DocumentationActor
+[2017.03.28-13.49.41:445][353]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2017.03.28-13.49.44:063][653]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.44:070][653]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.46:609][952]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.46:620][952]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.03.28-13.49.47:690][ 75]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.47:697][ 75]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.49:089][234]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.49:098][234]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2017.03.28-13.49.49:841][318]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.49:848][318]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.52:216][596]LogEditorActor: Deleted Actor: TextRenderActor
+[2017.03.28-13.49.52:223][596]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.54:828][828]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.54:835][828]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.55:438][892]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.55:445][892]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.55:900][939]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.55:907][939]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.49.56:310][979]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.03.28-13.49.56:316][979]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.50.01:999][588]LogEditorActor: Deleted Actor: PostProcessVolume
+[2017.03.28-13.50.02:006][588]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.03.28-13.50.04:168][842]LogEditorActor: Deleted Actor: LightmassImportanceVolume
+[2017.03.28-13.50.04:175][842]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.03.28-13.50.05:052][947]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.03.28-13.50.05:060][947]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.50.05:060][947]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-13.50.05:060][947]PIE: New page: PIE 세션: ThirdPersonExampleMap (2017. 3. 29. 오전 7:50:05)
+[2017.03.28-13.50.05:060][947]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.03.28-13.50.05:077][947]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017160s)
+[2017.03.28-13.50.05:079][947]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.03.28-13.50.05:079][947]LogPlayLevel: PIE: World Init took: (0.001544s)
+[2017.03.28-13.50.05:080][947]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019556s)
+[2017.03.28-13.50.05:110][947]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-13.50.05:127][947]LogInit: FAudioDevice initialized.
+[2017.03.28-13.50.05:159][947]LogLoad: Game class is 'NoahGameMode'
+[2017.03.28-13.50.05:162][947]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.03.28-22.50.05
+[2017.03.28-13.50.05:162][947]LogWorld: Bringing up level for play took: 0.001595
+[2017.03.28-13.50.05:163][947]PIE: 정보 /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 에 대한 에디터에서 플레이 시작 시간: 0.748
+[2017.03.28-13.50.05:163][947]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.50.07:824][260]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.50.07:860][260]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.08:025][717]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2017.03.28-13.57.16:206][649]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.03.28-13.57.16:213][649]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.16:213][649]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-13.57.16:213][649]PIE: New page: PIE 세션: ThirdPersonExampleMap (2017. 3. 29. 오전 7:57:16)
+[2017.03.28-13.57.16:213][649]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.03.28-13.57.16:230][649]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016261s)
+[2017.03.28-13.57.16:231][649]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.03.28-13.57.16:231][649]LogPlayLevel: PIE: World Init took: (0.001321s)
+[2017.03.28-13.57.16:231][649]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.018060s)
+[2017.03.28-13.57.16:267][649]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-13.57.16:286][649]LogInit: FAudioDevice initialized.
+[2017.03.28-13.57.16:323][649]LogLoad: Game class is 'NoahGameMode'
+[2017.03.28-13.57.16:326][649]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.03.28-22.57.16
+[2017.03.28-13.57.16:326][649]LogWorld: Bringing up level for play took: 0.001792
+[2017.03.28-13.57.16:327][649]PIE: 정보 /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 에 대한 에디터에서 플레이 시작 시간: -0.088
+[2017.03.28-13.57.16:327][649]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.18:391][889]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.18:460][889]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.25:537][698]LogSlate: Took 0.001544 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.03.28-13.57.26:346][793]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.03.28-13.57.26:901][819]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.03.28-13.57.33:422][516]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.03.28-13.57.33:430][516]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.33:430][516]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-13.57.33:430][516]PIE: New page: PIE 세션: ThirdPersonExampleMap (2017. 3. 29. 오전 7:57:33)
+[2017.03.28-13.57.33:430][516]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.03.28-13.57.33:448][516]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017642s)
+[2017.03.28-13.57.33:449][516]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.03.28-13.57.33:449][516]LogPlayLevel: PIE: World Init took: (0.000947s)
+[2017.03.28-13.57.33:449][516]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019140s)
+[2017.03.28-13.57.33:513][516]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-13.57.33:531][516]LogInit: FAudioDevice initialized.
+[2017.03.28-13.57.33:563][516]LogLoad: Game class is 'NoahGameMode'
+[2017.03.28-13.57.33:565][516]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2017.03.28-22.57.33
+[2017.03.28-13.57.33:566][516]LogWorld: Bringing up level for play took: 0.001611
+[2017.03.28-13.57.33:567][516]PIE: 정보 /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 에 대한 에디터에서 플레이 시작 시간: -0.848
+[2017.03.28-13.57.33:567][516]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.35:349][724]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.57.35:763][724]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.03.28-13.58.06:191][315]LogSlate: Took 0.000249 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-13.58.14:864][341]LogSlate: Took 0.000288 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-13.58.15:008][341]LogSavePackage: Save=77.33ms
+[2017.03.28-13.58.15:008][341]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Saved/ThirdPersonExampleMap_Auto1C6F3FE7442FC10655234119C7952964C.tmp' to '../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2017.03.28-13.58.15:011][341]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap
+[2017.03.28-13.58.15:016][341]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.108
+[2017.03.28-13.58.15:017][341]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.108
+[2017.03.28-13.58.30:495][388]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2017.03.28-13.58.31:771][499]LogTexture:Display: 텍스처 빌드중: Texture2D_2 (G8, 128X128) - 111 MB 총 VRAM
