@@ -1,0 +1,1421 @@
+﻿Log file open, 04/16/17 23:11:06
+LogInit:Display: Running engine for game: Noah
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(963623329) SRandInit(963623329).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.345013
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: DebugGame
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  -skipcompile -debug
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.16-14.11.08:414][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.16-14.11.08:414][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.16-14.11.08:429][  0]LogInit: Computer: DOHYUNYUNPC
+[2017.04.16-14.11.08:429][  0]LogInit: User: DohyunYun
+[2017.04.16-14.11.08:429][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.16-14.11.08:429][  0]LogInit: High frequency timer resolution =3.234375 MHz
+[2017.04.16-14.11.08:429][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.04.16-14.11.08:429][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.16-14.11.08:429][  0]LogMemory: Process Physical Memory: 265.03 MB used, 265.03 MB peak
+[2017.04.16-14.11.08:430][  0]LogMemory: Process Virtual Memory: 265.48 MB used, 265.48 MB peak
+[2017.04.16-14.11.08:430][  0]LogMemory: Physical Memory: 4643.47 MB used,  11652.30 MB free, 16295.77 MB total
+[2017.04.16-14.11.08:430][  0]LogMemory: Virtual Memory: 647.04 MB used,  11652.30 MB free, 134217728.00 MB total
+[2017.04.16-14.11.08:857][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.04.16-14.11.08:901][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
+[2017.04.16-14.11.08:901][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.04.16-14.11.08:902][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+ )
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
+이 노드를 무시합니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+ )
+[2017.04.16-14.11.08:902][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.04.16-14.11.08:902][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
+[2017.04.16-14.11.08:902][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
+기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
+디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
+[2017.04.16-14.11.08:902][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
+[2017.04.16-14.11.08:903][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
+루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
+반복하면 1회전 후 0.f 부터 시작됩니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
+[2017.04.16-14.11.08:904][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
+반복하면, 1회전 후 0.f 부터 시작됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
+루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
+[2017.04.16-14.11.08:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+[2017.04.16-14.11.09:667][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.16-14.11.09:712][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2017.04.16-14.11.09:712][  0]LogD3D11RHI:       4061/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.04.16-14.11.09:721][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.16-14.11.09:721][  0]LogD3D11RHI:       0/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.16-14.11.09:721][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.16-14.11.09:726][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.16-14.11.09:726][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.16-14.11.09:726][  0]LogWindows: EnumDisplayDevices:
+[2017.04.16-14.11.09:726][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2017.04.16-14.11.09:727][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2017.04.16-14.11.09:728][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.04.16-14.11.09:728][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.04.16-14.11.09:729][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.16-14.11.09:729][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2017.04.16-14.11.09:729][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.04.16-14.11.09:729][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.04.16-14.11.09:729][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.16-14.11.09:747][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.16-14.11.09:757][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.04.16-14.11.09:857][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Intermediate/Shaders/WorkingDirectory/10184/).
+[2017.04.16-14.11.09:857][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DohyunYun/AppData/Local/Temp/UnrealShaderWorkingDir/5ACF7F8645CFB8CD1BDD06BAF84A19D2/'.
+[2017.04.16-14.11.09:858][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.16-14.11.11:311][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.16-14.11.11:586][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.16-14.11.11:857][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.16-14.11.12:129][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.16-14.11.12:403][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.16-14.11.12:671][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.16-14.11.12:946][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.16-14.11.13:218][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.16-14.11.13:404][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.16-14.11.13:674][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.16-14.11.13:945][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.16-14.11.14:221][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.16-14.11.14:487][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.16-14.11.14:763][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.16-14.11.15:036][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.16-14.11.15:569][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.16-14.11.15:569][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.16-14.11.15:752][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.16-14.11.16:156][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.16-14.11.16:361][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.16-14.11.16:633][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.16-14.11.16:902][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.16-14.11.17:167][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.16-14.11.17:439][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.16-14.11.17:439][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.16-14.11.19:545][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.16-14.11.19:590][  0]LogDerivedDataCache: Loaded boot cache 0.04s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.16-14.11.19:590][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.16-14.11.19:590][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.16-14.11.19:591][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.16-14.11.19:591][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.16-14.11.19:591][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.16-14.11.19:607][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.16-14.11.19:621][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DohyunYun/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.16-14.11.19:629][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.16-14.11.19:630][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.16-14.11.19:630][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.16-14.11.19:939][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.16-14.11.19:941][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.16-14.11.20:565][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.16-14.11.20:784][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.16-14.11.20:989][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.16-14.11.20:989][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.16-14.11.20:989][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.16-14.11.22:136][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: noah, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3984355841
+[2017.04.16-14.11.22:286][  0]LogAssetRegistry: FAssetRegistry took 0.0236 seconds to start up
+[2017.04.16-14.11.22:447][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.043775 seconds
+[2017.04.16-14.11.22:453][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.16-14.11.22:454][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.04.16-14.11.22:454][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.16-14.11.22:828][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.16-14.11.28:829][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.16-14.11.28:973][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.16-14.11.29:914][  0]LogClass: Noah:AItem Init
+[2017.04.16-14.11.29:914][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.29:915][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.29:994][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.30:047][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:047][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:048][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:048][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:074][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:075][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:076][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:076][  0]LogLinker:Error: HOTRELOADED_Inventory_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/UI/Inventory/InventorySlot.uasset)
+[2017.04.16-14.11.30:131][  0]LogClass: Noah:AItem Init
+[2017.04.16-14.11.30:154][  0]LogClass: Noah:AItem Init
+[2017.04.16-14.11.30:166][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.30:169][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.30:174][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.30:180][  0]LogClass: Noah:AItem Init
+[2017.04.16-14.11.30:236][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.30:242][  0]LogClass: Noah:UInventory Init
+[2017.04.16-14.11.31:373][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.16-14.11.32:904][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.16-14.11.33:046][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.16-14.11.33:256][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.16-14.11.33:465][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.16-14.11.39:093][  0]LogEngine: Initializing Engine...
+[2017.04.16-14.11.39:095][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.16-14.11.39:803][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.16-14.11.39:845][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.16-14.11.39:910][  0]LogInit: FAudioDevice initialized.
+[2017.04.16-14.11.39:935][  0]LogDerivedDataCache: Saved boot cache 0.02s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.16-14.11.39:937][  0]LogInit: Texture streaming: Enabled
+[2017.04.16-14.11.40:462][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.16-14.11.40:852][  0]LogInit: Transaction tracking system initialized
+[2017.04.16-14.11.42:429][  0]BlueprintLog: New page: 에디터 로드
+[2017.04.16-14.11.46:622][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.04.16-14.11.49:874][  0]LogConsoleResponse:Display: 
+[2017.04.16-14.11.50:095][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.16-14.11.50:095][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.16-14.11.50:698][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/' took 0.02s
+[2017.04.16-14.11.54:497][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.16-14.11.54:497][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/World.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.16-14.11.54:498][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.16-14.11.54:680][  0]MapCheck: New page: 맵 체크
+[2017.04.16-14.11.54:680][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.16-14.11.54:802][  0]LogAIModule: Creating AISystem for world World
+[2017.04.16-14.11.54:824][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.16-14.11.54:825][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.16-14.11.54:944][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 118.289ms.
+[2017.04.16-14.11.54:944][  0]LogFileHelpers: Loading map 'World' took 0.446
+[2017.04.16-14.11.55:011][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.04.16-14.11.55:228][  0]LogCollectionManager: Loaded 0 collections in 0.001518 seconds
+[2017.04.16-14.11.55:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Collections/' took 0.01s
+[2017.04.16-14.11.55:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/Developers/DohyunYun/Collections/' took 0.01s
+[2017.04.16-14.11.55:459][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/Collections/' took 0.01s
+[2017.04.16-14.11.55:459][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.16-14.11.55:468][  0]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2254 classes and 455 folders.
+[2017.04.16-14.11.55:478][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.16-14.11.55:478][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.16-14.11.55:771][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2017.04.16-14.11.55:826][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2017.04.16-14.11.56:015][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2017.04.16-14.11.56:222][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.16-14.11.56:242][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.04.16-14.11.56:465][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2017.04.16-14.11.56:466][  0]LogLoad: (Engine Initialization) Total time: 52.78 seconds
+[2017.04.16-14.11.56:466][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.41 seconds
+[2017.04.16-14.11.56:466][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.16-14.11.56:466][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.16-14.11.56:477][  0]LogOcInput: OculusInput pre-init called
+[2017.04.16-14.11.56:477][  0]LoadErrors:Error: 오류 오래된 클래스 LandscapeProxy 에 대한 리디렉터 다수가 포함된 콜리전이 ActiveClassRedirects 에 들어있습니다.
+[2017.04.16-14.11.56:498][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.16-14.11.56:502][  0]LogSlate: Took 0.000323 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.16-14.11.56:508][  0]LogSlate: Took 0.002803 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.04.16-14.11.56:510][  0]LogSlate: Took 0.000376 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.16-14.11.56:515][  0]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.16-14.11.56:648][  0]LogSlate: Took 0.002047 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.16-14.11.56:723][  0]LogRenderer: Reallocating scene render targets to support 1176x568 NumSamples 1 (Frame:2).
+[2017.04.16-14.11.56:747][  1]LogAssetRegistry: Asset discovery search completed in 34.4851 seconds
+[2017.04.16-14.11.56:748][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
+[2017.04.16-14.11.56:748][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000095 seconds (updated 0 objects)
+[2017.04.16-14.12.14:339][ 87]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.16-14.12.14:340][ 87]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.16-14.12.14:340][ 87]PIE: New page: PIE 세션: World (2017. 4. 17. 오전 8:12:14)
+[2017.04.16-14.12.14:340][ 87]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_World
+[2017.04.16-14.12.14:343][ 87]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002868s)
+[2017.04.16-14.12.14:344][ 87]LogAIModule: Creating AISystem for world World
+[2017.04.16-14.12.14:344][ 87]LogPlayLevel: PIE: World Init took: (0.000796s)
+[2017.04.16-14.12.14:344][ 87]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/World.World to /Game/UEDPIE_0_World.World (0.004100s)
+[2017.04.16-14.12.14:383][ 87]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.16-14.12.14:406][ 87]LogInit: FAudioDevice initialized.
+[2017.04.16-14.12.14:476][ 87]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.16-14.12.14:478][ 87]LogWorld: Bringing World /Game/UEDPIE_0_World.World up for play (max tick rate 0) at 2017.04.16-23.12.14
+[2017.04.16-14.12.14:478][ 87]LogWorld: Bringing up level for play took: 0.001159
+[2017.04.16-14.12.14:479][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:480][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:663][ 87]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0016 seconds. Added 11 classes and 0 folders.
+[2017.04.16-14.12.14:664][ 87]LogClass: Noah:UInventory Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:667][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:AItem Init
+[2017.04.16-14.12.14:668][ 87]LogClass: Noah:UInventory BeginPlay
+[2017.04.16-14.12.14:669][ 87]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.16-14.12.14:683][ 87]PIE: 정보 /Game/UEDPIE_0_World 에 대한 에디터에서 플레이 시작 시간: -0.106
+[2017.04.16-14.12.14:684][ 87]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.16-14.12.14:727][ 87]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:1927).
+[2017.04.16-14.12.19:000][244]LogRenderer: Reallocating scene render targets to support 1920x1016 NumSamples 1 (Frame:2086).
+[2017.04.16-14.13.50:440][105]LogClass: Noah:AItem Init
+[2017.04.16-14.13.51:071][179]LogClass: Noah:AItem Init
+[2017.04.16-14.13.53:222][430]LogClass: Noah:AItem Init
+[2017.04.16-14.13.53:222][430]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.53:226][430]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_26.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.53:227][430]LogClass: adsf /Game/Resource/Mesh/Mesh_Wood.Mesh_Wood
+[2017.04.16-14.13.54:552][587]LogClass: Noah:AItem Init
+[2017.04.16-14.13.54:552][587]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.54:559][587]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_27.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.54:559][587]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.13.55:697][722]LogClass: Noah:AItem Init
+[2017.04.16-14.13.55:697][722]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.55:697][722]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_28.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.55:697][722]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.13.56:469][813]LogClass: Noah:AItem Init
+[2017.04.16-14.13.56:469][813]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.56:469][813]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_29.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.56:469][813]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.13.57:616][949]LogClass: Noah:AItem Init
+[2017.04.16-14.13.57:616][949]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.57:616][949]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_30.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.57:616][949]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.13.58:532][ 57]LogClass: Noah:AItem Init
+[2017.04.16-14.13.58:533][ 57]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.13.58:533][ 57]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_31.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.13.58:533][ 57]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.14.08:985][297]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.09:194][322]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.09:381][344]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.09:573][367]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.09:751][388]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.10:564][484]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.10:850][518]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.11:368][580]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.11:611][609]LogClass: Noah:AItem Init
+[2017.04.16-14.14.11:803][631]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.12:325][693]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.12:517][716]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.12:743][743]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.12:943][767]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.13:144][791]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.13:479][830]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.14:436][944]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.14:680][973]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.16:211][156]LogClass: Noah:AItem Init
+[2017.04.16-14.14.16:212][156]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.16:212][156]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_32.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.14.16:212][156]LogClass: adsf /Game/Resource/Mesh/Mesh_Ston.Mesh_Ston
+[2017.04.16-14.14.16:917][239]LogClass: Noah:AItem Init
+[2017.04.16-14.14.16:917][239]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.16:917][239]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_33.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.14.16:917][239]LogClass: adsf /Game/Resource/Mesh/Mesh_Wood.Mesh_Wood
+[2017.04.16-14.14.26:216][345]LogClass: Noah:AItem Init
+[2017.04.16-14.14.29:375][715]LogClass: Noah:AItem Init
+[2017.04.16-14.14.29:375][715]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.29:375][715]LogClass: Noah:AItem Init
+[2017.04.16-14.14.29:376][715]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.32:514][ 90]LogClass: Noah:AItem Init
+[2017.04.16-14.14.32:515][ 90]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.32:515][ 90]LogClass: Noah:AItem Init
+[2017.04.16-14.14.34:299][300]LogBlueprintUserMessages: [InventorySlot_C_769] Slot
+[2017.04.16-14.14.35:054][389]LogClass: Noah:AItem Init
+[2017.04.16-14.14.35:054][389]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.35:054][389]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_38.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.14.35:054][389]LogClass: adsf /Game/Resource/Mesh/Mesh_Wood.Mesh_Wood
+[2017.04.16-14.14.36:010][502]LogClass: Noah:AItem Init
+[2017.04.16-14.14.36:010][502]LogClass: Noah:AItem BeginPlay
+[2017.04.16-14.14.36:010][502]LogActorComponent: RegisterComponentWithWorld: (/Game/UEDPIE_0_World.World:PersistentLevel.Item_39.ItemMesh) Already registered. Aborting.
+[2017.04.16-14.14.36:010][502]LogClass: adsf /Game/Resource/Mesh/Mesh_Axe.Mesh_Axe
+[2017.04.16-14.14.37:077][628]LogScript:Warning: CallFunc_Array_Get_Item2 프로퍼티를 통해 Item_33 에 접근하려 하였으나, Item_33 는 킬 대기중입니다.
+	BP_NoahCharacter_C /Game/UEDPIE_0_World.World:PersistentLevel.BP_NoahCharacter_C_0
+	Function /Game/GameMode/BP_NoahCharacter.BP_NoahCharacter_C:ExecuteUbergraph_BP_NoahCharacter:06CF
+[2017.04.16-14.14.37:077][628]PIE:Error: 오류 블루프린트 런타임 오류: CallFunc_Array_Get_Item2 프로퍼티를 통해 Item_33 에 접근하려 하였으나, Item_33 는 킬 대기중입니다. 다음 함수에서: 'ExecuteUbergraph_BP_NoahCharacter' 노드: Branch 그래프: EventGraph 오브젝트: BP_NoahCharacter 설명: CallFunc_Array_Get_Item2 프로퍼티를 통해 Item_33 에 접근하려 하였으나, Item_33 는 킬 대기중입니다.
+[2017.04.16-14.14.37:077][628]LogClass: Noah:AItem Init
+[2017.04.16-14.14.37:724][704]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.37:951][731]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.14.38:168][757]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array OverlapItemArray of length 0!
+[2017.04.16-14.16.01:754][694]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.16-14.16.01:789][694]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.16-14.20.44:052][ 47]LogSlate: Took 0.000198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.16-14.20.44:158][ 47]LogSavePackage: Save=12.20ms
+[2017.04.16-14.20.44:159][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/NoahTextureF891DAB945581D3DAA868DA18938AC23.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/NoahTexture.uasset'
+[2017.04.16-14.20.44:165][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/NoahTexture.uasset
+[2017.04.16-14.20.44:200][ 47]LogSavePackage: Save=12.72ms
+[2017.04.16-14.20.44:200][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/04_-_Default6A3772F540C1553DC6665BA316D7A220.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/04_-_Default.uasset'
+[2017.04.16-14.20.44:206][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/04_-_Default.uasset
+[2017.04.16-14.20.44:247][ 47]LogSavePackage: Save=20.90ms
+[2017.04.16-14.20.44:247][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath5E7DF5714F148ECB391D89A6C5AAF778.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset'
+[2017.04.16-14.20.44:257][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset
+[2017.04.16-14.20.44:282][ 47]LogSavePackage: Save=18.61ms
+[2017.04.16-14.20.44:282][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_PhysicsAsset211B5B1C46413DEFC60378BCC28E871A.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath_PhysicsAsset.uasset'
+[2017.04.16-14.20.44:291][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath_PhysicsAsset.uasset
+[2017.04.16-14.20.44:496][ 47]LogClass: Noah:UInventory Init
+[2017.04.16-14.20.44:518][ 47]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameMode/BP_NoahCharacter" FILE="../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/GameMode/BP_NoahCharacter.uasset" SILENT=true
+[2017.04.16-14.20.44:640][ 47]LogSavePackage: Save=52.52ms
+[2017.04.16-14.20.44:640][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/BP_NoahCharacter7145893F4CA88C65D8DCC79609DC9807.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/GameMode/BP_NoahCharacter.uasset'
+[2017.04.16-14.20.44:643][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/GameMode/BP_NoahCharacter.uasset
+[2017.04.16-14.20.44:718][ 47]LogSavePackage: Save=4.64ms
+[2017.04.16-14.20.44:718][ 47]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_Skeleton4224046649B4F0F0BC05A18677551E9F.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_Skeleton.uasset'
+[2017.04.16-14.20.44:721][ 47]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_Skeleton.uasset
+[2017.04.16-14.20.47:082][304]LogSavePackage: Save=5.36ms
+[2017.04.16-14.20.47:082][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_SkeletonE8134F3B4C0DF8123067CB9721249E70.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath_Skeleton.uasset'
+[2017.04.16-14.20.47:088][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath_Skeleton.uasset
+[2017.04.16-14.20.47:283][304]LogSavePackage: Save=11.19ms
+[2017.04.16-14.20.47:283][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_AnimF672EDA445F51251A331E8A17A3117B0.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/breath_Anim.uasset'
+[2017.04.16-14.20.47:286][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/breath_Anim.uasset
+[2017.04.16-14.20.47:381][304]LogSavePackage: Save=10.79ms
+[2017.04.16-14.20.47:382][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_1E0D777744C8D2E9184891384AD7822E9.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_1.uasset'
+[2017.04.16-14.20.47:385][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_1.uasset
+[2017.04.16-14.20.47:482][304]LogSavePackage: Save=10.69ms
+[2017.04.16-14.20.47:482][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_2CA36DF4443494FE3D74C36B57D4458F5.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_2.uasset'
+[2017.04.16-14.20.47:485][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_2.uasset
+[2017.04.16-14.20.47:580][304]LogSavePackage: Save=10.67ms
+[2017.04.16-14.20.47:580][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_3E2B6997D4A1F3D4EA9E6AEBEC562C757.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_3.uasset'
+[2017.04.16-14.20.47:583][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_3.uasset
+[2017.04.16-14.20.47:679][304]LogSavePackage: Save=11.00ms
+[2017.04.16-14.20.47:679][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Fire_Rifle_Ironsights9065E87A494AAE3CF2132C971C53EFA3.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Fire_Rifle_Ironsights.uasset'
+[2017.04.16-14.20.47:682][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Fire_Rifle_Ironsights.uasset
+[2017.04.16-14.20.47:778][304]LogSavePackage: Save=11.30ms
+[2017.04.16-14.20.47:778][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Maria_J_J_Ong_Sword_Swing6C1CC0D4424C68C15EC6E1BE356D4FB3.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Maria_J_J_Ong_Sword_Swing.uasset'
+[2017.04.16-14.20.47:781][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Maria_J_J_Ong_Sword_Swing.uasset
+[2017.04.16-14.20.47:876][304]LogSavePackage: Save=10.62ms
+[2017.04.16-14.20.47:877][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Montage_Attack8A20E2284B8F02CCAC23A3B231C891E1.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Montage_Attack.uasset'
+[2017.04.16-14.20.47:879][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Montage_Attack.uasset
+[2017.04.16-14.20.48:006][304]LogSavePackage: Save=36.81ms
+[2017.04.16-14.20.48:006][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/NoahAni61342C7F4B65865F62C1428900486413.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahAni.uasset'
+[2017.04.16-14.20.48:010][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahAni.uasset
+[2017.04.16-14.20.48:117][304]LogSavePackage: Save=11.03ms
+[2017.04.16-14.20.48:118][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/NoahCharacter_IdleWalk44F708E549542208B720B8A5509EF732.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahCharacter_IdleWalk.uasset'
+[2017.04.16-14.20.48:121][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahCharacter_IdleWalk.uasset
+[2017.04.16-14.20.48:219][304]LogSavePackage: Save=10.85ms
+[2017.04.16-14.20.48:219][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Reload_PistolA0147B964ED88281AA505C8573D1E70C.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Reload_Pistol.uasset'
+[2017.04.16-14.20.48:222][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Reload_Pistol.uasset
+[2017.04.16-14.20.48:338][304]LogSavePackage: Save=10.77ms
+[2017.04.16-14.20.48:338][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Stand_to_Crouch_Rifle_HipF050AFA645014155F949D69D3424632A.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Stand_to_Crouch_Rifle_Hip.uasset'
+[2017.04.16-14.20.48:341][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Stand_to_Crouch_Rifle_Hip.uasset
+[2017.04.16-14.20.48:441][304]LogSavePackage: Save=12.39ms
+[2017.04.16-14.20.48:441][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_End998890004C6A25B0BB197BBB936C3722.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_End.uasset'
+[2017.04.16-14.20.48:444][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_End.uasset
+[2017.04.16-14.20.48:543][304]LogSavePackage: Save=12.64ms
+[2017.04.16-14.20.48:543][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_LoopEB88FB36432A1E228C57B8A7858E6CE1.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Loop.uasset'
+[2017.04.16-14.20.48:546][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Loop.uasset
+[2017.04.16-14.20.48:643][304]LogSavePackage: Save=12.15ms
+[2017.04.16-14.20.48:643][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_Start34B1CA4A49B9FD7AD1DBBF8ACBDF1341.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Start.uasset'
+[2017.04.16-14.20.48:647][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Start.uasset
+[2017.04.16-14.20.48:747][304]LogSavePackage: Save=13.94ms
+[2017.04.16-14.20.48:747][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonRun89C4EF924EAB5E77804DA3A64319D758.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonRun.uasset'
+[2017.04.16-14.20.48:750][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonRun.uasset
+[2017.04.16-14.20.48:847][304]LogSavePackage: Save=12.38ms
+[2017.04.16-14.20.48:847][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonWalkC297E46B45A4234059BB2894457AE5AC.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonWalk.uasset'
+[2017.04.16-14.20.48:850][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonWalk.uasset
+[2017.04.16-14.20.48:947][304]LogSavePackage: Save=12.27ms
+[2017.04.16-14.20.48:948][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPerson_JumpDF1FE52D4D4C8C1BF4E014B15E77A969.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPerson_Jump.uasset'
+[2017.04.16-14.20.48:951][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPerson_Jump.uasset
+[2017.04.16-14.20.49:038][304]LogSavePackage: Save=13.01ms
+[2017.04.16-14.20.49:038][304]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath2341D2064C6D557D88E982BA5AC8EA43.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset'
+[2017.04.16-14.20.49:041][304]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset
+[2017.04.16-14.21.01:092][622]LogSavePackage: Save=4.63ms
+[2017.04.16-14.21.01:092][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_SkeletonCAE0E3144B76034DB4DC4FA8C3C52B48.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_Skeleton.uasset'
+[2017.04.16-14.21.01:097][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_Skeleton.uasset
+[2017.04.16-14.21.01:274][622]LogSavePackage: Save=3.71ms
+[2017.04.16-14.21.01:274][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_AnimD4D30CE24763770D3484C6BFCD206A3B.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/breath_Anim.uasset'
+[2017.04.16-14.21.01:277][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/breath_Anim.uasset
+[2017.04.16-14.21.01:353][622]LogSavePackage: Save=3.45ms
+[2017.04.16-14.21.01:353][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_195BB56494A975893FD5057B598AF466F.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_1.uasset'
+[2017.04.16-14.21.01:359][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_1.uasset
+[2017.04.16-14.21.01:437][622]LogSavePackage: Save=3.47ms
+[2017.04.16-14.21.01:437][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_2B92EB49B476BAEE6AF6E738EBA65A827.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_2.uasset'
+[2017.04.16-14.21.01:443][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_2.uasset
+[2017.04.16-14.21.01:520][622]LogSavePackage: Save=3.33ms
+[2017.04.16-14.21.01:521][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Death_3291D969641C32E4A62EAC8AD1970FF76.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_3.uasset'
+[2017.04.16-14.21.01:524][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Death_3.uasset
+[2017.04.16-14.21.01:601][622]LogSavePackage: Save=3.25ms
+[2017.04.16-14.21.01:601][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Fire_Rifle_Ironsights89A60B8D42A2FE6D7F6DC3BE856021C2.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Fire_Rifle_Ironsights.uasset'
+[2017.04.16-14.21.01:607][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Fire_Rifle_Ironsights.uasset
+[2017.04.16-14.21.01:684][622]LogSavePackage: Save=3.62ms
+[2017.04.16-14.21.01:684][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Maria_J_J_Ong_Sword_SwingE199171044A5A09BF6D1958C9B9E9E66.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Maria_J_J_Ong_Sword_Swing.uasset'
+[2017.04.16-14.21.01:690][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Maria_J_J_Ong_Sword_Swing.uasset
+[2017.04.16-14.21.01:768][622]LogSavePackage: Save=3.24ms
+[2017.04.16-14.21.01:768][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Montage_Attack6C05F67B4BC29A89FF6EF28E6088B472.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Montage_Attack.uasset'
+[2017.04.16-14.21.01:771][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Montage_Attack.uasset
+[2017.04.16-14.21.01:872][622]LogSavePackage: Save=28.43ms
+[2017.04.16-14.21.01:872][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/NoahAni08F5BBF147F9F3038FC91FB10A39F18F.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahAni.uasset'
+[2017.04.16-14.21.01:878][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahAni.uasset
+[2017.04.16-14.21.01:956][622]LogSavePackage: Save=3.47ms
+[2017.04.16-14.21.01:956][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/NoahCharacter_IdleWalk4693202C4D3A3149BE3AA69AD6153C4D.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahCharacter_IdleWalk.uasset'
+[2017.04.16-14.21.01:962][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/NoahCharacter_IdleWalk.uasset
+[2017.04.16-14.21.02:037][622]LogSavePackage: Save=3.39ms
+[2017.04.16-14.21.02:037][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Reload_Pistol85EB14FF44FD592476A665B2E6AEAAE4.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Reload_Pistol.uasset'
+[2017.04.16-14.21.02:043][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Reload_Pistol.uasset
+[2017.04.16-14.21.02:119][622]LogSavePackage: Save=3.41ms
+[2017.04.16-14.21.02:119][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Stand_to_Crouch_Rifle_Hip802CB68B4E8EC2F2C0767EAE0F181E44.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Stand_to_Crouch_Rifle_Hip.uasset'
+[2017.04.16-14.21.02:123][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/Stand_to_Crouch_Rifle_Hip.uasset
+[2017.04.16-14.21.02:199][622]LogSavePackage: Save=4.40ms
+[2017.04.16-14.21.02:199][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_End8024232F43E39234EA387EA81A53D538.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_End.uasset'
+[2017.04.16-14.21.02:202][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_End.uasset
+[2017.04.16-14.21.02:285][622]LogSavePackage: Save=4.37ms
+[2017.04.16-14.21.02:287][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_LoopA6B9B95D467357147FB9F9BA1BA312CD.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Loop.uasset'
+[2017.04.16-14.21.02:293][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Loop.uasset
+[2017.04.16-14.21.02:372][622]LogSavePackage: Save=4.41ms
+[2017.04.16-14.21.02:372][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonJump_Start8993EAE04FB252589B51F2BF8CD59AFC.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Start.uasset'
+[2017.04.16-14.21.02:378][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonJump_Start.uasset
+[2017.04.16-14.21.02:452][622]LogSavePackage: Save=4.28ms
+[2017.04.16-14.21.02:453][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonRunF6231B8244C52FBC6962708830A92CFD.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonRun.uasset'
+[2017.04.16-14.21.02:458][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonRun.uasset
+[2017.04.16-14.21.02:534][622]LogSavePackage: Save=4.29ms
+[2017.04.16-14.21.02:534][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPersonWalk431C611942390117B43200B9AC4BB61D.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonWalk.uasset'
+[2017.04.16-14.21.02:539][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPersonWalk.uasset
+[2017.04.16-14.21.02:616][622]LogSavePackage: Save=4.20ms
+[2017.04.16-14.21.02:616][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/ThirdPerson_JumpAA96D18D47D496CD382169B2E1D663A5.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPerson_Jump.uasset'
+[2017.04.16-14.21.02:622][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Animation/ThirdPerson_Jump.uasset
+[2017.04.16-14.21.02:706][622]LogSavePackage: Save=12.10ms
+[2017.04.16-14.21.02:706][622]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath0FB017F5405629F9CDC3648D85FF4404.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset'
+[2017.04.16-14.21.02:712][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset
+[2017.04.16-14.21.05:149][886]LogSavePackage: Save=10.74ms
+[2017.04.16-14.21.05:149][886]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_PhysicsAssetD416996947985C346F0F539AC1A52404.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_PhysicsAsset.uasset'
+[2017.04.16-14.21.05:158][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/breath_PhysicsAsset.uasset
+[2017.04.16-14.21.05:335][886]LogSavePackage: Save=12.23ms
+[2017.04.16-14.21.05:335][886]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath1BA692CD411D58B85E851DA2155F7A94.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset'
+[2017.04.16-14.21.05:338][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/NewFolder/breath.uasset
+[2017.04.16-14.21.08:559][187]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\DohyunYun\Downloads\respiration.FBX)
+[2017.04.16-14.21.08:656][187]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.04.16-14.21.08:656][187]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.04.16-14.21.08:656][187]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.04.16-14.21.08:656][187]LogFbx: ItemName: Model, ItemCount : 39
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Material, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Texture, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: NodeAttribute, ItemCount : 37
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Collection, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: SelectionNode, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: AnimationCurve, ItemCount : 342
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: AnimationCurveNode, ItemCount : 114
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Deformer, ItemCount : 32
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Pose, ItemCount : 1
+[2017.04.16-14.21.08:657][187]LogFbx: ItemName: Video, ItemCount : 1
+[2017.04.16-14.21.08:665][187]LogFbx: Loading FBX Scene from C:\Users\DohyunYun\Downloads\respiration.FBX
+[2017.04.16-14.21.08:762][187]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.16-14.21.10:021][187]LogSlate: Took 0.000440 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.16-14.21.14:015][187]LogFbx: Loading FBX Scene from C:\Users\DohyunYun\Downloads\respiration.FBX
+[2017.04.16-14.21.14:110][187]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.16-14.21.14:113][187]LogFbx: =================================================
+[2017.04.16-14.21.14:113][187]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.21.14:113][187]LogFbx: 	Total Deformer Count 1149820944.
+[2017.04.16-14.21.14:114][187]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.21.14:114][187]LogFbx: =================================================
+[2017.04.16-14.21.14:114][187]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.21.14:114][187]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.21.14:114][187]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.21.14:114][187]LogFbx: =================================================
+[2017.04.16-14.21.14:114][187]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.21.14:114][187]LogFbx: 	Total Deformer Count 1149821448.
+[2017.04.16-14.21.14:114][187]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.21.14:114][187]LogFbx: =================================================
+[2017.04.16-14.21.14:114][187]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.21.14:114][187]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.21.14:114][187]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.21.14:115][187]LogFbx: Valid bind pose for Pose (BIND_POSES) - Plane001
+[2017.04.16-14.21.14:117][187]LogLinker: '/Game/ProjectContents/Character/Mesh/04_-_Default' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:117][187]LogLinker: '/Game/ProjectContents/Character/Mesh/04_-_Default' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:117][187]LogMaterial:Warning: Material /Game/ProjectContents/Character/Mesh/04_-_Default.04_-_Default needed to have new flag set bUsedWithSkeletalMesh !
+[2017.04.16-14.21.14:119][187]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.14:120][187]LogTemp:Display: Added material ShaderMap 0x000001CC5BF79280 with Material 0x000001CC25C76800 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.14:159][187]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC5BF79280
+[2017.04.16-14.21.14:160][187]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.21.14:161][187]LogLinker: '/Game/ProjectContents/Character/Mesh/uvwmap_01' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:161][187]LogLinker: '/Game/ProjectContents/Character/Mesh/uvwmap_01' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:161][187]LogStreaming:Warning: Failed to read file 'C:\Users\Godgyu\Desktop\uvwmap_01.jpg' error.
+[2017.04.16-14.21.14:162][187]LogStreaming:Warning: Failed to read file 'C:\Users\DohyunYun\Downloads/..\..\uvwmap_01.jpg' error.
+[2017.04.16-14.21.14:162][187]LogStreaming:Warning: Failed to read file 'C:\Users\DohyunYun\Downloads/uvwmap_01.jpg' error.
+[2017.04.16-14.21.14:162][187]LogFbxMaterialImport:Warning: Unable to find TEXTure file uvwmap_01.jpg. Tried:
+ - C:\Users\Godgyu\Desktop\uvwmap_01.jpg
+ - C:\Users\DohyunYun\Downloads/..\..\uvwmap_01.jpg
+ - C:\Users\DohyunYun\Downloads/uvwmap_01.jpg
+[2017.04.16-14.21.14:165][187]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.14:166][187]LogTemp:Display: Added material ShaderMap 0x000001CC4A84EB00 with Material 0x000001CC25C76800 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.14:193][187]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC4A84EB00
+[2017.04.16-14.21.14:200][187]LogFbx:Warning: Bones digested - 37  Depth of hierarchy - 12
+[2017.04.16-14.21.14:221][187]LogSkeletalMesh: Section 0: 6238 vertices, 29 active bones
+[2017.04.16-14.21.14:222][187]LogSkeletalMesh: Section 0: Material=0, 2138 triangles
+[2017.04.16-14.21.14:225][187]LogLinker: '/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:225][187]LogLinker: '/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:229][187]LogFbx: =================================================
+[2017.04.16-14.21.14:229][187]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.21.14:229][187]LogFbx: 	Total Deformer Count 1912201848.
+[2017.04.16-14.21.14:229][187]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.21.14:229][187]LogFbx: =================================================
+[2017.04.16-14.21.14:229][187]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.21.14:229][187]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.21.14:229][187]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.21.14:229][187]LogFbx: =================================================
+[2017.04.16-14.21.14:229][187]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.21.14:229][187]LogFbx: 	Total Deformer Count 1912202184.
+[2017.04.16-14.21.14:229][187]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.21.14:229][187]LogFbx: =================================================
+[2017.04.16-14.21.14:229][187]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.21.14:229][187]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.21.14:229][187]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(0) Bip001
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(2) Bip001 Spine
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(4) Bip001 Neck
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(5) Bip001 L Clavicle
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(6) Bip001 L UpperArm
+[2017.04.16-14.21.14:230][187]LogFbx: SortedLinks :(7) Bip001 L Forearm
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(8) Bip001 L Hand
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(9) Bip001 L Finger0
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(10) Bip001 L Finger01
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(11) Bip001 L Finger0Nub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(12) Bip001 L Finger1
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(13) Bip001 L Finger11
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(14) Bip001 L Finger1Nub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(15) Bip001 R Clavicle
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(16) Bip001 R UpperArm
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(17) Bip001 R Forearm
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(18) Bip001 R Hand
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(19) Bip001 R Finger0
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(20) Bip001 R Finger01
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(21) Bip001 R Finger0Nub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(22) Bip001 R Finger1
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(23) Bip001 R Finger11
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(24) Bip001 R Finger1Nub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(25) Bip001 Head
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(26) Bip001 HeadNub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(27) Bip001 L Thigh
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(28) Bip001 L Calf
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(29) Bip001 L Foot
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(30) Bip001 L Toe0
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(31) Bip001 L Toe0Nub
+[2017.04.16-14.21.14:231][187]LogFbx: SortedLinks :(32) Bip001 R Thigh
+[2017.04.16-14.21.14:232][187]LogFbx: SortedLinks :(33) Bip001 R Calf
+[2017.04.16-14.21.14:232][187]LogFbx: SortedLinks :(34) Bip001 R Foot
+[2017.04.16-14.21.14:232][187]LogFbx: SortedLinks :(35) Bip001 R Toe0
+[2017.04.16-14.21.14:232][187]LogFbx: SortedLinks :(36) Bip001 R Toe0Nub
+[2017.04.16-14.21.14:232][187]LogFbx: Parsing AnimStack Take 001
+[2017.04.16-14.21.14:235][187]LogLinker: '/Game/ProjectContents/Character/Mesh/respiration_Anim' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:235][187]LogLinker: '/Game/ProjectContents/Character/Mesh/respiration_Anim' 파일을 찾을 수 없습니다.
+[2017.04.16-14.21.14:395][187]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ProjectContents/Character/Mesh/respiration_Anim.respiration_Anim
+[2017.04.16-14.21.14:403][187]FBXImport:Warning: 경고 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 HeadNub  
+Bip001 L Toe0Nub  
+Bip001 R Toe0Nub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2017.04.16-14.21.25:338][870]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.25:339][870]LogTemp:Display: Added material ShaderMap 0x000001CC050E5280 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.25:359][870]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC050E5280
+[2017.04.16-14.21.25:365][870]LogSlate: Took 0.000214 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.16-14.21.25:457][870]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.25:458][870]LogTemp:Display: Added material ShaderMap 0x000001CC0DE80480 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.25:479][870]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC0DE80480
+[2017.04.16-14.21.25:480][870]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.21.25:514][870]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.16-14.21.25:514][870]LogTemp:Display: Added material ShaderMap 0x000001CC07DC4100 with Material 0x000001CC07DCBA00 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.25:516][870]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000001CC07DC4100
+[2017.04.16-14.21.25:523][870]LogTemp:Display: Finished compile of shader map 0x000001CC4A84EB00
+[2017.04.16-14.21.25:524][870]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC4A84EB00, marking material 04_-_Default as finished
+[2017.04.16-14.21.25:524][870]LogTemp:Display: Marking material as finished 0x000001CC25C76800
+[2017.04.16-14.21.25:531][870]LogSlate: Took 0.001547 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.16-14.21.25:699][871]LogSlate: Took 0.001735 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.16-14.21.29:605][200]MapCheck: New page: 맵 체크
+[2017.04.16-14.21.29:623][200]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.16-14.21.29:623][200]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.16-14.21.31:914][200]LogTemp:Display: Finished compile of shader map 0x000001CC0DE80480
+[2017.04.16-14.21.31:915][200]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC0DE80480, marking material 04_-_Default as finished
+[2017.04.16-14.21.31:915][200]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.21.32:044][200]LogTemp:Display: Finished compile of shader map 0x000001CC07DC4100
+[2017.04.16-14.21.32:044][200]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000001CC07DC4100, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.16-14.21.32:044][200]LogTemp:Display: Marking material as finished 0x000001CC07DCBA00
+[2017.04.16-14.21.32:054][200]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.16-14.21.32:055][200]LogTemp:Display: Added material ShaderMap 0x000001CC07DC4800 with Material 0x000001CC8C544D00 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.32:058][200]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001CC07DC4800
+[2017.04.16-14.21.32:063][200]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.04.16-14.21.32:064][200]LogTemp:Display: Added material ShaderMap 0x000001CC07DC6E80 with Material 0x000001CC8C544400 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.32:066][200]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy DefaultMaterial, GameThreadShaderMap 0x000001CC07DC6E80
+[2017.04.16-14.21.32:069][200]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, compiling. 
+[2017.04.16-14.21.32:071][200]LogTemp:Display: Added material ShaderMap 0x000001CC07DC6400 with Material 0x000001CC07DC9900 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.32:072][200]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, GameThreadShaderMap 0x000001CC07DC6400
+[2017.04.16-14.21.32:075][200]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy BasicShapeMaterial, compiling. 
+[2017.04.16-14.21.32:076][200]LogTemp:Display: Added material ShaderMap 0x000001CC07DC6780 with Material 0x000001CC07DC9600 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.32:078][200]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy BasicShapeMaterial, GameThreadShaderMap 0x000001CC07DC6780
+[2017.04.16-14.21.32:081][200]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, compiling. 
+[2017.04.16-14.21.32:081][200]LogTemp:Display: Added material ShaderMap 0x000001CC5415A080 with Material 0x000001CC07DCA800 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.32:083][200]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, GameThreadShaderMap 0x000001CC5415A080
+[2017.04.16-14.21.32:347][200]LogTemp:Display: Finished compile of shader map 0x000001CC07DC6E80
+[2017.04.16-14.21.32:347][200]LogTemp:Display: Shader map FDebugViewModeMaterialProxy DefaultMaterial complete, GameThreadShaderMap 0x000001CC07DC6E80, marking material FDebugViewModeMaterialProxy DefaultMaterial as finished
+[2017.04.16-14.21.32:347][200]LogTemp:Display: Marking material as finished 0x000001CC8C544400
+[2017.04.16-14.21.32:348][200]LogTemp:Display: Finished compile of shader map 0x000001CC07DC4800
+[2017.04.16-14.21.32:348][200]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001CC07DC4800, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.16-14.21.32:348][200]LogTemp:Display: Marking material as finished 0x000001CC8C544D00
+[2017.04.16-14.21.32:361][200]LogTemp:Display: Finished compile of shader map 0x000001CC07DC6400
+[2017.04.16-14.21.32:361][200]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 complete, GameThreadShaderMap 0x000001CC07DC6400, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 as finished
+[2017.04.16-14.21.32:361][200]LogTemp:Display: Marking material as finished 0x000001CC07DC9900
+[2017.04.16-14.21.32:468][200]LogTemp:Display: Finished compile of shader map 0x000001CC07DC6780
+[2017.04.16-14.21.32:468][200]LogTemp:Display: Shader map FDebugViewModeMaterialProxy BasicShapeMaterial complete, GameThreadShaderMap 0x000001CC07DC6780, marking material FDebugViewModeMaterialProxy BasicShapeMaterial as finished
+[2017.04.16-14.21.32:468][200]LogTemp:Display: Marking material as finished 0x000001CC07DC9600
+[2017.04.16-14.21.32:480][200]LogTemp:Display: Finished compile of shader map 0x000001CC5415A080
+[2017.04.16-14.21.32:480][200]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 complete, GameThreadShaderMap 0x000001CC5415A080, marking material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 as finished
+[2017.04.16-14.21.32:480][200]LogTemp:Display: Marking material as finished 0x000001CC07DCA800
+[2017.04.16-14.21.32:483][200]TextureStreamingBuild:Display: Compiling optional shaders took 0.437 seconds.
+[2017.04.16-14.21.32:489][200]LogLevel:Display: Export Material TexCoord Scales took 0.006 seconds.
+[2017.04.16-14.21.32:493][200]TextureStreamingBuild:Display: Build Texture Streaming took 0.004 seconds.
+[2017.04.16-14.21.32:503][200]LightingResults: New page: 라이팅 빌드 - 2017. 4. 17. 오전 8:21:32
+[2017.04.16-14.21.32:714][200]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.16-14.21.32:862][200]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.16-14.21.33:033][200]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.16-14.21.33:707][200]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.16-14.21.33:707][200]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10184
+[2017.04.16-14.21.37:394][200]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.04.16-14.21.37:395][200]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.16-14.21.37:395][200]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.16-14.21.37:395][200]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.16-14.21.37:395][200]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.16-14.21.37:395][200]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.16-14.21.37:731][200]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.16-14.21.37:732][200]MapCheck: New page: World - 2017. 4. 17. 오전 8:21:37
+[2017.04.16-14.21.37:860][200]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 127.981ms.
+[2017.04.16-14.21.37:883][200]LogEditorBuildUtils: Build time 0:08
+[2017.04.16-14.21.37:894][200]MaterialEditorStats: 정보 Base pass shader with only dynamic lighting: 80 instructions
+[2017.04.16-14.21.37:894][200]MaterialEditorStats: 정보 Vertex shader: 29 instructions
+[2017.04.16-14.21.37:894][200]MaterialEditorStats: 정보 Texture samplers: 1/16
+[2017.04.16-14.21.39:511][264]Job is a success!
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: SkyOcclusion1_1 (AutoDXT, 256X128) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap1_1 (AutoDXT, 256X256) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_1_1 (DXT1, 256X256) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: SkyOcclusion1_2 (AutoDXT, 64X32) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap1_2 (AutoDXT, 64X64) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_1_2 (DXT1, 64X64) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_1 (G8, 32X32) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:595][265]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_0 (G8, 128X128) - 83 MB 총 VRAM
+[2017.04.16-14.21.39:611][265]Lightmass on DOHYUNYUNPC: 742 ms total, 95 ms importing, 3 ms setup, 184 ms photons, 375 ms processing, 0 ms extra exporting [2/2 mappings]. Threads: 1.40 sec total, 372 ms processing.
+[2017.04.16-14.21.39:626][265]LogStaticLightingSystem: Illumination: 7.10 sec (17 ms encoding lightmaps, 11 ms encoding shadowmaps)
+[2017.04.16-14.21.39:627][265]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.04.16-14.21.39:627][265]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.16-14.21.40:400][265]DumpUnbuiltLightIteractions
+[2017.04.16-14.21.40:400][265]Lights with unbuilt interactions: 0
+[2017.04.16-14.21.40:400][265]
+[2017.04.16-14.21.40:400][265]Primitives with unbuilt interactions: 0
+[2017.04.16-14.21.40:443][266]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.16-14.21.40:443][266]MapCheck: New page: World - 2017. 4. 17. 오전 8:21:40
+[2017.04.16-14.21.40:570][266]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 126.869ms.
+[2017.04.16-14.21.52:715][326]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.52:716][326]LogTemp:Display: Added material ShaderMap 0x000001CC07919280 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.52:735][326]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC07919280
+[2017.04.16-14.21.52:736][326]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.21.52:737][326]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.16-14.21.52:738][326]LogTemp:Display: Added material ShaderMap 0x000001CC7EDA2780 with Material 0x000001CC07986200 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.52:740][326]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x000001CC7EDA2780
+[2017.04.16-14.21.52:743][326]LogTemp:Display: Removed shader map 0x000001CC7EDA2780 from material 0x000001CC07986200
+[2017.04.16-14.21.52:767][326]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.16-14.21.52:768][326]LogTemp:Display: Added material ShaderMap 0x000001CC7EDA0F00 with Material 0x000001CC0DF25C00 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.52:770][326]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000001CC7EDA0F00
+[2017.04.16-14.21.52:771][326]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.16-14.21.52:772][326]LogTemp:Display: Added material ShaderMap 0x000001CC53B6D980 with Material 0x000001CC0DF24700 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.52:774][326]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x000001CC53B6D980
+[2017.04.16-14.21.55:448][606]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.21.55:449][606]LogTemp:Display: Added material ShaderMap 0x000001CC4A815D00 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.55:469][606]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC4A815D00
+[2017.04.16-14.21.55:470][606]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.21.55:474][606]LogTemp:Display: Removed shader map 0x000001CC53B6D980 from material 0x000001CC0DF24700
+[2017.04.16-14.21.55:499][606]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.16-14.21.55:500][606]LogTemp:Display: Added material ShaderMap 0x000001CC08C06780 with Material 0x000001CC08C6BA00 to ShaderMapsBeingCompiled
+[2017.04.16-14.21.55:502][606]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x000001CC08C06780
+[2017.04.16-14.21.55:606][617]LogTemp:Display: Finished compile of shader map 0x000001CC07919280
+[2017.04.16-14.21.55:606][617]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC07919280, marking material 04_-_Default as finished
+[2017.04.16-14.21.55:606][617]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.21.56:255][682]LogTemp:Display: Finished compile of shader map 0x000001CC7EDA0F00
+[2017.04.16-14.21.56:255][682]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000001CC7EDA0F00, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.16-14.21.56:255][682]LogTemp:Display: Marking material as finished 0x000001CC0DF25C00
+[2017.04.16-14.22.05:230][230]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2017.04.16-14.22.05:386][230]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.04.16-14.22.05:441][230]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_7:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2017.04.16-14.22.05:504][230]LogTemp:Display: Finished compile of shader map 0x000001CC08C06780
+[2017.04.16-14.22.05:504][230]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_0 complete, GameThreadShaderMap 0x000001CC08C06780, marking material FMatExpressionPreview MaterialExpressionTextureSample_0 as finished
+[2017.04.16-14.22.05:504][230]LogTemp:Display: Marking material as finished 0x000001CC08C6BA00
+[2017.04.16-14.22.05:506][230]LogTemp:Display: Finished compile of shader map 0x000001CC4A815D00
+[2017.04.16-14.22.05:506][230]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC4A815D00, marking material 04_-_Default as finished
+[2017.04.16-14.22.05:506][230]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.22.05:509][230]MaterialEditorStats: 정보 Base pass shader with only dynamic lighting: 81 instructions
+[2017.04.16-14.22.05:509][230]MaterialEditorStats: 정보 Vertex shader: 31 instructions
+[2017.04.16-14.22.05:510][230]MaterialEditorStats: 정보 Texture samplers: 2/16
+[2017.04.16-14.22.18:748][488]MapCheck: New page: 맵 체크
+[2017.04.16-14.22.18:765][488]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.16-14.22.18:765][488]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.16-14.22.18:859][488]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.16-14.22.18:860][488]LogTemp:Display: Added material ShaderMap 0x000001CCB1536080 with Material 0x000001CCB1621000 to ShaderMapsBeingCompiled
+[2017.04.16-14.22.18:862][488]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001CCB1536080
+[2017.04.16-14.22.18:865][488]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.04.16-14.22.18:866][488]LogTemp:Display: Added material ShaderMap 0x000001CCB1535600 with Material 0x000001CCB1620A00 to ShaderMapsBeingCompiled
+[2017.04.16-14.22.18:868][488]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy DefaultMaterial, GameThreadShaderMap 0x000001CCB1535600
+[2017.04.16-14.22.18:871][488]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_2, compiling. 
+[2017.04.16-14.22.18:872][488]LogTemp:Display: Added material ShaderMap 0x000001CCB1535280 with Material 0x000001CCB1620D00 to ShaderMapsBeingCompiled
+[2017.04.16-14.22.18:874][488]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_2, GameThreadShaderMap 0x000001CCB1535280
+[2017.04.16-14.22.18:877][488]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy BasicShapeMaterial, compiling. 
+[2017.04.16-14.22.18:878][488]LogTemp:Display: Added material ShaderMap 0x000001CCB1534800 with Material 0x000001CCB1507D00 to ShaderMapsBeingCompiled
+[2017.04.16-14.22.18:879][488]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy BasicShapeMaterial, GameThreadShaderMap 0x000001CCB1534800
+[2017.04.16-14.22.18:882][488]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, compiling. 
+[2017.04.16-14.22.18:883][488]LogTemp:Display: Added material ShaderMap 0x000001CCB5677200 with Material 0x000001CCB1507700 to ShaderMapsBeingCompiled
+[2017.04.16-14.22.18:885][488]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, GameThreadShaderMap 0x000001CCB5677200
+[2017.04.16-14.22.19:127][488]LogTemp:Display: Finished compile of shader map 0x000001CCB1535600
+[2017.04.16-14.22.19:127][488]LogTemp:Display: Shader map FDebugViewModeMaterialProxy DefaultMaterial complete, GameThreadShaderMap 0x000001CCB1535600, marking material FDebugViewModeMaterialProxy DefaultMaterial as finished
+[2017.04.16-14.22.19:127][488]LogTemp:Display: Marking material as finished 0x000001CCB1620A00
+[2017.04.16-14.22.19:128][488]LogTemp:Display: Finished compile of shader map 0x000001CCB1536080
+[2017.04.16-14.22.19:128][488]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001CCB1536080, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.16-14.22.19:129][488]LogTemp:Display: Marking material as finished 0x000001CCB1621000
+[2017.04.16-14.22.19:226][488]LogTemp:Display: Finished compile of shader map 0x000001CCB1535280
+[2017.04.16-14.22.19:226][488]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_2 complete, GameThreadShaderMap 0x000001CCB1535280, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_2 as finished
+[2017.04.16-14.22.19:226][488]LogTemp:Display: Marking material as finished 0x000001CCB1620D00
+[2017.04.16-14.22.19:238][488]LogTemp:Display: Finished compile of shader map 0x000001CCB1534800
+[2017.04.16-14.22.19:238][488]LogTemp:Display: Shader map FDebugViewModeMaterialProxy BasicShapeMaterial complete, GameThreadShaderMap 0x000001CCB1534800, marking material FDebugViewModeMaterialProxy BasicShapeMaterial as finished
+[2017.04.16-14.22.19:238][488]LogTemp:Display: Marking material as finished 0x000001CCB1507D00
+[2017.04.16-14.22.19:271][488]LogTemp:Display: Finished compile of shader map 0x000001CCB5677200
+[2017.04.16-14.22.19:271][488]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 complete, GameThreadShaderMap 0x000001CCB5677200, marking material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 as finished
+[2017.04.16-14.22.19:271][488]LogTemp:Display: Marking material as finished 0x000001CCB1507700
+[2017.04.16-14.22.19:273][488]TextureStreamingBuild:Display: Compiling optional shaders took 0.418 seconds.
+[2017.04.16-14.22.19:278][488]LogLevel:Display: Export Material TexCoord Scales took 0.004 seconds.
+[2017.04.16-14.22.19:282][488]TextureStreamingBuild:Display: Build Texture Streaming took 0.003 seconds.
+[2017.04.16-14.22.19:291][488]LightingResults: New page: 라이팅 빌드 - 2017. 4. 17. 오전 8:22:19
+[2017.04.16-14.22.19:303][488]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.16-14.22.19:307][488]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.16-14.22.19:307][488]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.16-14.22.19:309][488]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.16-14.22.19:309][488]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10184
+[2017.04.16-14.22.23:873][488]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.04.16-14.22.23:873][488]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.16-14.22.23:873][488]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.16-14.22.23:873][488]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.16-14.22.23:873][488]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.16-14.22.23:874][488]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.16-14.22.24:062][488]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.16-14.22.24:062][488]MapCheck: New page: World - 2017. 4. 17. 오전 8:22:24
+[2017.04.16-14.22.24:193][488]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 130.149ms.
+[2017.04.16-14.22.24:217][488]LogEditorBuildUtils: Build time 0:05
+[2017.04.16-14.22.25:784][539]Job is a success!
+[2017.04.16-14.22.25:868][540]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_1 (AutoDXT, 256X256) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:868][540]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_1 (AutoDXT, 256X128) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:868][540]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_1 (DXT1, 256X256) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:868][540]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_2 (AutoDXT, 64X32) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:868][540]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_2 (AutoDXT, 64X64) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:869][540]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_2 (DXT1, 64X64) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:869][540]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_3 (G8, 32X32) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:869][540]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_2 (G8, 128X128) - 102 MB 총 VRAM
+[2017.04.16-14.22.25:888][540]LogStaticLightingSystem: Illumination: 6.57 sec (18 ms encoding lightmaps, 9 ms encoding shadowmaps)
+[2017.04.16-14.22.25:889][540]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.04.16-14.22.25:889][540]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.16-14.22.26:885][540]Lightmass on DOHYUNYUNPC: 773 ms total, 121 ms importing, 3 ms setup, 200 ms photons, 400 ms processing, 0 ms extra exporting [2/2 mappings]. Threads: 1.50 sec total, 420 ms processing.
+[2017.04.16-14.22.26:885][540]DumpUnbuiltLightIteractions
+[2017.04.16-14.22.26:885][540]Lights with unbuilt interactions: 0
+[2017.04.16-14.22.26:885][540]
+[2017.04.16-14.22.26:885][540]Primitives with unbuilt interactions: 0
+[2017.04.16-14.22.27:028][541]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.16-14.22.27:028][541]MapCheck: New page: World - 2017. 4. 17. 오전 8:22:27
+[2017.04.16-14.22.27:156][541]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 127.105ms.
+[2017.04.16-14.22.34:867][250]Cmd: DELETE
+[2017.04.16-14.22.34:867][250]Cmd: ACTOR DELETE
+[2017.04.16-14.22.34:868][250]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2017.04.16-14.22.34:875][250]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.04.16-14.23.46:581][375]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\DohyunYun\Downloads\1492352579148.jpg)
+[2017.04.16-14.23.46:630][375]LogTexture:Display: 텍스처 빌드중: 1492352579148 (AutoDXT, 2048X2048) - 102 MB 총 VRAM
+[2017.04.16-14.23.51:528][654]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.23.51:530][654]LogTemp:Display: Added material ShaderMap 0x000001CCB5571980 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.51:551][654]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CCB5571980
+[2017.04.16-14.23.51:551][654]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.23.51:553][654]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.16-14.23.51:554][654]LogTemp:Display: Added material ShaderMap 0x000001CC7E8F7200 with Material 0x000001CC08C69C00 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.51:556][654]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_1, GameThreadShaderMap 0x000001CC7E8F7200
+[2017.04.16-14.23.51:558][654]LogTemp:Display: Removed shader map 0x000001CC7E8F7200 from material 0x000001CC08C69C00
+[2017.04.16-14.23.51:583][654]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.16-14.23.51:584][654]LogTemp:Display: Added material ShaderMap 0x000001CCB1B45D00 with Material 0x000001CC621D1600 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.51:586][654]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000001CCB1B45D00
+[2017.04.16-14.23.51:587][654]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.16-14.23.51:588][654]LogTemp:Display: Added material ShaderMap 0x000001CCB1B46E80 with Material 0x000001CC621D0700 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.51:590][654]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x000001CCB1B46E80
+[2017.04.16-14.23.51:591][654]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.16-14.23.51:592][654]LogTemp:Display: Added material ShaderMap 0x000001CC8DD40800 with Material 0x000001CC5C0D0100 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.51:594][654]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_1, GameThreadShaderMap 0x000001CC8DD40800
+[2017.04.16-14.23.53:322][827]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.23.53:322][827]LogTemp:Display: Added material ShaderMap 0x000001CCB50A2780 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.53:343][827]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CCB50A2780
+[2017.04.16-14.23.53:343][827]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.23.53:345][827]LogTemp:Display: Removed shader map 0x000001CC8DD40800 from material 0x000001CC5C0D0100
+[2017.04.16-14.23.53:370][827]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.16-14.23.53:371][827]LogTemp:Display: Added material ShaderMap 0x000001CC0C6C3580 with Material 0x000001CC0C6DBA00 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.53:373][827]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_1, GameThreadShaderMap 0x000001CC0C6C3580
+[2017.04.16-14.23.54:441][931]LogTemp:Display: Finished compile of shader map 0x000001CCB5571980
+[2017.04.16-14.23.54:441][931]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CCB5571980, marking material 04_-_Default as finished
+[2017.04.16-14.23.54:441][931]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.23.54:657][954]LogMaterialEditor: Saving and Compiling material 04_-_Default
+[2017.04.16-14.23.55:332][954]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.23.55:333][954]LogTemp:Display: Added material ShaderMap 0x000001CCA9369600 with Material 0x000001CC75A1DF80 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.55:362][954]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CCA9369600
+[2017.04.16-14.23.55:362][954]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.23.55:378][954]LogTemp:Display: Removed shader map 0x000001CC5BF79280 from material 0x000001CC25C76800
+[2017.04.16-14.23.55:383][954]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.23.55:384][954]LogTemp:Display: Added material ShaderMap 0x000001CCA8FEA780 with Material 0x000001CC25C77280 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.55:414][954]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CCA8FEA780
+[2017.04.16-14.23.55:417][954]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.23.55:418][954]LogTemp:Display: Added material ShaderMap 0x000001CCA986D980 with Material 0x000001CC25C77280 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.55:445][954]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CCA986D980
+[2017.04.16-14.23.55:446][954]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.23.55:457][954]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy 04_-_Default, compiling. 
+[2017.04.16-14.23.55:458][954]LogTemp:Display: Added material ShaderMap 0x000001CCAA360100 with Material 0x000001CCAA389900 to ShaderMapsBeingCompiled
+[2017.04.16-14.23.58:832][954]LogTemp:Display: Finished compile of shader map 0x000001CCAA360100
+[2017.04.16-14.23.58:832][954]LogTemp:Display: Shader map FDebugViewModeMaterialProxy 04_-_Default complete, GameThreadShaderMap 0x000001CCAA360100, marking material FDebugViewModeMaterialProxy 04_-_Default as finished
+[2017.04.16-14.23.58:832][954]LogTemp:Display: Marking material as finished 0x000001CCAA389900
+[2017.04.16-14.23.58:835][954]TextureStreamingBuild:Display: Compiling optional shaders took 3.382 seconds.
+[2017.04.16-14.24.02:970][954]LogTemp:Display: Finished compile of shader map 0x000001CCA986D980
+[2017.04.16-14.24.02:970][954]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CCA986D980, marking material 04_-_Default as finished
+[2017.04.16-14.24.02:970][954]LogTemp:Display: Marking material as finished 0x000001CC25C77280
+[2017.04.16-14.24.02:976][954]LogTemp:Display: Finished compile of shader map 0x000001CCB50A2780
+[2017.04.16-14.24.02:976][954]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CCB50A2780, marking material 04_-_Default as finished
+[2017.04.16-14.24.02:976][954]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.24.02:977][954]LogTemp:Display: Finished compile of shader map 0x000001CCA9369600
+[2017.04.16-14.24.02:978][954]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CCA9369600, marking material 04_-_Default as finished
+[2017.04.16-14.24.02:978][954]LogTemp:Display: Marking material as finished 0x000001CC75A1DF80
+[2017.04.16-14.24.02:980][954]LogTemp:Display: Finished compile of shader map 0x000001CC0C6C3580
+[2017.04.16-14.24.02:980][954]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_1 complete, GameThreadShaderMap 0x000001CC0C6C3580, marking material FMatExpressionPreview MaterialExpressionTextureSample_1 as finished
+[2017.04.16-14.24.02:980][954]LogTemp:Display: Marking material as finished 0x000001CC0C6DBA00
+[2017.04.16-14.24.02:981][954]LogTemp:Display: Finished compile of shader map 0x000001CCB1B46E80
+[2017.04.16-14.24.02:982][954]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_0 complete, GameThreadShaderMap 0x000001CCB1B46E80, marking material FMatExpressionPreview MaterialExpressionTextureSample_0 as finished
+[2017.04.16-14.24.02:982][954]LogTemp:Display: Marking material as finished 0x000001CC621D0700
+[2017.04.16-14.24.02:983][954]LogTemp:Display: Finished compile of shader map 0x000001CCB1B45D00
+[2017.04.16-14.24.02:983][954]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000001CCB1B45D00, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.16-14.24.02:983][954]LogTemp:Display: Marking material as finished 0x000001CC621D1600
+[2017.04.16-14.24.03:063][954]LogSavePackage: Save=12.70ms
+[2017.04.16-14.24.03:063][954]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/04_-_Default99E3DBCA4EA607C8B258E88F3C7F3589.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/04_-_Default.uasset'
+[2017.04.16-14.24.03:069][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Content/ProjectContents/Character/Mesh/04_-_Default.uasset
+[2017.04.16-14.24.03:074][954]MaterialEditorStats: 정보 Base pass shader with only dynamic lighting: 81 instructions
+[2017.04.16-14.24.03:076][954]MaterialEditorStats: 정보 Vertex shader: 31 instructions
+[2017.04.16-14.24.03:076][954]MaterialEditorStats: 정보 Texture samplers: 3/16
+[2017.04.16-14.24.07:605][341]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2017.04.16-14.24.45:072][132]LogEditorFactories: Performing atomic reimport of [C:/Users/DohyunYun/Downloads/respiration.FBX]
+[2017.04.16-14.24.45:181][132]LogFbx: Loading FBX Scene from C:/Users/DohyunYun/Downloads/respiration.FBX
+[2017.04.16-14.24.45:287][132]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.16-14.24.45:291][132]LogFbx: =================================================
+[2017.04.16-14.24.45:291][132]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.24.45:291][132]LogFbx: 	Total Deformer Count 1911839384.
+[2017.04.16-14.24.45:291][132]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.24.45:291][132]LogFbx: =================================================
+[2017.04.16-14.24.45:292][132]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.24.45:292][132]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.24.45:292][132]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.24.45:292][132]LogFbx: =================================================
+[2017.04.16-14.24.45:292][132]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.24.45:292][132]LogFbx: 	Total Deformer Count 1911832888.
+[2017.04.16-14.24.45:292][132]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.24.45:292][132]LogFbx: =================================================
+[2017.04.16-14.24.45:293][132]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.24.45:293][132]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.24.45:293][132]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.24.45:294][132]LogFbx: Valid bind pose for Pose (BIND_POSES) - Plane001
+[2017.04.16-14.24.45:298][132]LogFbx:Warning: Bones digested - 37  Depth of hierarchy - 12
+[2017.04.16-14.24.45:353][132]LogSkeletalMesh: Section 0: 6238 vertices, 29 active bones
+[2017.04.16-14.24.45:355][132]LogSkeletalMesh: Section 0: Material=0, 2138 triangles
+[2017.04.16-14.24.45:359][132]LogEditorFactories: -- imported successfully
+[2017.04.16-14.24.45:366][132]FBXImport:Warning: 경고 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 HeadNub  
+Bip001 L Toe0Nub  
+Bip001 R Toe0Nub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2017.04.16-14.25.04:735][576]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\DohyunYun\Downloads\respiration.FBX)
+[2017.04.16-14.25.04:822][576]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.04.16-14.25.04:822][576]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.04.16-14.25.04:822][576]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.04.16-14.25.04:822][576]LogFbx: ItemName: Model, ItemCount : 39
+[2017.04.16-14.25.04:822][576]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Material, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Texture, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: NodeAttribute, ItemCount : 37
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Collection, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: SelectionNode, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: AnimationCurve, ItemCount : 342
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: AnimationCurveNode, ItemCount : 114
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Deformer, ItemCount : 32
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Pose, ItemCount : 1
+[2017.04.16-14.25.04:823][576]LogFbx: ItemName: Video, ItemCount : 1
+[2017.04.16-14.25.04:828][576]LogFbx: Loading FBX Scene from C:\Users\DohyunYun\Downloads\respiration.FBX
+[2017.04.16-14.25.04:925][576]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.16-14.25.13:125][576]LogFbx: Loading FBX Scene from C:\Users\DohyunYun\Downloads\respiration.FBX
+[2017.04.16-14.25.13:219][576]LogFbx: FBX Scene Loaded Succesfully
+[2017.04.16-14.25.13:223][576]LogFbx: =================================================
+[2017.04.16-14.25.13:224][576]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.25.13:224][576]LogFbx: 	Total Deformer Count -1439521400.
+[2017.04.16-14.25.13:224][576]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.25.13:224][576]LogFbx: =================================================
+[2017.04.16-14.25.13:224][576]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.25.13:224][576]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.25.13:224][576]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.25.13:224][576]LogFbx: =================================================
+[2017.04.16-14.25.13:224][576]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.25.13:224][576]LogFbx: 	Total Deformer Count -1439528512.
+[2017.04.16-14.25.13:225][576]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.25.13:225][576]LogFbx: =================================================
+[2017.04.16-14.25.13:225][576]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.25.13:225][576]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.25.13:225][576]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.25.13:226][576]LogFbx: Valid bind pose for Pose (BIND_POSES) - Plane001
+[2017.04.16-14.25.13:227][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/04_-_Default' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:227][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/04_-_Default' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:228][576]LogMaterial:Warning: Material /Game/ProjectContents/Character/NewFolder/04_-_Default.04_-_Default needed to have new flag set bUsedWithSkeletalMesh !
+[2017.04.16-14.25.13:230][576]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.25.13:231][576]LogTemp:Display: Added material ShaderMap 0x000001CC0A227900 with Material 0x000001CC0A24F100 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.13:256][576]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC0A227900
+[2017.04.16-14.25.13:259][576]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.25.13:260][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/uvwmap_01' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:261][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/uvwmap_01' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:261][576]LogStreaming:Warning: Failed to read file 'C:\Users\Godgyu\Desktop\uvwmap_01.jpg' error.
+[2017.04.16-14.25.13:261][576]LogStreaming:Warning: Failed to read file 'C:\Users\DohyunYun\Downloads/..\..\uvwmap_01.jpg' error.
+[2017.04.16-14.25.13:262][576]LogStreaming:Warning: Failed to read file 'C:\Users\DohyunYun\Downloads/uvwmap_01.jpg' error.
+[2017.04.16-14.25.13:262][576]LogFbxMaterialImport:Warning: Unable to find TEXTure file uvwmap_01.jpg. Tried:
+ - C:\Users\Godgyu\Desktop\uvwmap_01.jpg
+ - C:\Users\DohyunYun\Downloads/..\..\uvwmap_01.jpg
+ - C:\Users\DohyunYun\Downloads/uvwmap_01.jpg
+[2017.04.16-14.25.13:265][576]LogMaterial: Missing cached shader map for material 04_-_Default, compiling. 
+[2017.04.16-14.25.13:267][576]LogTemp:Display: Added material ShaderMap 0x000001CC7EDA0B80 with Material 0x000001CC0A24F100 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.13:292][576]LogTemp:Display: Kicking off shader compilation for 04_-_Default, GameThreadShaderMap 0x000001CC7EDA0B80
+[2017.04.16-14.25.13:299][576]LogFbx:Warning: Bones digested - 37  Depth of hierarchy - 12
+[2017.04.16-14.25.13:321][576]LogSkeletalMesh: Section 0: 6238 vertices, 29 active bones
+[2017.04.16-14.25.13:322][576]LogSkeletalMesh: Section 0: Material=0, 2138 triangles
+[2017.04.16-14.25.13:325][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:326][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:330][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_Skeleton' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:330][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_Skeleton' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:333][576]LogFbx: =================================================
+[2017.04.16-14.25.13:333][576]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.25.13:333][576]LogFbx: 	Total Deformer Count 179121848.
+[2017.04.16-14.25.13:333][576]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.25.13:333][576]LogFbx: =================================================
+[2017.04.16-14.25.13:333][576]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.25.13:333][576]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.25.13:333][576]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.25.13:333][576]LogFbx: =================================================
+[2017.04.16-14.25.13:333][576]LogFbx: Dumping Node START [Plane001] 
+[2017.04.16-14.25.13:333][576]LogFbx: 	Total Deformer Count 179121792.
+[2017.04.16-14.25.13:334][576]LogFbx: 		[Node 1]  (Type Skin).
+[2017.04.16-14.25.13:334][576]LogFbx: =================================================
+[2017.04.16-14.25.13:334][576]LogFbx: 	Attribute () Type (4).
+[2017.04.16-14.25.13:334][576]LogFbx: 		[Node Attribute Child 1] Plane001 (Type Mesh).
+[2017.04.16-14.25.13:334][576]LogFbx: Dumping Node END [Plane001]
+[2017.04.16-14.25.13:334][576]LogFbx: SortedLinks :(0) Bip001
+[2017.04.16-14.25.13:334][576]LogFbx: SortedLinks :(1) Bip001 Pelvis
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(2) Bip001 Spine
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(3) Bip001 Spine1
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(4) Bip001 Neck
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(5) Bip001 L Clavicle
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(6) Bip001 L UpperArm
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(7) Bip001 L Forearm
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(8) Bip001 L Hand
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(9) Bip001 L Finger0
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(10) Bip001 L Finger01
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(11) Bip001 L Finger0Nub
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(12) Bip001 L Finger1
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(13) Bip001 L Finger11
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(14) Bip001 L Finger1Nub
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(15) Bip001 R Clavicle
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(16) Bip001 R UpperArm
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(17) Bip001 R Forearm
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(18) Bip001 R Hand
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(19) Bip001 R Finger0
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(20) Bip001 R Finger01
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(21) Bip001 R Finger0Nub
+[2017.04.16-14.25.13:335][576]LogFbx: SortedLinks :(22) Bip001 R Finger1
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(23) Bip001 R Finger11
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(24) Bip001 R Finger1Nub
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(25) Bip001 Head
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(26) Bip001 HeadNub
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(27) Bip001 L Thigh
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(28) Bip001 L Calf
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(29) Bip001 L Foot
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(30) Bip001 L Toe0
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(31) Bip001 L Toe0Nub
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(32) Bip001 R Thigh
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(33) Bip001 R Calf
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(34) Bip001 R Foot
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(35) Bip001 R Toe0
+[2017.04.16-14.25.13:336][576]LogFbx: SortedLinks :(36) Bip001 R Toe0Nub
+[2017.04.16-14.25.13:337][576]LogFbx: Parsing AnimStack Take 001
+[2017.04.16-14.25.13:339][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_Anim' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:339][576]LogLinker: '/Game/ProjectContents/Character/NewFolder/respiration_Anim' 파일을 찾을 수 없습니다.
+[2017.04.16-14.25.13:507][576]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ProjectContents/Character/NewFolder/respiration_Anim.respiration_Anim
+[2017.04.16-14.25.13:515][576]FBXImport:Warning: 경고 바인드 포즈에서 빠진 본은 다음과 같습니다:
+Bip001 L Finger0Nub  
+Bip001 L Finger1Nub  
+Bip001 R Finger0Nub  
+Bip001 R Finger1Nub  
+Bip001 HeadNub  
+Bip001 L Toe0Nub  
+Bip001 R Toe0Nub  
+
+버텍스 웨이팅되지 않은 본에 대해 일어날 수 있습니다. 임포트 이후 오리엔테이션이 제대로 되어 있지 않은 경우,
+"Use T0 as ref pose" 옵션을 사용하거나, 바인드 포즈에 추가한 다음 스켈레탈 메시를 다시 임포트해 보세요. 
+[2017.04.16-14.25.21:431][976]LogTemp:Display: Finished compile of shader map 0x000001CC0A227900
+[2017.04.16-14.25.21:432][976]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC0A227900, marking material 04_-_Default as finished
+[2017.04.16-14.25.21:432][976]LogTemp:Display: Marking material as finished 0x000001CC0A24F100
+[2017.04.16-14.25.24:939][291]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.04.16-14.25.24:940][291]LogTemp:Display: Added material ShaderMap 0x000001CC0A224100 with Material 0x000001CC620E5080 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.24:960][291]LogTemp:Display: Kicking off shader compilation for PreviewMaterial_0, GameThreadShaderMap 0x000001CC0A224100
+[2017.04.16-14.25.25:016][291]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.04.16-14.25.25:017][291]LogTemp:Display: Added material ShaderMap 0x000001CC0AED4480 with Material 0x000001CC620E5080 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.25:037][291]LogTemp:Display: Kicking off shader compilation for PreviewMaterial_0, GameThreadShaderMap 0x000001CC0AED4480
+[2017.04.16-14.25.25:037][291]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.16-14.25.25:064][291]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.16-14.25.25:066][291]LogTemp:Display: Added material ShaderMap 0x000001CC01353580 with Material 0x000001CC0B47C700 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.25:067][291]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000001CC01353580
+[2017.04.16-14.25.29:138][662]MapCheck: New page: 맵 체크
+[2017.04.16-14.25.29:151][662]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.16-14.25.29:151][662]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.16-14.25.32:701][662]LogTemp:Display: Finished compile of shader map 0x000001CC0AED4480
+[2017.04.16-14.25.32:701][662]LogTemp:Display: Shader map PreviewMaterial_0 complete, GameThreadShaderMap 0x000001CC0AED4480, marking material PreviewMaterial_0 as finished
+[2017.04.16-14.25.32:701][662]LogTemp:Display: Marking material as finished 0x000001CC620E5080
+[2017.04.16-14.25.32:858][662]LogTemp:Display: Finished compile of shader map 0x000001CC01353580
+[2017.04.16-14.25.32:859][662]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000001CC01353580, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.16-14.25.32:859][662]LogTemp:Display: Marking material as finished 0x000001CC0B47C700
+[2017.04.16-14.25.34:487][662]LogTemp:Display: Finished compile of shader map 0x000001CC7EDA0B80
+[2017.04.16-14.25.34:487][662]LogTemp:Display: Shader map 04_-_Default complete, GameThreadShaderMap 0x000001CC7EDA0B80, marking material 04_-_Default as finished
+[2017.04.16-14.25.34:487][662]LogTemp:Display: Marking material as finished 0x000001CC0A24F100
+[2017.04.16-14.25.34:516][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.16-14.25.34:517][662]LogTemp:Display: Added material ShaderMap 0x000001CC0135E080 with Material 0x000001CC4ECF4D00 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:520][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001CC0135E080
+[2017.04.16-14.25.34:522][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.04.16-14.25.34:523][662]LogTemp:Display: Added material ShaderMap 0x000001CC0135D280 with Material 0x000001CC4ECF5900 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:525][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy DefaultMaterial, GameThreadShaderMap 0x000001CC0135D280
+[2017.04.16-14.25.34:527][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_3, compiling. 
+[2017.04.16-14.25.34:529][662]LogTemp:Display: Added material ShaderMap 0x000001CC0135CF00 with Material 0x000001CC4ECF5300 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:531][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_3, GameThreadShaderMap 0x000001CC0135CF00
+[2017.04.16-14.25.34:534][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy BasicShapeMaterial, compiling. 
+[2017.04.16-14.25.34:535][662]LogTemp:Display: Added material ShaderMap 0x000001CC0135C480 with Material 0x000001CC53E9D600 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:537][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy BasicShapeMaterial, GameThreadShaderMap 0x000001CC0135C480
+[2017.04.16-14.25.34:540][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, compiling. 
+[2017.04.16-14.25.34:540][662]LogTemp:Display: Added material ShaderMap 0x000001CC0AAFD600 with Material 0x000001CC53E9CA00 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:542][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, GameThreadShaderMap 0x000001CC0AAFD600
+[2017.04.16-14.25.34:544][662]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy 04_-_Default, compiling. 
+[2017.04.16-14.25.34:545][662]LogTemp:Display: Added material ShaderMap 0x000001CC0AAFF200 with Material 0x000001CC53E9D900 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.34:547][662]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy 04_-_Default, GameThreadShaderMap 0x000001CC0AAFF200
+[2017.04.16-14.25.34:945][662]LogTemp:Display: Finished compile of shader map 0x000001CC0135D280
+[2017.04.16-14.25.34:946][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy DefaultMaterial complete, GameThreadShaderMap 0x000001CC0135D280, marking material FDebugViewModeMaterialProxy DefaultMaterial as finished
+[2017.04.16-14.25.34:946][662]LogTemp:Display: Marking material as finished 0x000001CC4ECF5900
+[2017.04.16-14.25.34:970][662]LogTemp:Display: Finished compile of shader map 0x000001CC0135CF00
+[2017.04.16-14.25.34:970][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_3 complete, GameThreadShaderMap 0x000001CC0135CF00, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_3 as finished
+[2017.04.16-14.25.34:970][662]LogTemp:Display: Marking material as finished 0x000001CC4ECF5300
+[2017.04.16-14.25.35:005][662]LogTemp:Display: Finished compile of shader map 0x000001CC0135E080
+[2017.04.16-14.25.35:005][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001CC0135E080, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.16-14.25.35:005][662]LogTemp:Display: Marking material as finished 0x000001CC4ECF4D00
+[2017.04.16-14.25.35:165][662]LogTemp:Display: Finished compile of shader map 0x000001CC0135C480
+[2017.04.16-14.25.35:165][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy BasicShapeMaterial complete, GameThreadShaderMap 0x000001CC0135C480, marking material FDebugViewModeMaterialProxy BasicShapeMaterial as finished
+[2017.04.16-14.25.35:165][662]LogTemp:Display: Marking material as finished 0x000001CC53E9D600
+[2017.04.16-14.25.35:167][662]LogTemp:Display: Finished compile of shader map 0x000001CC0AAFF200
+[2017.04.16-14.25.35:167][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy 04_-_Default complete, GameThreadShaderMap 0x000001CC0AAFF200, marking material FDebugViewModeMaterialProxy 04_-_Default as finished
+[2017.04.16-14.25.35:167][662]LogTemp:Display: Marking material as finished 0x000001CC53E9D900
+[2017.04.16-14.25.35:170][662]LogTemp:Display: Finished compile of shader map 0x000001CC0AAFD600
+[2017.04.16-14.25.35:170][662]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 complete, GameThreadShaderMap 0x000001CC0AAFD600, marking material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 as finished
+[2017.04.16-14.25.35:170][662]LogTemp:Display: Marking material as finished 0x000001CC53E9CA00
+[2017.04.16-14.25.35:172][662]TextureStreamingBuild:Display: Compiling optional shaders took 0.682 seconds.
+[2017.04.16-14.25.35:184][662]LogLevel:Display: Export Material TexCoord Scales took 0.012 seconds.
+[2017.04.16-14.25.35:201][662]TextureStreamingBuild:Display: Build Texture Streaming took 0.016 seconds.
+[2017.04.16-14.25.35:210][662]LightingResults: New page: 라이팅 빌드 - 2017. 4. 17. 오전 8:25:35
+[2017.04.16-14.25.35:228][662]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.16-14.25.35:230][662]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.16-14.25.35:230][662]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.16-14.25.35:231][662]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.16-14.25.35:231][662]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10184
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.16-14.25.39:742][662]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.16-14.25.39:967][662]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.16-14.25.39:967][662]MapCheck: New page: World - 2017. 4. 17. 오전 8:25:39
+[2017.04.16-14.25.40:097][662]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 129.321ms.
+[2017.04.16-14.25.40:121][662]LogEditorBuildUtils: Build time 0:10
+[2017.04.16-14.25.40:132][662]MaterialEditorStats: 정보 Base pass shader with only dynamic lighting: 80 instructions
+[2017.04.16-14.25.40:132][662]MaterialEditorStats: 정보 Vertex shader: 29 instructions
+[2017.04.16-14.25.40:132][662]MaterialEditorStats: 정보 Texture samplers: 1/16
+[2017.04.16-14.25.41:513][713]Job is a success!
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap1_1 (AutoDXT, 256X256) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: SkyOcclusion1_1 (AutoDXT, 256X128) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_1_1 (DXT1, 256X256) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: SkyOcclusion1_2 (AutoDXT, 64X32) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap1_2 (AutoDXT, 64X64) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_1_2 (DXT1, 64X64) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_4 (G8, 128X128) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:603][714]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_5 (G8, 32X32) - 105 MB 총 VRAM
+[2017.04.16-14.25.41:621][714]Lightmass on DOHYUNYUNPC: 752 ms total, 103 ms importing, 5 ms setup, 210 ms photons, 383 ms processing, 0 ms extra exporting [2/2 mappings]. Threads: 1.45 sec total, 434 ms processing.
+[2017.04.16-14.25.41:625][714]LogStaticLightingSystem: Illumination: 6.39 sec (17 ms encoding lightmaps, 9 ms encoding shadowmaps)
+[2017.04.16-14.25.41:625][714]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.04.16-14.25.41:625][714]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.16-14.25.41:748][714]DumpUnbuiltLightIteractions
+[2017.04.16-14.25.41:748][714]Lights with unbuilt interactions: 0
+[2017.04.16-14.25.41:748][714]
+[2017.04.16-14.25.41:748][714]Primitives with unbuilt interactions: 0
+[2017.04.16-14.25.41:785][715]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.16-14.25.41:786][715]MapCheck: New page: World - 2017. 4. 17. 오전 8:25:41
+[2017.04.16-14.25.41:916][715]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 129.873ms.
+[2017.04.16-14.25.44:801][936]MapCheck: New page: 맵 체크
+[2017.04.16-14.25.44:818][936]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.16-14.25.44:818][936]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.16-14.25.44:923][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.16-14.25.44:924][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16EBC80 with Material 0x000001CCA9AE3700 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:926][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001CCB16EBC80
+[2017.04.16-14.25.44:929][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy DefaultMaterial, compiling. 
+[2017.04.16-14.25.44:930][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16EAE80 with Material 0x000001CC4ECF4A00 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:932][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy DefaultMaterial, GameThreadShaderMap 0x000001CCB16EAE80
+[2017.04.16-14.25.44:934][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_4, compiling. 
+[2017.04.16-14.25.44:935][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16EAB00 with Material 0x000001CC4ECF5C00 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:937][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_4, GameThreadShaderMap 0x000001CCB16EAB00
+[2017.04.16-14.25.44:939][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy BasicShapeMaterial, compiling. 
+[2017.04.16-14.25.44:940][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16EA080 with Material 0x000001CC4ECF7100 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:942][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy BasicShapeMaterial, GameThreadShaderMap 0x000001CCB16EA080
+[2017.04.16-14.25.44:945][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, compiling. 
+[2017.04.16-14.25.44:945][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16E8B80 with Material 0x000001CC4ECF5900 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:947][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MAT_PolygonAdventure_01, GameThreadShaderMap 0x000001CCB16E8B80
+[2017.04.16-14.25.44:950][936]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy 04_-_Default, compiling. 
+[2017.04.16-14.25.44:950][936]LogTemp:Display: Added material ShaderMap 0x000001CCB16E8100 with Material 0x000001CC07D8C400 to ShaderMapsBeingCompiled
+[2017.04.16-14.25.44:952][936]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy 04_-_Default, GameThreadShaderMap 0x000001CCB16E8100
+[2017.04.16-14.25.45:239][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16EBC80
+[2017.04.16-14.25.45:239][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001CCB16EBC80, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.16-14.25.45:239][936]LogTemp:Display: Marking material as finished 0x000001CCA9AE3700
+[2017.04.16-14.25.45:241][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16EAB00
+[2017.04.16-14.25.45:241][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_4 complete, GameThreadShaderMap 0x000001CCB16EAB00, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_4 as finished
+[2017.04.16-14.25.45:241][936]LogTemp:Display: Marking material as finished 0x000001CC4ECF5C00
+[2017.04.16-14.25.45:343][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16EAE80
+[2017.04.16-14.25.45:343][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy DefaultMaterial complete, GameThreadShaderMap 0x000001CCB16EAE80, marking material FDebugViewModeMaterialProxy DefaultMaterial as finished
+[2017.04.16-14.25.45:343][936]LogTemp:Display: Marking material as finished 0x000001CC4ECF4A00
+[2017.04.16-14.25.45:367][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16EA080
+[2017.04.16-14.25.45:367][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy BasicShapeMaterial complete, GameThreadShaderMap 0x000001CCB16EA080, marking material FDebugViewModeMaterialProxy BasicShapeMaterial as finished
+[2017.04.16-14.25.45:367][936]LogTemp:Display: Marking material as finished 0x000001CC4ECF7100
+[2017.04.16-14.25.45:413][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16E8B80
+[2017.04.16-14.25.45:413][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 complete, GameThreadShaderMap 0x000001CCB16E8B80, marking material FDebugViewModeMaterialProxy MAT_PolygonAdventure_01 as finished
+[2017.04.16-14.25.45:413][936]LogTemp:Display: Marking material as finished 0x000001CC4ECF5900
+[2017.04.16-14.25.45:482][936]LogTemp:Display: Finished compile of shader map 0x000001CCB16E8100
+[2017.04.16-14.25.45:482][936]LogTemp:Display: Shader map FDebugViewModeMaterialProxy 04_-_Default complete, GameThreadShaderMap 0x000001CCB16E8100, marking material FDebugViewModeMaterialProxy 04_-_Default as finished
+[2017.04.16-14.25.45:482][936]LogTemp:Display: Marking material as finished 0x000001CC07D8C400
+[2017.04.16-14.25.45:485][936]TextureStreamingBuild:Display: Compiling optional shaders took 0.565 seconds.
+[2017.04.16-14.25.45:494][936]LogLevel:Display: Export Material TexCoord Scales took 0.009 seconds.
+[2017.04.16-14.25.45:513][936]TextureStreamingBuild:Display: Build Texture Streaming took 0.018 seconds.
+[2017.04.16-14.25.45:523][936]LightingResults: New page: 라이팅 빌드 - 2017. 4. 17. 오전 8:25:45
+[2017.04.16-14.25.45:536][936]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.16-14.25.45:538][936]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.16-14.25.45:538][936]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.16-14.25.45:538][936]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.16-14.25.45:538][936]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10184
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.16-14.25.50:051][936]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.16-14.25.50:233][936]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.16-14.25.50:233][936]MapCheck: New page: World - 2017. 4. 17. 오전 8:25:50
+[2017.04.16-14.25.50:363][936]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 130.024ms.
+[2017.04.16-14.25.50:388][936]LogEditorBuildUtils: Build time 0:05
+[2017.04.16-14.25.51:778][986]Job is a success!
+[2017.04.16-14.25.51:807][987]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 1
+SessionName : 
+Reason      : 라이팅 적용중
+
+Purging the undo buffer...
+
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_1 (AutoDXT, 256X128) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_1 (AutoDXT, 256X256) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_1 (DXT1, 256X256) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_2 (AutoDXT, 64X64) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_2 (AutoDXT, 64X32) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_2 (DXT1, 64X64) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_7 (G8, 32X32) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:865][987]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_6 (G8, 128X128) - 105 MB 총 VRAM
+[2017.04.16-14.25.51:886][987]Lightmass on DOHYUNYUNPC: 655 ms total, 116 ms importing, 2 ms setup, 170 ms photons, 327 ms processing, 0 ms extra exporting [2/2 mappings]. Threads: 1.21 sec total, 309 ms processing.
+[2017.04.16-14.25.51:886][987]LogStaticLightingSystem: Illumination: 6.34 sec (16 ms encoding lightmaps, 12 ms encoding shadowmaps)
+[2017.04.16-14.25.51:887][987]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.04.16-14.25.51:887][987]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.16-14.25.52:056][987]DumpUnbuiltLightIteractions
+[2017.04.16-14.25.52:056][987]Lights with unbuilt interactions: 0
+[2017.04.16-14.25.52:056][987]
+[2017.04.16-14.25.52:056][987]Primitives with unbuilt interactions: 0
+[2017.04.16-14.25.52:257][988]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.16-14.25.52:258][988]MapCheck: New page: World - 2017. 4. 17. 오전 8:25:52
+[2017.04.16-14.25.52:387][988]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 129.356ms.
+[2017.04.16-14.26.26:316][601]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/World" FILE="../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.04.16-14.26.26:451][601]LogSavePackage: Save=63.37ms
+[2017.04.16-14.26.26:451][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/World_Auto1BD185D94441DC4D43EAD0DB098C9CDDE.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_Auto1.umap'
+[2017.04.16-14.26.26:455][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_Auto1.umap
+[2017.04.16-14.26.26:457][601]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/World' took 0.151
+[2017.04.16-14.26.26:457][601]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.151
+[2017.04.16-14.26.26:462][601]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ProjectContents/Character/Mesh/breath_Skeleton] ([1] browsable assets)...
+[2017.04.16-14.26.26:462][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/Mesh/breath_Skeleton]
+[2017.04.16-14.26.26:538][601]LogSavePackage: Save=5.05ms
+[2017.04.16-14.26.26:538][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/breath_Skeleton_Auto13DFB506142FA3895955FBFB7625AC99C.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/breath_Skeleton_Auto1.uasset'
+[2017.04.16-14.26.26:541][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/breath_Skeleton_Auto1.uasset
+[2017.04.16-14.26.26:543][601]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/World_BuiltData] ([1] browsable assets)...
+[2017.04.16-14.26.26:543][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/World_BuiltData]
+[2017.04.16-14.26.26:543][601]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/World_BuiltData" FILE="../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_BuiltData_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.04.16-14.26.26:623][601]LogSavePackage: Save=6.13ms
+[2017.04.16-14.26.26:623][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/World_BuiltData_Auto19B4D7DB2479C7D05B3C2B2AC95CC0ABF.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_BuiltData_Auto1.uasset'
+[2017.04.16-14.26.26:626][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/World_BuiltData_Auto1.uasset
+[2017.04.16-14.26.26:628][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/Mesh/respiration] ([1] browsable assets)...
+[2017.04.16-14.26.26:674][601]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ProjectContents/Character/Mesh/respiration.respiration]
+[2017.04.16-14.26.26:674][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/Mesh/respiration]
+[2017.04.16-14.26.26:699][601]LogSavePackage: Save=21.45ms
+[2017.04.16-14.26.26:700][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_Auto1B5D1F35846A6C3C2222CEC93F0841458.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_Auto1.uasset'
+[2017.04.16-14.26.26:702][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_Auto1.uasset
+[2017.04.16-14.26.26:705][601]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset] ([1] browsable assets)...
+[2017.04.16-14.26.26:705][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset]
+[2017.04.16-14.26.26:725][601]LogSavePackage: Save=17.94ms
+[2017.04.16-14.26.26:725][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_PhysicsAsset_Auto1A905C6E140853DA856A404B05040878D.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset_Auto1.uasset'
+[2017.04.16-14.26.26:728][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_PhysicsAsset_Auto1.uasset
+[2017.04.16-14.26.26:730][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/Mesh/respiration_Anim] ([1] browsable assets)...
+[2017.04.16-14.26.26:764][601]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ProjectContents/Character/Mesh/respiration_Anim.respiration_Anim]
+[2017.04.16-14.26.26:764][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/Mesh/respiration_Anim]
+[2017.04.16-14.26.26:780][601]LogSavePackage: Save=11.92ms
+[2017.04.16-14.26.26:780][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_Anim_Auto141541DAE40E82A056A892080C5ADA59B.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_Anim_Auto1.uasset'
+[2017.04.16-14.26.26:783][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/respiration_Anim_Auto1.uasset
+[2017.04.16-14.26.26:785][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/Mesh/1492352579148] ([1] browsable assets)...
+[2017.04.16-14.26.26:793][601]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/ProjectContents/Character/Mesh/1492352579148.1492352579148]
+[2017.04.16-14.26.26:793][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/Mesh/1492352579148]
+[2017.04.16-14.26.26:806][601]LogSavePackage: Save=10.01ms
+[2017.04.16-14.26.26:806][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/1492352579148_Auto12979ADFA490DA34E7747E4A21B05D055.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/1492352579148_Auto1.uasset'
+[2017.04.16-14.26.26:810][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/Mesh/1492352579148_Auto1.uasset
+[2017.04.16-14.26.26:813][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/NewFolder/respiration] ([1] browsable assets)...
+[2017.04.16-14.26.26:846][601]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/ProjectContents/Character/NewFolder/respiration.respiration]
+[2017.04.16-14.26.26:846][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/NewFolder/respiration]
+[2017.04.16-14.26.26:870][601]LogSavePackage: Save=21.17ms
+[2017.04.16-14.26.26:871][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_Auto179B9561346F232DDFFF6FEBE78BE7F23.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Auto1.uasset'
+[2017.04.16-14.26.26:874][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Auto1.uasset
+[2017.04.16-14.26.26:876][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/NewFolder/04_-_Default] ([1] browsable assets)...
+[2017.04.16-14.26.26:911][601]OBJ SavePackage:     Rendered thumbnail for [Material /Game/ProjectContents/Character/NewFolder/04_-_Default.04_-_Default]
+[2017.04.16-14.26.26:911][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/NewFolder/04_-_Default]
+[2017.04.16-14.26.26:925][601]LogSavePackage: Save=10.87ms
+[2017.04.16-14.26.26:925][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/04_-_Default_Auto1EE88B3A34E086BBA945ED4BA170E9ADD.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/04_-_Default_Auto1.uasset'
+[2017.04.16-14.26.26:928][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/04_-_Default_Auto1.uasset
+[2017.04.16-14.26.26:930][601]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset] ([1] browsable assets)...
+[2017.04.16-14.26.26:930][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset]
+[2017.04.16-14.26.26:951][601]LogSavePackage: Save=18.16ms
+[2017.04.16-14.26.26:952][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_PhysicsAsset_Auto131CD22804D62BD5062FDD3B3163E75CC.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset_Auto1.uasset'
+[2017.04.16-14.26.26:955][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_PhysicsAsset_Auto1.uasset
+[2017.04.16-14.26.26:957][601]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ProjectContents/Character/NewFolder/respiration_Skeleton] ([1] browsable assets)...
+[2017.04.16-14.26.26:957][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/NewFolder/respiration_Skeleton]
+[2017.04.16-14.26.26:963][601]LogSavePackage: Save=2.60ms
+[2017.04.16-14.26.26:963][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_Skeleton_Auto1AF51F1BF48CC9C3D0275169963894247.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Skeleton_Auto1.uasset'
+[2017.04.16-14.26.26:966][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Skeleton_Auto1.uasset
+[2017.04.16-14.26.26:968][601]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ProjectContents/Character/NewFolder/respiration_Anim] ([1] browsable assets)...
+[2017.04.16-14.26.27:001][601]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/ProjectContents/Character/NewFolder/respiration_Anim.respiration_Anim]
+[2017.04.16-14.26.27:001][601]OBJ SavePackage: Finished generating thumbnails for package [/Game/ProjectContents/Character/NewFolder/respiration_Anim]
+[2017.04.16-14.26.27:016][601]LogSavePackage: Save=12.13ms
+[2017.04.16-14.26.27:016][601]LogSavePackage: Moving '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/respiration_Anim_Auto18B9BDB514078189C2277AE9144428484.tmp' to '../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Anim_Auto1.uasset'
+[2017.04.16-14.26.27:019][601]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DohyunYun/Desktop/GP 170416/Noah/Noah/Saved/Autosaves/Game/ProjectContents/Character/NewFolder/respiration_Anim_Auto1.uasset
+[2017.04.16-14.26.27:019][601]LogFileHelpers: Auto-saving content packages took 0.559
+[2017.04.16-14.30.49:850][ 30]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimSequence_0' or package '/Engine/Transient'.
+[2017.04.16-14.30.49:853][ 30]LogD3D11RHI:Error: Direct3DDevice->CreateBuffer(&Desc,pInitData,VertexBufferResource.GetInitReference()) failed 
+ at D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11VertexBuffer.cpp:75 
+ with error E_INVALIDARG
+[2017.04.16-14.30.49:863][ 30]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimPreviewInstance_0' or package '/Engine/Transient'.
+[2017.04.16-14.30.54:289][ 30]LogWindows: Windows GetLastError: 작업을 완료했습니다. (0)
+[2017.04.16-14.30.54:289][ 30]LogCrashTracker: 
+
+
+[2017.04.16-14.30.54:289][ 30]LogWindows:Error: === Critical error: ===
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: Fatal error: [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11Util.cpp] [Line: 227] 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: Direct3DDevice->CreateBuffer(&Desc,pInitData,VertexBufferResource.GetInitReference()) failed 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error:  at D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11VertexBuffer.cpp:75 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error:  with error E_INVALIDARG
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: 
+[2017.04.16-14.30.54:290][ 30]LogWindows:Error: 
+[2017.04.16-14.30.54:328][ 30]LogExit: Executing StaticShutdownAfterError
+[2017.04.16-14.30.54:328][ 30]LogWindows: FPlatformMisc::RequestExit(1)
+[2017.04.16-14.30.54:329][ 30]Log file closed, 04/16/17 23:30:54

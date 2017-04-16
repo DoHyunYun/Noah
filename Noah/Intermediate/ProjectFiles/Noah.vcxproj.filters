@@ -1,58 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\Noah.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{3FB8631D-0BB2-49C5-9E03-63DA337CACDF}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\Noah.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\NoahEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{CBBD87A6-4EF7-451B-87F1-25C20EF8AC07}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\Noah">
-			<UniqueIdentifier>{7EB26A5A-5448-4D77-B2E8-6623E2AFCCEA}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\Noah\Noah.Build.cs">
-			<Filter>Source\Noah</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\Noah\Noah.cpp">
-			<Filter>Source\Noah</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Noah\Noah.h">
-			<Filter>Source\Noah</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\Noah\NoahCharacter.cpp">
-			<Filter>Source\Noah</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Noah\NoahCharacter.h">
-			<Filter>Source\Noah</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\Noah\NoahGameMode.cpp">
-			<Filter>Source\Noah</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\Noah\NoahGameMode.h">
-			<Filter>Source\Noah</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Noah.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{36686876-9212-4654-B306-6B7428172715}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Noah.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\NoahEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4B99D196-592A-4823-94A0-9319369D7959}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Noah">
+      <UniqueIdentifier>{1F9548F7-C3C6-47E3-8F42-E50663EED83A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Noah\Noah.Build.cs">
+      <Filter>Source\Noah</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Noah\Noah.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\Noah.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Noah\NoahCharacter.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\NoahCharacter.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Noah\NoahGameModeBase.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\NoahGameModeBase.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Noah\NoahGameState.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\NoahGameState.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Noah\NoahPlayerController.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\NoahPlayerController.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Noah\NoahPlayerState.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Noah\NoahPlayerState.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Noah\Inventory.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\Item.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\NoahHUD.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\Craft.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Noah\Inventory.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\Item.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\NoahHUD.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\Craft.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
