@@ -1,14 +1,14 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Noah.h"
-#include "Kismet/HeadMountedDisplayFunctionLibrary.h"
 #include "NoahCharacter.h"
 
-//////////////////////////////////////////////////////////////////////////
-// ANoahCharacter
 
-ANoahCharacter::ANoahCharacter()
+// Sets default values
+ANoahCharacter::ANoahCharacter() : m_zoomMax(500), m_zoomMin(200)
 {
+ 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -33,69 +33,62 @@ ANoahCharacter::ANoahCharacter()
 	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
-	// Create a follow camera
+												// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	// Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+	Inventory = CreateDefaultSubobject<UInventory>(TEXT("Inventory"));
+	Craft = CreateDefaultSubobject<UCraft>(TEXT("Craft"));
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
-
-void ANoahCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+// Called when the game starts or when spawned
+void ANoahCharacter::BeginPlay()
 {
-	// Set up gameplay key bindings
-	check(PlayerInputComponent);
+	Super::BeginPlay();
+
+	UE_LOG(LogClass, Log, TEXT("Noah:ANoahCharacter BeginPlay"));
+}
+
+// Called every frame
+void ANoahCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+}
+
+// Called to bind functionality to input
+void ANoahCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ANoahCharacter::Attack);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANoahCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANoahCharacter::MoveRight);
 
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("TurnRate", this, &ANoahCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ANoahCharacter::LookUpAtRate);
-
-	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &ANoahCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &ANoahCharacter::TouchStopped);
-
-	// VR headset functionality
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ANoahCharacter::OnResetVR);
+	PlayerInputComponent->BindAxis("CameraZoom", this, &ANoahCharacter::CameraZoomRate);
 }
 
-
-void ANoahCharacter::OnResetVR()
+void ANoahCharacter::Attack()
 {
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void ANoahCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		Jump();
-}
-
-void ANoahCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		StopJumping();
+	//PlayAnimMontage();
 }
 
 void ANoahCharacter::TurnAtRate(float Rate)
 {
-	// calculate delta for this frame from the rate information
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
 void ANoahCharacter::LookUpAtRate(float Rate)
 {
-	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
@@ -103,11 +96,9 @@ void ANoahCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
-		// find out which way is forward
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 	}
@@ -115,15 +106,66 @@ void ANoahCharacter::MoveForward(float Value)
 
 void ANoahCharacter::MoveRight(float Value)
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
+	if ((Controller != NULL) && (Value != 0.0f))
 	{
-		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
-	
-		// get right vector 
+
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+
+void ANoahCharacter::CameraZoomRate(float Rate)
+{
+	CameraBoom->TargetArmLength += Rate;
+
+	if (CameraBoom->TargetArmLength >= m_zoomMax) {
+		CameraBoom->TargetArmLength = m_zoomMax;
+	}
+	else if (CameraBoom->TargetArmLength <= m_zoomMin) {
+		CameraBoom->TargetArmLength = m_zoomMin;
+	}
+}
+bool ANoahCharacter::DetectObject(AActor* detectedObject)
+{
+	UE_LOG(LogClass, Log, TEXT("asdffdssfdasadfsdfa %d"), DetectedObject.Num());
+
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (DetectedObject[i] == detectedObject) return false;
+	}
+
+	DetectedObject.Add(detectedObject);
+
+	return true;
+}
+
+bool ANoahCharacter::MissObject(AActor* missedObject)
+{
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (DetectedObject[i] == missedObject) {
+			DetectedObject.RemoveSingle(missedObject);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+AActor* ANoahCharacter::FindNearItem()
+{
+	//예외처리
+	if (DetectedObject.Num() <= 0) return nullptr;
+
+	AActor* near = DetectedObject[0]; //가장 가까운 Actor
+	FVector playerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation(); //캐릭터 위치
+
+	for (int i = 0; i < DetectedObject.Num(); i++) {
+		if (FVector::Dist(DetectedObject[i]->GetActorLocation(), playerLocation) < FVector::Dist(near->GetActorLocation(), playerLocation)) {
+			near = DetectedObject[i];
+		}
+	}
+
+	return near;
 }

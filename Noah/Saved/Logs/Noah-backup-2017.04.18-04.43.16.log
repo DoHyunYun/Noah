@@ -1,0 +1,810 @@
+﻿Log file open, 04/18/17 03:49:14
+LogInit:Display: Running engine for game: Noah
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-92517405) SRandInit(-92517405).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.385503
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: DebugGame
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  -skipcompile -debug
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.17-18.49.17:147][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.17-18.49.17:151][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.17-18.49.17:231][  0]LogInit: Computer: DOHYUNYUNPC
+[2017.04.17-18.49.17:231][  0]LogInit: User: DohyunYun
+[2017.04.17-18.49.17:231][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.17-18.49.17:231][  0]LogInit: High frequency timer resolution =3.234373 MHz
+[2017.04.17-18.49.17:237][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.04.17-18.49.17:240][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.17-18.49.17:240][  0]LogMemory: Process Physical Memory: 266.16 MB used, 266.16 MB peak
+[2017.04.17-18.49.17:241][  0]LogMemory: Process Virtual Memory: 265.49 MB used, 265.49 MB peak
+[2017.04.17-18.49.17:241][  0]LogMemory: Physical Memory: 4837.14 MB used,  11458.63 MB free, 16295.77 MB total
+[2017.04.17-18.49.17:241][  0]LogMemory: Virtual Memory: 647.04 MB used,  11458.63 MB free, 134217728.00 MB total
+[2017.04.17-18.49.18:220][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.04.17-18.49.18:302][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+ )
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
+이 노드를 무시합니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+ )
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
+기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
+디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
+[2017.04.17-18.49.18:303][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
+[2017.04.17-18.49.18:307][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
+루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
+반복하면 1회전 후 0.f 부터 시작됩니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
+반복하면, 1회전 후 0.f 부터 시작됩니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
+루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
+[2017.04.17-18.49.18:308][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+Localization Resource: (C:/Program Files/Epic Games/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+[2017.04.17-18.49.19:493][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.17-18.49.19:545][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2017.04.17-18.49.19:545][  0]LogD3D11RHI:       4061/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.04.17-18.49.19:559][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.17-18.49.19:559][  0]LogD3D11RHI:       0/0/8147 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.17-18.49.19:559][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.17-18.49.19:565][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.17-18.49.19:565][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.17-18.49.19:565][  0]LogWindows: EnumDisplayDevices:
+[2017.04.17-18.49.19:566][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2017.04.17-18.49.19:566][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2017.04.17-18.49.19:567][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.04.17-18.49.19:568][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.04.17-18.49.19:568][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.17-18.49.19:568][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2017.04.17-18.49.19:568][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.04.17-18.49.19:568][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.04.17-18.49.19:569][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.17-18.49.19:592][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.17-18.49.19:608][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.04.17-18.49.19:709][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Intermediate/Shaders/WorkingDirectory/14608/).
+[2017.04.17-18.49.19:710][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DohyunYun/AppData/Local/Temp/UnrealShaderWorkingDir/976D2B1E4DE8D89202610681CD10D81E/'.
+[2017.04.17-18.49.19:710][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.17-18.49.21:604][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.17-18.49.21:906][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.17-18.49.22:215][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.17-18.49.22:513][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.17-18.49.22:820][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.17-18.49.23:106][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.17-18.49.23:403][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.17-18.49.23:676][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.17-18.49.23:885][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.17-18.49.24:172][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.17-18.49.24:469][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.17-18.49.24:750][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.17-18.49.25:034][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.17-18.49.25:304][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.17-18.49.25:590][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.17-18.49.26:195][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.17-18.49.26:197][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.17-18.49.26:407][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.17-18.49.26:873][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.17-18.49.27:079][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.17-18.49.27:377][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.17-18.49.27:665][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.17-18.49.27:939][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.17-18.49.28:234][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.17-18.49.28:234][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.17-18.49.30:501][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache: Loaded boot cache 0.27s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.17-18.49.30:768][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.17-18.49.30:790][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.17-18.49.30:805][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DohyunYun/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.17-18.49.30:817][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.17-18.49.30:840][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.17-18.49.30:843][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.17-18.49.34:308][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.17-18.49.34:312][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.17-18.49.35:319][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.17-18.49.35:669][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.17-18.49.36:008][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.17-18.49.36:035][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.17-18.49.36:075][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.17-18.49.38:368][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: noah, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3984355841
+[2017.04.17-18.49.38:667][  0]LogAssetRegistry: FAssetRegistry took 0.1211 seconds to start up
+[2017.04.17-18.49.39:077][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.264764 seconds
+[2017.04.17-18.49.39:083][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.17-18.49.39:083][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.04.17-18.49.39:083][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.17-18.49.39:500][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.17-18.49.49:719][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.17-18.49.49:858][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.17-18.49.50:814][  0]LogClass: Noah:AItem Init
+[2017.04.17-18.49.50:814][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.50:814][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.50:903][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.51:039][  0]LogClass: Noah:AItem Init
+[2017.04.17-18.49.51:063][  0]LogClass: Noah:AItem Init
+[2017.04.17-18.49.51:077][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.51:079][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.51:083][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.51:089][  0]LogClass: Noah:AItem Init
+[2017.04.17-18.49.51:154][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.51:159][  0]LogClass: Noah:UInventory Init
+[2017.04.17-18.49.52:333][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.17-18.49.53:957][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.17-18.49.54:085][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.17-18.49.54:306][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.17-18.49.54:519][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.17-18.50.00:159][  0]LogEngine: Initializing Engine...
+[2017.04.17-18.50.00:161][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.17-18.50.00:900][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.17-18.50.00:950][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-18.50.01:002][  0]LogInit: FAudioDevice initialized.
+[2017.04.17-18.50.01:027][  0]LogDerivedDataCache: Saved boot cache 0.02s 51MB C:/Users/DohyunYun/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.17-18.50.01:031][  0]LogInit: Texture streaming: Enabled
+[2017.04.17-18.50.01:566][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.17-18.50.01:993][  0]LogInit: Transaction tracking system initialized
+[2017.04.17-18.50.03:704][  0]BlueprintLog: New page: 에디터 로드
+[2017.04.17-18.50.08:383][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.04.17-18.50.11:998][  0]LogConsoleResponse:Display: 
+[2017.04.17-18.50.12:288][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.17-18.50.12:288][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.17-18.50.12:920][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/' took 0.02s
+[2017.04.17-18.50.17:104][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.04.17-18.50.17:105][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Content/World.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.17-18.50.17:106][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.17-18.50.17:302][  0]MapCheck: New page: 맵 체크
+[2017.04.17-18.50.17:302][  0]LightingResults: New page: 라이팅 빌드
+[2017.04.17-18.50.17:506][  0]LogAIModule: Creating AISystem for world World
+[2017.04.17-18.50.17:535][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.17-18.50.17:536][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.17-18.50.17:665][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 128.389ms.
+[2017.04.17-18.50.17:665][  0]LogFileHelpers: Loading map 'World' took 0.560
+[2017.04.17-18.50.17:760][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.04.17-18.50.18:079][  0]LogCollectionManager: Loaded 0 collections in 0.001527 seconds
+[2017.04.17-18.50.18:368][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Saved/Collections/' took 0.01s
+[2017.04.17-18.50.18:368][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Developers/DohyunYun/Collections/' took 0.02s
+[2017.04.17-18.50.18:368][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DohyunYun/Desktop/NoahProject/Noah/Content/Collections/' took 0.01s
+[2017.04.17-18.50.18:368][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.17-18.50.18:381][  0]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2256 classes and 455 folders.
+[2017.04.17-18.50.18:396][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.17-18.50.18:396][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.17-18.50.18:793][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0016 seconds. Added 0 classes and 0 folders.
+[2017.04.17-18.50.18:973][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2017.04.17-18.50.19:218][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
+[2017.04.17-18.50.19:451][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.17-18.50.19:463][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.04.17-18.50.19:711][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0074 seconds. Added 1 classes and 2 folders.
+[2017.04.17-18.50.19:715][  0]LogLoad: (Engine Initialization) Total time: 70.06 seconds
+[2017.04.17-18.50.19:718][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.52 seconds
+[2017.04.17-18.50.19:720][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.17-18.50.19:721][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.17-18.50.19:731][  0]LogOcInput: OculusInput pre-init called
+[2017.04.17-18.50.19:733][  0]LoadErrors:Error: 오류 오래된 클래스 LandscapeProxy 에 대한 리디렉터 다수가 포함된 콜리전이 ActiveClassRedirects 에 들어있습니다.
+[2017.04.17-18.50.19:749][  0]LogAssetRegistry: Asset discovery search completed in 41.2021 seconds
+[2017.04.17-18.50.19:750][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000009 seconds (found 0 objects)
+[2017.04.17-18.50.19:750][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000069 seconds (updated 0 objects)
+[2017.04.17-18.50.19:755][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.17-18.50.19:784][  0]LogSlate: Took 0.002834 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.17-18.50.19:808][  0]LogSlate: Took 0.021255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.04.17-18.50.19:811][  0]LogSlate: Took 0.001491 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.17-18.50.19:818][  0]LogSlate: Took 0.001404 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.17-18.50.19:964][  0]LogSlate: Took 0.003737 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-18.50.20:017][  0]LogRenderer: Reallocating scene render targets to support 1176x568 NumSamples 1 (Frame:2).
+[2017.04.17-18.51.23:507][918]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-18.51.23:531][918]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.17-18.51.23:531][918]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-18.51.23:533][918]PIE: New page: PIE 세션: World (2017. 4. 18. 오후 12:51:23)
+[2017.04.17-18.51.23:533][918]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_World
+[2017.04.17-18.51.23:540][918]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007091s)
+[2017.04.17-18.51.23:541][918]LogAIModule: Creating AISystem for world World
+[2017.04.17-18.51.23:542][918]LogPlayLevel: PIE: World Init took: (0.001009s)
+[2017.04.17-18.51.23:542][918]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/World.World to /Game/UEDPIE_0_World.World (0.009391s)
+[2017.04.17-18.51.23:591][918]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-18.51.23:615][918]LogInit: FAudioDevice initialized.
+[2017.04.17-18.51.23:669][918]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-18.51.23:674][918]LogWorld: Bringing World /Game/UEDPIE_0_World.World up for play (max tick rate 0) at 2017.04.18-03.51.23
+[2017.04.17-18.51.23:675][918]LogWorld: Bringing up level for play took: 0.001029
+[2017.04.17-18.51.23:676][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.23:676][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:069][918]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0015 seconds. Added 11 classes and 0 folders.
+[2017.04.17-18.51.25:070][918]LogClass: Noah:UInventory Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem BeginPlay
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:074][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:AItem Init
+[2017.04.17-18.51.25:075][918]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-18.51.25:075][918]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-18.51.25:084][918]PIE: 정보 /Game/UEDPIE_0_World 에 대한 에디터에서 플레이 시작 시간: 2.311
+[2017.04.17-18.51.25:085][918]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.17-18.51.26:824][107]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.17-18.51.26:871][107]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/World.World:PersistentLevel' has LevelScriptBlueprint '/Game/World.World:PersistentLevel.World' with GeneratedClass '/Game/World.World_C' with ClassGeneratedBy '/Game/World.World:PersistentLevel.World'
+[2017.04.17-18.51.30:970][591]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-18.51.31:708][591]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0018 seconds. Added 112 classes and 0 folders.
+[2017.04.17-18.51.32:298][591]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.17-18.51.32:397][591]LogSlate: Took 0.001499 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.17-18.51.32:605][592]LogSlate: Took 0.001561 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.17-18.51.42:502][364]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-18.51.42:549][364]Cmd: MAP LOAD FILE="../../../../../../Users/DohyunYun/Desktop/NoahProject/Noah/Content/Maps/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.17-18.51.42:549][364]LightingResults: New page: 라이팅 빌드
+[2017.04.17-18.51.42:551][364]LoadErrors: New page: 맵 로드중: TestMap.umap
+[2017.04.17-18.51.42:552][364]MapCheck: New page: 맵 체크
+[2017.04.17-18.51.42:553][364]LightingResults: New page: 라이팅 빌드
+[2017.04.17-18.51.43:209][364]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.17-18.51.43:260][364]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.17-18.51.43:410][364]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 149.861ms.
+[2017.04.17-18.51.43:411][364]LogFileHelpers: Loading map 'TestMap' took 0.863
+[2017.04.17-19.01.32:579][194]LogSlate: Took 0.000312 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-19.01.43:162][253]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.01.43:206][253]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.01.43:206][253]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.01.43:207][253]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:01:43)
+[2017.04.17-19.01.43:207][253]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.01.43:235][253]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028285s)
+[2017.04.17-19.01.43:236][253]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.01.43:236][253]LogPlayLevel: PIE: World Init took: (0.000788s)
+[2017.04.17-19.01.43:236][253]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.029515s)
+[2017.04.17-19.01.43:288][253]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.01.43:314][253]LogInit: FAudioDevice initialized.
+[2017.04.17-19.01.43:350][253]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.01.43:358][253]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.01.43
+[2017.04.17-19.01.43:359][253]LogWorld: Bringing up level for play took: 0.007395
+[2017.04.17-19.01.43:359][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:359][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:360][253]LogClass: Noah:UInventory Init
+[2017.04.17-19.01.43:364][253]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.01.43:364][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:364][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:365][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:366][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:366][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:366][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:366][253]LogClass: Noah:AItem Init
+[2017.04.17-19.01.43:366][253]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.01.43:366][253]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.01.43:375][253]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: 0.601
+[2017.04.17-19.01.43:375][253]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.01.51:029][949]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.01.51:078][949]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.19.07:782][349]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.19.07:808][349]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.19.07:808][349]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.19.07:808][349]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:19:07)
+[2017.04.17-19.19.07:808][349]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.19.07:830][349]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021866s)
+[2017.04.17-19.19.07:831][349]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.19.07:831][349]LogPlayLevel: PIE: World Init took: (0.000867s)
+[2017.04.17-19.19.07:831][349]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.023216s)
+[2017.04.17-19.19.07:889][349]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.19.07:918][349]LogInit: FAudioDevice initialized.
+[2017.04.17-19.19.07:953][349]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.19.07:960][349]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.19.07
+[2017.04.17-19.19.07:960][349]LogWorld: Bringing up level for play took: 0.006703
+[2017.04.17-19.19.07:960][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:961][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:962][349]LogClass: Noah:UInventory Init
+[2017.04.17-19.19.07:964][349]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.19.07:964][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:964][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:964][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:964][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:965][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:965][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:965][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:965][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:965][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:966][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:967][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:967][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:967][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:967][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:967][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:968][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:968][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:968][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:968][349]LogClass: Noah:AItem Init
+[2017.04.17-19.19.07:968][349]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.19.07:969][349]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.19.07:977][349]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: -0.796
+[2017.04.17-19.19.07:979][349]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.19.21:840][667]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.19.21:885][667]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.22.54:393][864]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.22.54:420][864]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.22.54:420][864]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.22.54:420][864]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:22:54)
+[2017.04.17-19.22.54:420][864]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.22.54:444][864]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022786s)
+[2017.04.17-19.22.54:445][864]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.22.54:445][864]LogPlayLevel: PIE: World Init took: (0.000813s)
+[2017.04.17-19.22.54:445][864]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.024410s)
+[2017.04.17-19.22.54:505][864]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.22.54:534][864]LogInit: FAudioDevice initialized.
+[2017.04.17-19.22.54:570][864]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.22.54:577][864]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.22.54
+[2017.04.17-19.22.54:577][864]LogWorld: Bringing up level for play took: 0.006432
+[2017.04.17-19.22.54:578][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:578][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:579][864]LogClass: Noah:UInventory Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:583][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:584][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:584][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:584][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:584][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:584][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:585][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:585][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:585][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:585][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:585][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:586][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:587][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:587][864]LogClass: Noah:AItem Init
+[2017.04.17-19.22.54:587][864]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.22.54:587][864]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.22.54:596][864]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: -0.178
+[2017.04.17-19.22.54:596][864]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.22.58:537][316]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.22.58:586][316]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.23.28:181][336]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.23.28:206][336]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.23.28:206][336]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.23.28:206][336]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:23:28)
+[2017.04.17-19.23.28:206][336]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.23.28:228][336]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021289s)
+[2017.04.17-19.23.28:228][336]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.23.28:229][336]LogPlayLevel: PIE: World Init took: (0.000795s)
+[2017.04.17-19.23.28:229][336]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.022641s)
+[2017.04.17-19.23.28:281][336]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.23.28:307][336]LogInit: FAudioDevice initialized.
+[2017.04.17-19.23.28:342][336]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.23.28:349][336]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.23.28
+[2017.04.17-19.23.28:349][336]LogWorld: Bringing up level for play took: 0.006532
+[2017.04.17-19.23.28:350][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:350][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:351][336]LogClass: Noah:UInventory Init
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:353][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:354][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:354][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:354][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:354][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:AItem Init
+[2017.04.17-19.23.28:355][336]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.23.28:356][336]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.23.28:364][336]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: -0.41
+[2017.04.17-19.23.28:364][336]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.24.38:622][268]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.24.38:662][268]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.25.36:081][523]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.25.36:107][523]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.25.36:107][523]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.25.36:107][523]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:25:36)
+[2017.04.17-19.25.36:108][523]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.25.36:128][523]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020836s)
+[2017.04.17-19.25.36:129][523]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.25.36:129][523]LogPlayLevel: PIE: World Init took: (0.000830s)
+[2017.04.17-19.25.36:130][523]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.022042s)
+[2017.04.17-19.25.36:187][523]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.25.36:216][523]LogInit: FAudioDevice initialized.
+[2017.04.17-19.25.36:252][523]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.25.36:258][523]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.25.36
+[2017.04.17-19.25.36:259][523]LogWorld: Bringing up level for play took: 0.006500
+[2017.04.17-19.25.36:259][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:259][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:260][523]LogClass: Noah:UInventory Init
+[2017.04.17-19.25.36:262][523]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.25.36:262][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:262][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:262][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:263][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:264][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:264][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:264][523]LogClass: Noah:AItem Init
+[2017.04.17-19.25.36:264][523]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.25.36:264][523]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.25.36:272][523]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: -0.502
+[2017.04.17-19.25.36:273][523]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.27.00:294][773]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.27.00:339][773]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.28.01:653][617]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.28.01:679][617]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.28.01:679][617]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.28.01:680][617]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:28:01)
+[2017.04.17-19.28.01:680][617]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.28.01:701][617]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021189s)
+[2017.04.17-19.28.01:702][617]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.28.01:702][617]LogPlayLevel: PIE: World Init took: (0.000807s)
+[2017.04.17-19.28.01:702][617]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.022402s)
+[2017.04.17-19.28.01:763][617]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.28.01:792][617]LogInit: FAudioDevice initialized.
+[2017.04.17-19.28.01:825][617]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.28.01:832][617]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.28.01
+[2017.04.17-19.28.01:833][617]LogWorld: Bringing up level for play took: 0.006651
+[2017.04.17-19.28.01:833][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:834][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:835][617]LogClass: Noah:UInventory Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:837][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:838][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:839][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:839][617]LogClass: Noah:AItem Init
+[2017.04.17-19.28.01:839][617]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.28.01:839][617]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.28.01:848][617]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: 1.074
+[2017.04.17-19.28.01:848][617]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.29.13:378][264]Set new viewmode: Wireframe
+[2017.04.17-19.29.40:535][750]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.29.40:619][750]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.29.44:746][143]LogWindows: LaunchURL http://docs.unrealengine.com/latest/KOR/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2017.04.17-19.29.46:899][216]LogTemp: Repeting last play command: 선택된 뷰포트
+[2017.04.17-19.29.46:926][216]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.29.46:926][216]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-19.29.46:926][216]PIE: New page: PIE 세션: TestMap (2017. 4. 18. 오후 1:29:46)
+[2017.04.17-19.29.46:926][216]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.04.17-19.29.46:948][216]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021434s)
+[2017.04.17-19.29.46:948][216]LogAIModule: Creating AISystem for world TestMap
+[2017.04.17-19.29.46:949][216]LogPlayLevel: PIE: World Init took: (0.001061s)
+[2017.04.17-19.29.46:949][216]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.022984s)
+[2017.04.17-19.29.47:001][216]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.17-19.29.47:026][216]LogInit: FAudioDevice initialized.
+[2017.04.17-19.29.47:059][216]LogLoad: Game class is 'NoahGameModeBase'
+[2017.04.17-19.29.47:066][216]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.04.18-04.29.47
+[2017.04.17-19.29.47:066][216]LogWorld: Bringing up level for play took: 0.006561
+[2017.04.17-19.29.47:067][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:067][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:068][216]LogClass: Noah:UInventory Init
+[2017.04.17-19.29.47:069][216]LogClass: Noah:AItem BeginPlay
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:070][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:AItem Init
+[2017.04.17-19.29.47:071][216]LogClass: Noah:UInventory BeginPlay
+[2017.04.17-19.29.47:071][216]LogClass: Noah:ANoahCharacter BeginPlay
+[2017.04.17-19.29.47:080][216]PIE: 정보 /Game/Maps/UEDPIE_0_TestMap 에 대한 에디터에서 플레이 시작 시간: 0.306
+[2017.04.17-19.29.47:080][216]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.29.47:663][266]Set new viewmode: Wireframe
+[2017.04.17-19.29.52:893][704]LogWindows: LaunchURL http://docs.unrealengine.com/latest/KOR/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2017.04.17-19.29.56:038][741]LogEditorViewport: Clicking on Actor (LMB): BP_Wave_C (BP_Wave)
+[2017.04.17-19.30.38:223][533]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.30.38:269][533]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2017.04.17-19.36.25:412][691]Recompiling Noah...
+[2017.04.17-19.36.25:413][691]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 6458 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.36.25:416][691]Warning: Starting HotReload took  0.1s.
+[2017.04.17-19.36.33:368][996]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:36:33
+[2017.04.17-19.36.33:369][996]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.36.33:369][996]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.36.33:369][996]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.36.33:369][996]CompilerResultsLog:Error: 오류 C:/Users/DohyunYun/Desktop/NoahProject/Noah/Source/Noah/NoahGameStateBase.h(15)  : Error: BlueprintReadWrite should not be used on private members
+[2017.04.17-19.36.33:369][996]CompilerResultsLog: 정보 Error: UnrealHeaderTool failed for target 'NoahEditor' (platform: Win64, module info: C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+[2017.04.17-19.36.33:369][996]LogMainFrame: MainFrame: Module compiling took 7.967 seconds
+[2017.04.17-19.36.33:370][996]Warning: HotReload failed, recompile failed
+[2017.04.17-19.36.45:348][ 49]LogClass: Noah:UInventory Init
+[2017.04.17-19.37.21:701][835]Recompiling Noah...
+[2017.04.17-19.37.21:701][835]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 2696 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.37.21:703][835]Warning: Starting HotReload took  0.0s.
+[2017.04.17-19.37.30:220][496]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:37:30
+[2017.04.17-19.37.30:220][496]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.37.30:221][496]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.37.30:221][496]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.37.30:222][496]CompilerResultsLog:Error: 오류 C:/Users/DohyunYun/Desktop/NoahProject/Noah/Source/Noah/NoahGameStateBase.h(15)  : Error: BlueprintReadWrite should not be used on private members
+[2017.04.17-19.37.30:222][496]CompilerResultsLog: 정보 Error: UnrealHeaderTool failed for target 'NoahEditor' (platform: Win64, module info: C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+[2017.04.17-19.37.30:223][496]LogMainFrame: MainFrame: Module compiling took 8.531 seconds
+[2017.04.17-19.37.30:223][496]Warning: HotReload failed, recompile failed
+[2017.04.17-19.37.36:960][518]Recompiling Noah...
+[2017.04.17-19.37.36:961][518]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 4831 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.37.36:963][518]Warning: Starting HotReload took  0.1s.
+[2017.04.17-19.37.45:242][252]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:37:45
+[2017.04.17-19.37.45:245][252]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.37.45:245][252]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.37.45:245][252]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.37.45:245][252]CompilerResultsLog:Error: 오류 C:/Users/DohyunYun/Desktop/NoahProject/Noah/Source/Noah/NoahGameStateBase.h(15)  : Error: BlueprintReadWrite should not be used on private members
+[2017.04.17-19.37.45:245][252]CompilerResultsLog: 정보 Error: UnrealHeaderTool failed for target 'NoahEditor' (platform: Win64, module info: C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+[2017.04.17-19.37.45:245][252]LogMainFrame: MainFrame: Module compiling took 8.321 seconds
+[2017.04.17-19.37.45:245][252]Warning: HotReload failed, recompile failed
+[2017.04.17-19.38.06:006][612]Recompiling Noah...
+[2017.04.17-19.38.06:006][612]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 4981 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.38.06:008][612]Warning: Starting HotReload took  0.0s.
+[2017.04.17-19.38.34:969][329]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:38:34
+[2017.04.17-19.38.34:970][329]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.38.34:970][329]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.38.34:970][329]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.38.34:970][329]CompilerResultsLog: 정보 Reflection code generated for NoahEditor in 4.2825249 seconds
+[2017.04.17-19.38.34:971][329]CompilerResultsLog: 정보 Performing 4 actions (4 in parallel)
+[2017.04.17-19.38.34:972][329]CompilerResultsLog: 정보 Noah.generated.cpp
+[2017.04.17-19.38.34:972][329]CompilerResultsLog: 정보 NoahGameStateBase.cpp
+[2017.04.17-19.38.34:973][329]CompilerResultsLog: 정보 [3/4] Link UE4Editor-Noah-4981-Win64-DebugGame.dll
+[2017.04.17-19.38.34:974][329]CompilerResultsLog: 정보 [4/4] Link UE4Editor-Noah-4981-Win64-DebugGame.lib
+[2017.04.17-19.38.34:974][329]CompilerResultsLog: 정보    C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-4981-Win64-DebugGame.lib ???̺귯?? ?? C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-4981-Win64-DebugGame.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.04.17-19.38.34:974][329]CompilerResultsLog: 정보    C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-4981-Win64-DebugGame.suppressed.lib ???̺귯?? ?? C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-4981-Win64-DebugGame.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.04.17-19.38.34:975][329]CompilerResultsLog: 정보 Total build time: 28.48 seconds (Local executor: 19.60 seconds)
+[2017.04.17-19.38.34:975][329]LogMainFrame: MainFrame: Module compiling took 28.980 seconds
+[2017.04.17-19.38.35:270][329]LogClass: Noah:AItem Init
+[2017.04.17-19.38.35:270][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:270][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:271][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:271][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:278][329]LogClass: Could not find existing class NoahGameStateBase in package /Script/Noah for HotReload, assuming new class
+[2017.04.17-19.38.35:282][329]LogClass: ItemStruct HotReload.
+[2017.04.17-19.38.35:283][329]LogClass: CraftItemStruct HotReload.
+[2017.04.17-19.38.35:283][329]LogClass: SimpleItemStruct HotReload.
+[2017.04.17-19.38.35:284][329]LogClass: Noah:AItem Init
+[2017.04.17-19.38.35:285][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:286][329]LogClass: Noah:UInventory Init
+[2017.04.17-19.38.35:292][329]LogHotReload: Re-instancing NoahGameStateBase after hot-reload.
+[2017.04.17-19.38.35:570][329]LogContentBrowser: Native class hierarchy updated for 'Noah' in 0.0017 seconds. Added 11 classes and 2 folders.
+[2017.04.17-19.38.35:573][329]Display: HotReload successful (13 functions remapped  3 scriptstructs remapped)
+[2017.04.17-19.38.35:862][329]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2258 classes and 459 folders.
+[2017.04.17-19.38.35:875][329]Display: HotReload took 29.9s.
+[2017.04.17-19.39.46:314][599]Recompiling Noah...
+[2017.04.17-19.39.46:315][599]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 105 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.39.46:317][599]Warning: Starting HotReload took  0.0s.
+[2017.04.17-19.39.55:784][877]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:39:55
+[2017.04.17-19.39.55:785][877]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.39.55:785][877]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.39.55:785][877]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.39.55:785][877]CompilerResultsLog: 정보 Reflection code generated for NoahEditor in 3.0736955 seconds
+[2017.04.17-19.39.55:786][877]CompilerResultsLog: 정보 Performing 3 actions (4 in parallel)
+[2017.04.17-19.39.55:786][877]CompilerResultsLog: 정보 NoahGameStateBase.cpp
+[2017.04.17-19.39.55:786][877]CompilerResultsLog:Error: 오류 C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\NoahGameStateBase.cpp(7) : error C2511: 'ANoahGameStateBase::ANoahGameStateBase(void)': ?????ε??? ???? ?Լ??? 'ANoahGameStateBase'?? ?????ϴ?.
+[2017.04.17-19.39.55:786][877]CompilerResultsLog:Error: 오류 c:\users\dohyunyun\desktop\noahproject\noah\source\noah\NoahGameStateBase.h(12) : note: 'ANoahGameStateBase' ?????? ?????Ͻʽÿ?.
+[2017.04.17-19.39.55:786][877]CompilerResultsLog:Error: 오류 C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\NoahGameStateBase.cpp(8) : error C2550: 'ANoahGameStateBase::{ctor}': ?????? ?̴ϼȶ????? ?????? ?????? ???ǿ??? ?????? ?? ?ֽ??ϴ?.
+[2017.04.17-19.39.55:787][877]CompilerResultsLog: 정보 ERROR: UBT ERROR: Failed to produce item: C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-105-Win64-DebugGame.dll
+[2017.04.17-19.39.55:787][877]CompilerResultsLog: 정보 Total build time: 8.65 seconds (Local executor: 0.00 seconds)
+[2017.04.17-19.39.55:787][877]LogMainFrame: MainFrame: Module compiling took 9.483 seconds
+[2017.04.17-19.39.55:787][877]Warning: HotReload failed, recompile failed
+[2017.04.17-19.41.49:844][221]Recompiling Noah...
+[2017.04.17-19.41.49:844][221]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe Noah -ModuleWithSuffix Noah 5305 Win64 DebugGame -editorrecompile -canskiplink "C:/Users/DohyunYun/Desktop/NoahProject/Noah/Noah.uproject" ]
+[2017.04.17-19.41.49:847][221]Warning: Starting HotReload took  0.0s.
+[2017.04.17-19.42.01:047][417]CompilerResultsLog: New page: 컴파일 - 2017. 4. 18. 오후 1:42:01
+[2017.04.17-19.42.01:047][417]CompilerResultsLog: 정보 Compiling game modules for hot reload
+[2017.04.17-19.42.01:048][417]CompilerResultsLog: 정보 Parsing headers for NoahEditor
+[2017.04.17-19.42.01:049][417]CompilerResultsLog: 정보   Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.17-19.42.01:049][417]CompilerResultsLog: 정보 Reflection code generated for NoahEditor in 3.2456389 seconds
+[2017.04.17-19.42.01:050][417]CompilerResultsLog: 정보 Performing 4 actions (4 in parallel)
+[2017.04.17-19.42.01:050][417]CompilerResultsLog: 정보 Noah.generated.cpp
+[2017.04.17-19.42.01:051][417]CompilerResultsLog: 정보 NoahGameStateBase.cpp
+[2017.04.17-19.42.01:051][417]CompilerResultsLog: 정보 [3/4] Link UE4Editor-Noah-5305-Win64-DebugGame.dll
+[2017.04.17-19.42.01:052][417]CompilerResultsLog: 정보 [4/4] Link UE4Editor-Noah-5305-Win64-DebugGame.lib
+[2017.04.17-19.42.01:052][417]CompilerResultsLog: 정보    C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-5305-Win64-DebugGame.lib ???̺귯?? ?? C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-5305-Win64-DebugGame.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.04.17-19.42.01:052][417]CompilerResultsLog: 정보    C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-5305-Win64-DebugGame.suppressed.lib ???̺귯?? ?? C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-5305-Win64-DebugGame.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2017.04.17-19.42.01:053][417]CompilerResultsLog: 정보 Total build time: 10.53 seconds (Local executor: 3.10 seconds)
+[2017.04.17-19.42.01:053][417]LogMainFrame: MainFrame: Module compiling took 11.217 seconds
+[2017.04.17-19.42.01:501][417]LogClass: Noah:AItem Init
+[2017.04.17-19.42.01:502][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:502][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:503][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:504][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:517][417]LogClass: ItemStruct HotReload.
+[2017.04.17-19.42.01:517][417]LogClass: CraftItemStruct HotReload.
+[2017.04.17-19.42.01:517][417]LogClass: SimpleItemStruct HotReload.
+[2017.04.17-19.42.01:519][417]LogClass: Noah:AItem Init
+[2017.04.17-19.42.01:519][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:520][417]LogClass: Noah:UInventory Init
+[2017.04.17-19.42.01:524][417]LogContentBrowser: Native class hierarchy updated for 'Noah' in 0.0017 seconds. Added 11 classes and 2 folders.
+[2017.04.17-19.42.01:527][417]Display: HotReload successful (13 functions remapped  3 scriptstructs remapped)
+[2017.04.17-19.42.01:818][417]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2258 classes and 459 folders.
+[2017.04.17-19.42.01:818][417]Display: HotReload took 12.0s.
+[2017.04.17-19.42.06:824][560]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.17-19.42.06:875][560]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.04.17-19.42.55:375][722]BlueprintLog: New page: BP_Date 컴파일

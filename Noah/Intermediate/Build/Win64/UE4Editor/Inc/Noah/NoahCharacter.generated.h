@@ -6,14 +6,71 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef NOAH_NoahCharacter_generated_h
 #error "NoahCharacter.generated.h already included, missing '#pragma once' in NoahCharacter.h"
 #endif
 #define NOAH_NoahCharacter_generated_h
 
-#define Noah_Source_Noah_NoahCharacter_h_9_RPC_WRAPPERS
-#define Noah_Source_Noah_NoahCharacter_h_9_RPC_WRAPPERS_NO_PURE_DECLS
-#define Noah_Source_Noah_NoahCharacter_h_9_INCLASS_NO_PURE_DECLS \
+#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFindNearItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->FindNearItem(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMissObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_missedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->MissObject(Z_Param_missedObject); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDetectObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_detectedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->DetectObject(Z_Param_detectedObject); \
+		P_NATIVE_END; \
+	}
+
+
+#define Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFindNearItem) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(AActor**)Z_Param__Result=this->FindNearItem(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMissObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_missedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->MissObject(Z_Param_missedObject); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDetectObject) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_detectedObject); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=this->DetectObject(Z_Param_detectedObject); \
+		P_NATIVE_END; \
+	}
+
+
+#define Noah_Source_Noah_NoahCharacter_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesANoahCharacter(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter(); \
@@ -24,7 +81,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_NoahCharacter_h_9_INCLASS \
+#define Noah_Source_Noah_NoahCharacter_h_13_INCLASS \
 	private: \
 	static void StaticRegisterNativesANoahCharacter(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter(); \
@@ -35,7 +92,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_NoahCharacter_h_9_STANDARD_CONSTRUCTORS \
+#define Noah_Source_Noah_NoahCharacter_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANoahCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANoahCharacter) \
@@ -48,7 +105,7 @@ private: \
 public:
 
 
-#define Noah_Source_Noah_NoahCharacter_h_9_ENHANCED_CONSTRUCTORS \
+#define Noah_Source_Noah_NoahCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANoahCharacter(ANoahCharacter&&); \
@@ -59,30 +116,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANoahCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANoahCharacter)
 
 
-#define Noah_Source_Noah_NoahCharacter_h_9_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ANoahCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ANoahCharacter, FollowCamera); }
-
-
-#define Noah_Source_Noah_NoahCharacter_h_6_PROLOG
-#define Noah_Source_Noah_NoahCharacter_h_9_GENERATED_BODY_LEGACY \
+#define Noah_Source_Noah_NoahCharacter_h_13_PRIVATE_PROPERTY_OFFSET
+#define Noah_Source_Noah_NoahCharacter_h_10_PROLOG
+#define Noah_Source_Noah_NoahCharacter_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_NoahCharacter_h_9_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_NoahCharacter_h_9_RPC_WRAPPERS \
-	Noah_Source_Noah_NoahCharacter_h_9_INCLASS \
-	Noah_Source_Noah_NoahCharacter_h_9_STANDARD_CONSTRUCTORS \
+	Noah_Source_Noah_NoahCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS \
+	Noah_Source_Noah_NoahCharacter_h_13_INCLASS \
+	Noah_Source_Noah_NoahCharacter_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Noah_Source_Noah_NoahCharacter_h_9_GENERATED_BODY \
+#define Noah_Source_Noah_NoahCharacter_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_NoahCharacter_h_9_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_NoahCharacter_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
-	Noah_Source_Noah_NoahCharacter_h_9_INCLASS_NO_PURE_DECLS \
-	Noah_Source_Noah_NoahCharacter_h_9_ENHANCED_CONSTRUCTORS \
+	Noah_Source_Noah_NoahCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_NoahCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	Noah_Source_Noah_NoahCharacter_h_13_INCLASS_NO_PURE_DECLS \
+	Noah_Source_Noah_NoahCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
