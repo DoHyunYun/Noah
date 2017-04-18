@@ -13,6 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Noah_Source_Noah_NoahGameStateBase_h_14_RPC_WRAPPERS
 #define Noah_Source_Noah_NoahGameStateBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Noah_Source_Noah_NoahGameStateBase_h_14_EVENT_PARMS
+extern NOAH_API  FName NOAH_AddDay;
+#define Noah_Source_Noah_NoahGameStateBase_h_14_CALLBACK_WRAPPERS
 #define Noah_Source_Noah_NoahGameStateBase_h_14_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesANoahGameStateBase(); \
@@ -37,7 +40,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Noah_Source_Noah_NoahGameStateBase_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANoahGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ANoahGameStateBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANoahGameStateBase) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ANoahGameStateBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANoahGameStateBase); \
@@ -49,8 +52,6 @@ public:
 
 
 #define Noah_Source_Noah_NoahGameStateBase_h_14_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANoahGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANoahGameStateBase(ANoahGameStateBase&&); \
@@ -58,16 +59,20 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ANoahGameStateBase); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANoahGameStateBase); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANoahGameStateBase)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANoahGameStateBase)
 
 
 #define Noah_Source_Noah_NoahGameStateBase_h_14_PRIVATE_PROPERTY_OFFSET
-#define Noah_Source_Noah_NoahGameStateBase_h_11_PROLOG
+#define Noah_Source_Noah_NoahGameStateBase_h_11_PROLOG \
+	Noah_Source_Noah_NoahGameStateBase_h_14_EVENT_PARMS
+
+
 #define Noah_Source_Noah_NoahGameStateBase_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Noah_Source_Noah_NoahGameStateBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Noah_Source_Noah_NoahGameStateBase_h_14_RPC_WRAPPERS \
+	Noah_Source_Noah_NoahGameStateBase_h_14_CALLBACK_WRAPPERS \
 	Noah_Source_Noah_NoahGameStateBase_h_14_INCLASS \
 	Noah_Source_Noah_NoahGameStateBase_h_14_STANDARD_CONSTRUCTORS \
 public: \
@@ -79,6 +84,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Noah_Source_Noah_NoahGameStateBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Noah_Source_Noah_NoahGameStateBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Noah_Source_Noah_NoahGameStateBase_h_14_CALLBACK_WRAPPERS \
 	Noah_Source_Noah_NoahGameStateBase_h_14_INCLASS_NO_PURE_DECLS \
 	Noah_Source_Noah_NoahGameStateBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \

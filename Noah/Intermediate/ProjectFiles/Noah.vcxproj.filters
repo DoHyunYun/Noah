@@ -82,6 +82,9 @@
     <ClInclude Include="..\..\Source\Noah\Date.h">
       <Filter>Source\Noah</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Noah\Wave.h">
+      <Filter>Source\Noah</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Noah\Inventory.cpp">
@@ -100,6 +103,9 @@
       <Filter>Source\Noah</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Noah\Date.cpp">
+      <Filter>Source\Noah</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Noah\Wave.cpp">
       <Filter>Source\Noah</Filter>
     </ClCompile>
   </ItemGroup>

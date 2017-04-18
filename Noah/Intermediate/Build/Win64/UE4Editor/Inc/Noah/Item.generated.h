@@ -13,13 +13,13 @@ class AItem;
 #endif
 #define NOAH_Item_generated_h
 
-#define Noah_Source_Noah_Item_h_13_GENERATED_BODY \
+#define Noah_Source_Noah_Item_h_12_GENERATED_BODY \
 	friend NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FItemStruct(); \
 	NOAH_API static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
 
 
-#define Noah_Source_Noah_Item_h_48_RPC_WRAPPERS \
+#define Noah_Source_Noah_Item_h_47_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetMesh) \
 	{ \
@@ -49,7 +49,7 @@ class AItem;
 	}
 
 
-#define Noah_Source_Noah_Item_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Noah_Source_Noah_Item_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetMesh) \
 	{ \
@@ -79,7 +79,7 @@ class AItem;
 	}
 
 
-#define Noah_Source_Noah_Item_h_48_INCLASS_NO_PURE_DECLS \
+#define Noah_Source_Noah_Item_h_47_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAItem(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_AItem(); \
@@ -90,7 +90,7 @@ class AItem;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_Item_h_48_INCLASS \
+#define Noah_Source_Noah_Item_h_47_INCLASS \
 	private: \
 	static void StaticRegisterNativesAItem(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_AItem(); \
@@ -101,7 +101,7 @@ class AItem;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_Item_h_48_STANDARD_CONSTRUCTORS \
+#define Noah_Source_Noah_Item_h_47_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AItem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AItem) \
@@ -114,7 +114,7 @@ private: \
 public:
 
 
-#define Noah_Source_Noah_Item_h_48_ENHANCED_CONSTRUCTORS \
+#define Noah_Source_Noah_Item_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AItem(AItem&&); \
@@ -125,26 +125,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AItem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AItem)
 
 
-#define Noah_Source_Noah_Item_h_48_PRIVATE_PROPERTY_OFFSET
-#define Noah_Source_Noah_Item_h_45_PROLOG
-#define Noah_Source_Noah_Item_h_48_GENERATED_BODY_LEGACY \
+#define Noah_Source_Noah_Item_h_47_PRIVATE_PROPERTY_OFFSET
+#define Noah_Source_Noah_Item_h_44_PROLOG
+#define Noah_Source_Noah_Item_h_47_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_Item_h_48_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_Item_h_48_RPC_WRAPPERS \
-	Noah_Source_Noah_Item_h_48_INCLASS \
-	Noah_Source_Noah_Item_h_48_STANDARD_CONSTRUCTORS \
+	Noah_Source_Noah_Item_h_47_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_Item_h_47_RPC_WRAPPERS \
+	Noah_Source_Noah_Item_h_47_INCLASS \
+	Noah_Source_Noah_Item_h_47_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Noah_Source_Noah_Item_h_48_GENERATED_BODY \
+#define Noah_Source_Noah_Item_h_47_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_Item_h_48_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_Item_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	Noah_Source_Noah_Item_h_48_INCLASS_NO_PURE_DECLS \
-	Noah_Source_Noah_Item_h_48_ENHANCED_CONSTRUCTORS \
+	Noah_Source_Noah_Item_h_47_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_Item_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
+	Noah_Source_Noah_Item_h_47_INCLASS_NO_PURE_DECLS \
+	Noah_Source_Noah_Item_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

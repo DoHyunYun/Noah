@@ -559,6 +559,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\Noah-HTML5-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Noah\Wave.cpp" />
+    <ClInclude Include="..\..\Source\Noah\Wave.h" />
     <None Include="..\..\Noah.uproject" />
     <None Include="..\..\Source\Noah.Target.cs" />
     <None Include="..\..\Source\NoahEditor.Target.cs" />

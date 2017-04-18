@@ -36,3 +36,6 @@
 #ifndef NOAH_NoahPlayerState_generated_h
 	#include "NoahPlayerState.h"
 #endif
+#ifndef NOAH_Wave_generated_h
+	#include "Wave.h"
+#endif

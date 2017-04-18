@@ -11,6 +11,8 @@
 PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1Noah() {}
+FName NOAH_AddDay = FName(TEXT("AddDay"));
+FName NOAH_UpWave = FName(TEXT("UpWave"));
 class UScriptStruct* FItemStruct::StaticStruct()
 {
 	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
@@ -108,10 +110,14 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	{
 	}
 	IMPLEMENT_CLASS(ANoahGameModeBase, 2246478573);
+	void ANoahGameStateBase::AddDay()
+	{
+		ProcessEvent(FindFunctionChecked(NOAH_AddDay),NULL);
+	}
 	void ANoahGameStateBase::StaticRegisterNativesANoahGameStateBase()
 	{
 	}
-	IMPLEMENT_CLASS(ANoahGameStateBase, 4055615687);
+	IMPLEMENT_CLASS(ANoahGameStateBase, 1933400830);
 	void ANoahHUD::StaticRegisterNativesANoahHUD()
 	{
 	}
@@ -124,6 +130,16 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	{
 	}
 	IMPLEMENT_CLASS(ANoahPlayerState, 3466459802);
+	void AWave::UpWave(int32 RainValue)
+	{
+		Wave_eventUpWave_Parms Parms;
+		Parms.RainValue=RainValue;
+		ProcessEvent(FindFunctionChecked(NOAH_UpWave),&Parms);
+	}
+	void AWave::StaticRegisterNativesAWave()
+	{
+	}
+	IMPLEMENT_CLASS(AWave, 224099784);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
@@ -169,6 +185,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UClass* Z_Construct_UClass_ANoahCharacter();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameModeBase_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameModeBase();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANoahGameStateBase_AddDay();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameStateBase_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahGameStateBase();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahHUD_NoRegister();
@@ -177,6 +194,9 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerController();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerState_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerState();
+	NOAH_API class UFunction* Z_Construct_UFunction_AWave_UpWave();
+	NOAH_API class UClass* Z_Construct_UClass_AWave_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_AWave();
 	NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
 	UScriptStruct* Z_Construct_UScriptStruct_FItemStruct()
 	{
@@ -915,6 +935,23 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ANoahGameModeBase(Z_Construct_UClass_ANoahGameModeBase, &ANoahGameModeBase::StaticClass, TEXT("ANoahGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ANoahGameModeBase);
+	UFunction* Z_Construct_UFunction_ANoahGameStateBase_AddDay()
+	{
+		UObject* Outer=Z_Construct_UClass_ANoahGameStateBase();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AddDay"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("GameState"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NoahGameStateBase.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ANoahGameStateBase_NoRegister()
 	{
 		return ANoahGameStateBase::StaticClass();
@@ -932,7 +969,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900280;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ANoahGameStateBase_AddDay());
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_Day = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Day"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(Day, ANoahGameStateBase), 0x0010000000000004);
+				UProperty* NewProp_RainValue = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RainValue"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(RainValue, ANoahGameStateBase), 0x0010000000000004);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANoahGameStateBase_AddDay(), "AddDay"); // 2134041446
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -940,6 +983,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("NoahGameStateBase.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("NoahGameStateBase.h"));
 				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+				MetaData->SetValue(NewProp_Day, TEXT("Category"), TEXT("GameState"));
+				MetaData->SetValue(NewProp_Day, TEXT("ModuleRelativePath"), TEXT("NoahGameStateBase.h"));
+				MetaData->SetValue(NewProp_RainValue, TEXT("Category"), TEXT("GameState"));
+				MetaData->SetValue(NewProp_RainValue, TEXT("ModuleRelativePath"), TEXT("NoahGameStateBase.h"));
 #endif
 			}
 		}
@@ -1048,6 +1095,63 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ANoahPlayerState(Z_Construct_UClass_ANoahPlayerState, &ANoahPlayerState::StaticClass, TEXT("ANoahPlayerState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ANoahPlayerState);
+	UFunction* Z_Construct_UFunction_AWave_UpWave()
+	{
+		UObject* Outer=Z_Construct_UClass_AWave();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("UpWave"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535, sizeof(Wave_eventUpWave_Parms));
+			UProperty* NewProp_RainValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("RainValue"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(RainValue, Wave_eventUpWave_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Wave"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AWave_NoRegister()
+	{
+		return AWave::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWave()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = AWave::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AWave_UpWave());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_WaveMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WaveMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(WaveMeshComponent, AWave), 0x001000000008000d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWave_UpWave(), "UpWave"); // 626822814
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Wave.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
+				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("Category"), TEXT("Wave"));
+				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWave(Z_Construct_UClass_AWave, &AWave::StaticClass, TEXT("AWave"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWave);
 	UPackage* Z_Construct_UPackage__Script_Noah()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -1056,8 +1160,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Noah")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x889B959F;
-			Guid.B = 0xDFE08983;
+			Guid.A = 0x5E439D98;
+			Guid.B = 0x049D7F16;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
