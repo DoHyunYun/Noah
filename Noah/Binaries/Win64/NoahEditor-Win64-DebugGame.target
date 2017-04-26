@@ -2,7 +2,11 @@
 	"TargetName" : "NoahEditor",
 	"Platform" : "Win64",
 	"Configuration" : "DebugGame",
+<<<<<<< HEAD
 	"BuildId" : "a1bfa5a0-019d-4d33-ac12-5e0686f4afb7",
+=======
+	"BuildId" : "fcde73e8-2416-43ca-b49a-96f9722e60ae",
+>>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
 	"Version" : 
 	{
 		"MajorVersion" : 4,

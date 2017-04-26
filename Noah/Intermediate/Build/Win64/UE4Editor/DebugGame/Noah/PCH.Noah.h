@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // PCH for C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah\Noah.h
+=======
+// PCH for C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\Noah.h
+>>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
 #define UE_EDITOR 1
 #define IS_PROGRAM 0
 #define WITH_DEV_AUTOMATION_TESTS 1
@@ -116,4 +120,8 @@
 #define MESHUTILITIES_API 
 #define KISMET_API DLLIMPORT
 #define NETWORKREPLAYSTREAMING_API 
+<<<<<<< HEAD
 #include "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah\Noah.h"
+=======
+#include "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\Noah.h"
+>>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
