@@ -1,0 +1,35 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Noah-2207-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB:"LIBCMT"
+/NODEFAULTLIB:"LIBCPMT"
+/NODEFAULTLIB:"LIBCMTD"
+/NODEFAULTLIB:"LIBCPMTD"
+/NODEFAULTLIB:"MSVCRTD"
+/NODEFAULTLIB:"MSVCPRTD"
+/NODEFAULTLIB:"LIBC"
+/NODEFAULTLIB:"LIBCP"
+/NODEFAULTLIB:"LIBCD"
+/NODEFAULTLIB:"LIBCPD"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\PCH.Noah.h.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Craft.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Date.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Inventory.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Item.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\MapObject.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Noah.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahCharacter.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahGameModeBase.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahGameStateBase.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahHUD.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahPlayerController.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\NoahPlayerState.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Wave.cpp.obj"
+"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Noah.generated.cpp.obj"
+"C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Development\Noah\PCLaunch.rc.res"
+"C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"F:\NoahProject\GP 170420\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-2207-Win64-DebugGame.lib"

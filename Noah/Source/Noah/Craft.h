@@ -9,7 +9,6 @@
 USTRUCT(BlueprintType)
 struct FSimpleItemStruct {//요구아이템 배열에 들어갈 간단한 형태의 아이템 구조체
 	GENERATED_USTRUCT_BODY()
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftSimpleItem")
 		int ItemCode;
 
@@ -39,7 +38,8 @@ class NOAH_API UCraft : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
+	UDataTable* GameObjectLookupTable = nullptr;
 	// Sets default values for this component's properties
 	UCraft();
 

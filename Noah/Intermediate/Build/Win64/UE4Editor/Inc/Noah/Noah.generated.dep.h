@@ -18,6 +18,9 @@
 #ifndef NOAH_Inventory_generated_h
 	#include "Inventory.h"
 #endif
+#ifndef NOAH_MapObject_generated_h
+	#include "MapObject.h"
+#endif
 #ifndef NOAH_NoahCharacter_generated_h
 	#include "NoahCharacter.h"
 #endif
@@ -35,6 +38,12 @@
 #endif
 #ifndef NOAH_NoahPlayerState_generated_h
 	#include "NoahPlayerState.h"
+#endif
+#ifndef NOAH_NPC_generated_h
+	#include "NPC.h"
+#endif
+#ifndef NOAH_Animal_generated_h
+	#include "Animal.h"
 #endif
 #ifndef NOAH_Wave_generated_h
 	#include "Wave.h"

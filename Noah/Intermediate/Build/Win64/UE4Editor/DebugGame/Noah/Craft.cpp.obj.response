@@ -21,15 +21,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source"
-<<<<<<< HEAD
-/I "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source"
-/I "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\Inc\Noah"
-/I "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah"
-=======
 /I C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source
 /I C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\Inc\Noah
 /I C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah
->>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -307,19 +301,11 @@
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Editor\Kismet"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming"
-<<<<<<< HEAD
-/FI"C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah\Noah.h"
-/Yu"C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah\Noah.h"
-/Fp"C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\PCH.Noah.h.pch"
-"C:\Users\DohyunYun\Desktop\GP 170416\Noah\Source\Noah\Craft.cpp"
-/Fo"C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Craft.cpp.obj"
-=======
 /FI"C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\Noah.h"
 /Yu"C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\Noah.h"
 /Fp"C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\PCH.Noah.h.pch"
 "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Source\Noah\Craft.cpp"
 /Fo"C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\Noah\Craft.cpp.obj"
->>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
 /TP
 /GR-
 /W4

@@ -6,7 +6,7 @@
 
 
 // Sets default values for this component's properties
-UInventory::UInventory() : MaxInvenSize(24), CurrentWeight(0)
+UInventory::UInventory() : MaxInvenSize(25), CurrentWeight(0)
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -52,7 +52,7 @@ bool UInventory::AddItem(AItem* item)
 		if (ItemList[i]->ItemCode == -1) {
 			AItem* temp = DuplicateObject<AItem>(item, this);
 			ItemList[i] = temp;
-			ItemList[i]->InitItem(ItemList[i]->ItemCode);//Database에서 정보 넣기.
+			ItemList[i]->InitItem(ItemList[i]->ItemCode, item->Number);//Database에서 정보 넣기.
 			return true;
 		}
 	}

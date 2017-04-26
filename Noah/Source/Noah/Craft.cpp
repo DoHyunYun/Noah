@@ -5,12 +5,13 @@
 
 
 // Sets default values for this component's properties
-UCraft::UCraft()
+UCraft::UCraft() : GameObjectLookupTable(nullptr)
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
+	ConstructorHelpers::FObjectFinder<UDataTable> ExcelTable_BP(TEXT("DataTable'/Game/DataTable/DT_Item.DT_Item'"));
+	GameObjectLookupTable = ExcelTable_BP.Object;
 	// ...
 	
 	IsSet = false;
@@ -23,15 +24,12 @@ void UCraft::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-
-
 	//제작 리스트 초기화
-
 	//DataTable 불러오기
-	UDataTable* GameObjectLookupTable = LoadObject<UDataTable>(nullptr, TEXT("DataTable'/Game/DataTable/DT_Item.DT_Item'"));
-
-	int32 Length = GameObjectLookupTable->GetTableData().Num() - 1;// DataTable 행Data 개수
+	//UDataTable* GameObjectLookupTable = LoadObject<UDataTable>(nullptr, TEXT("DataTable'/Game/DataTable/DT_Item.DT_Item'"));
 	
+	int32 Length = 3;//GameObjectLookupTable->GetTableData().Num() - 1;
+
 	for (int i = 1; i <= Length; i++) {
 		//CraftList에 넣기위한 temp 선언 및 초기화
 		FCraftItemStruct TempItemStruct;

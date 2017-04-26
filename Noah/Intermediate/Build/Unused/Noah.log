@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-﻿  Creating makefile for NoahEditor (game project files are newer)
-  Performing full C++ include scan (no include cache file)
-  Parsing headers for NoahEditor
-    Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for NoahEditor in 3.4419542 seconds
-  Performing 16 actions (4 in parallel)
-  PCH.Noah.cpp
-  Inventory.cpp
-  Craft.cpp
-  Date.cpp
-  NoahGameModeBase.cpp
-  Item.cpp
-  Noah.cpp
-  NoahCharacter.cpp
-  NoahGameStateBase.cpp
-  NoahHUD.cpp
-  NoahPlayerController.cpp
-  NoahPlayerState.cpp
-  Wave.cpp
-  Noah.generated.cpp
-  [15/16] Link UE4Editor-Noah-Win64-DebugGame.dll
-  [16/16] Link UE4Editor-Noah-Win64-DebugGame.lib
-     C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp 개체를 생성하고 있습니다.
-     C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170416\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp 개체를 생성하고 있습니다.
-  Deploying NoahEditor Win64 DebugGame...
-  Total build time: 39.15 seconds (Local executor: 30.20 seconds)
-=======
 ﻿  Target is up to date
   Deploying NoahEditor Win64 DebugGame...
-  Total build time: 1.03 seconds (NoActionsToExecute executor: 0.00 seconds)
->>>>>>> c4b466a21dd4e7b318b173fd5d29c0e46995e790
+  Total build time: 0.98 seconds (NoActionsToExecute executor: 0.00 seconds)
