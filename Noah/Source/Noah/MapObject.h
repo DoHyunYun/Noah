@@ -6,6 +6,7 @@
 #include "Inventory.h"
 #include "MapObject.generated.h"
 
+
 UCLASS()
 class NOAH_API AMapObject : public AActor
 {

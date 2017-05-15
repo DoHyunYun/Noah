@@ -6,6 +6,9 @@
 #include "Item.h"
 #include "Inventory.generated.h"
 
+//Delegate 메크로
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAddItemCompleteDelegate);
+
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class NOAH_API UInventory : public UActorComponent
@@ -23,6 +26,10 @@ protected:
 public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	//Delegate 변수
+	UPROPERTY(BlueprintAssignable, Category = "Inventory")
+		FAddItemCompleteDelegate AddItemCompleteDelegate;
 
 public:
 	UPROPERTY(BlueprintReadWrite, Category = "Inventory")

@@ -42,7 +42,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFItemStruct
 		FNativeFunctionRegistrar::RegisterFunction(AItem::StaticClass(), "InitItem",(Native)&AItem::execInitItem);
 		FNativeFunctionRegistrar::RegisterFunction(AItem::StaticClass(), "SetMesh",(Native)&AItem::execSetMesh);
 	}
-	IMPLEMENT_CLASS(AItem, 1089038993);
+	IMPLEMENT_CLASS(AItem, 1824710458);
 class UScriptStruct* FCraftItemStruct::StaticStruct()
 {
 	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
@@ -85,26 +85,9 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 } ScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct;
 	void UCraft::StaticRegisterNativesUCraft()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(UCraft::StaticClass(), "GetCraftApiSet",(Native)&UCraft::execGetCraftApiSet);
+		FNativeFunctionRegistrar::RegisterFunction(UCraft::StaticClass(), "GetCraftIsSet",(Native)&UCraft::execGetCraftIsSet);
 	}
-	IMPLEMENT_CLASS(UCraft, 1138783078);
-	void ADate::SunDown()
-	{
-		ProcessEvent(FindFunctionChecked(NOAH_SunDown),NULL);
-	}
-	void ADate::SunUp()
-	{
-		ProcessEvent(FindFunctionChecked(NOAH_SunUp),NULL);
-	}
-	void ADate::Tomorrow()
-	{
-		ProcessEvent(FindFunctionChecked(NOAH_Tomorrow),NULL);
-	}
-	void ADate::StaticRegisterNativesADate()
-	{
-		FNativeFunctionRegistrar::RegisterFunction(ADate::StaticClass(), "SeekSunRotator",(Native)&ADate::execSeekSunRotator);
-	}
-	IMPLEMENT_CLASS(ADate, 3129846999);
+	IMPLEMENT_CLASS(UCraft, 2461015783);
 	void UInventory::StaticRegisterNativesUInventory()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "AddItem",(Native)&UInventory::execAddItem);
@@ -114,12 +97,76 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "SortInventory",(Native)&UInventory::execSortInventory);
 		FNativeFunctionRegistrar::RegisterFunction(UInventory::StaticClass(), "SwapItemIndex",(Native)&UInventory::execSwapItemIndex);
 	}
-	IMPLEMENT_CLASS(UInventory, 1135534170);
+	IMPLEMENT_CLASS(UInventory, 1682985142);
 	void AMapObject::StaticRegisterNativesAMapObject()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMapObject::StaticClass(), "Damaged",(Native)&AMapObject::execDamaged);
 	}
 	IMPLEMENT_CLASS(AMapObject, 3785276752);
+static class UEnum* EMapObjectEnum_StaticEnum()
+{
+	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern NOAH_API class UEnum* Z_Construct_UEnum_Noah_EMapObjectEnum();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_Noah_EMapObjectEnum, Z_Construct_UPackage__Script_Noah(), TEXT("EMapObjectEnum"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMapObjectEnum(EMapObjectEnum_StaticEnum, TEXT("/Script/Noah"), TEXT("EMapObjectEnum"), false, nullptr, nullptr);
+class UScriptStruct* FMapObjectPlaceStruct::StaticStruct()
+{
+	extern NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FMapObjectPlaceStruct();
+		extern NOAH_API uint32 Get_Z_Construct_UScriptStruct_FMapObjectPlaceStruct_CRC();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FMapObjectPlaceStruct, Z_Construct_UPackage__Script_Noah(), TEXT("MapObjectPlaceStruct"), sizeof(FMapObjectPlaceStruct), Get_Z_Construct_UScriptStruct_FMapObjectPlaceStruct_CRC());
+	}
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FMapObjectPlaceStruct(FMapObjectPlaceStruct::StaticStruct, TEXT("/Script/Noah"), TEXT("MapObjectPlaceStruct"), false, nullptr, nullptr);
+static struct FScriptStruct_Noah_StaticRegisterNativesFMapObjectPlaceStruct
+{
+	FScriptStruct_Noah_StaticRegisterNativesFMapObjectPlaceStruct()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("MapObjectPlaceStruct")),new UScriptStruct::TCppStructOps<FMapObjectPlaceStruct>);
+	}
+} ScriptStruct_Noah_StaticRegisterNativesFMapObjectPlaceStruct;
+	void AMapObjectPlace::StaticRegisterNativesAMapObjectPlace()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AMapObjectPlace::StaticClass(), "ObjectPathSeek",(Native)&AMapObjectPlace::execObjectPathSeek);
+	}
+	IMPLEMENT_CLASS(AMapObjectPlace, 1416906903);
+	void AWave::UpWave(int32 RainValue)
+	{
+		Wave_eventUpWave_Parms Parms;
+		Parms.RainValue=RainValue;
+		ProcessEvent(FindFunctionChecked(NOAH_UpWave),&Parms);
+	}
+	void AWave::StaticRegisterNativesAWave()
+	{
+	}
+	IMPLEMENT_CLASS(AWave, 1672427436);
+	void ANaturalEnvironment::SunDown()
+	{
+		ProcessEvent(FindFunctionChecked(NOAH_SunDown),NULL);
+	}
+	void ANaturalEnvironment::SunUp()
+	{
+		ProcessEvent(FindFunctionChecked(NOAH_SunUp),NULL);
+	}
+	void ANaturalEnvironment::Tomorrow()
+	{
+		ProcessEvent(FindFunctionChecked(NOAH_Tomorrow),NULL);
+	}
+	void ANaturalEnvironment::StaticRegisterNativesANaturalEnvironment()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(ANaturalEnvironment::StaticClass(), "SeekSunRotator",(Native)&ANaturalEnvironment::execSeekSunRotator);
+	}
+	IMPLEMENT_CLASS(ANaturalEnvironment, 1166424980);
 	void ANoahCharacter::StaticRegisterNativesANoahCharacter()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ANoahCharacter::StaticClass(), "DetectObject",(Native)&ANoahCharacter::execDetectObject);
@@ -159,16 +206,6 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	{
 	}
 	IMPLEMENT_CLASS(AAnimal, 1391159368);
-	void AWave::UpWave(int32 RainValue)
-	{
-		Wave_eventUpWave_Parms Parms;
-		Parms.RainValue=RainValue;
-		ProcessEvent(FindFunctionChecked(NOAH_UpWave),&Parms);
-	}
-	void AWave::StaticRegisterNativesAWave()
-	{
-	}
-	IMPLEMENT_CLASS(AWave, 224099784);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
@@ -176,7 +213,13 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	COREUOBJECT_API class UClass* Z_Construct_UClass_UObject_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UBlueprintGeneratedClass_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FRotator();
+	ENGINE_API class UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UCurveLinearColor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ASkyLight_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ADirectionalLight_NoRegister();
@@ -197,15 +240,10 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UClass* Z_Construct_UClass_AItem();
 	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FCraftItemStruct();
 	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FSimpleItemStruct();
-	NOAH_API class UFunction* Z_Construct_UFunction_UCraft_GetCraftApiSet();
+	NOAH_API class UFunction* Z_Construct_UFunction_UCraft_GetCraftIsSet();
 	NOAH_API class UClass* Z_Construct_UClass_UCraft_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_UCraft();
-	NOAH_API class UFunction* Z_Construct_UFunction_ADate_SeekSunRotator();
-	NOAH_API class UFunction* Z_Construct_UFunction_ADate_SunDown();
-	NOAH_API class UFunction* Z_Construct_UFunction_ADate_SunUp();
-	NOAH_API class UFunction* Z_Construct_UFunction_ADate_Tomorrow();
-	NOAH_API class UClass* Z_Construct_UClass_ADate_NoRegister();
-	NOAH_API class UClass* Z_Construct_UClass_ADate();
+	NOAH_API class UFunction* Z_Construct_UDelegateFunction_Noah_AddItemCompleteDelegate__DelegateSignature();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_AddItem();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_GetItemNumberInfo();
 	NOAH_API class UFunction* Z_Construct_UFunction_UInventory_RemoveItemInventorySlot();
@@ -217,6 +255,20 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UFunction* Z_Construct_UFunction_AMapObject_Damaged();
 	NOAH_API class UClass* Z_Construct_UClass_AMapObject_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_AMapObject();
+	NOAH_API class UEnum* Z_Construct_UEnum_Noah_EMapObjectEnum();
+	NOAH_API class UScriptStruct* Z_Construct_UScriptStruct_FMapObjectPlaceStruct();
+	NOAH_API class UFunction* Z_Construct_UFunction_AMapObjectPlace_ObjectPathSeek();
+	NOAH_API class UClass* Z_Construct_UClass_AMapObjectPlace_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_AMapObjectPlace();
+	NOAH_API class UFunction* Z_Construct_UFunction_AWave_UpWave();
+	NOAH_API class UClass* Z_Construct_UClass_AWave_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_AWave();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANaturalEnvironment_SeekSunRotator();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANaturalEnvironment_SunDown();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANaturalEnvironment_SunUp();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANaturalEnvironment_Tomorrow();
+	NOAH_API class UClass* Z_Construct_UClass_ANaturalEnvironment_NoRegister();
+	NOAH_API class UClass* Z_Construct_UClass_ANaturalEnvironment();
 	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_DetectObject();
 	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_FindNearItem();
 	NOAH_API class UFunction* Z_Construct_UFunction_ANoahCharacter_MissObject();
@@ -237,9 +289,6 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 	NOAH_API class UClass* Z_Construct_UClass_ANPC();
 	NOAH_API class UClass* Z_Construct_UClass_AAnimal_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_AAnimal();
-	NOAH_API class UFunction* Z_Construct_UFunction_AWave_UpWave();
-	NOAH_API class UClass* Z_Construct_UClass_AWave_NoRegister();
-	NOAH_API class UClass* Z_Construct_UClass_AWave();
 	NOAH_API class UPackage* Z_Construct_UPackage__Script_Noah();
 	UScriptStruct* Z_Construct_UScriptStruct_FItemStruct()
 	{
@@ -268,6 +317,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 			UMetaData* MetaData = ReturnStruct->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnStruct, TEXT("BlueprintType"), TEXT("true"));
 			MetaData->SetValue(ReturnStruct, TEXT("ModuleRelativePath"), TEXT("Item.h"));
+			MetaData->SetValue(ReturnStruct, TEXT("ToolTip"), TEXT("DataTable ?\x05f8??? ???? ????\x00fc ????"));
 			MetaData->SetValue(NewProp_Recipe, TEXT("Category"), TEXT("ItemInformation"));
 			MetaData->SetValue(NewProp_Recipe, TEXT("ModuleRelativePath"), TEXT("Item.h"));
 			MetaData->SetValue(NewProp_Weight, TEXT("Category"), TEXT("ItemInformation"));
@@ -300,7 +350,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FItemStruct_CRC() { return 2839613384U; }
+	uint32 Get_Z_Construct_UScriptStruct_FItemStruct_CRC() { return 3484935051U; }
 	UFunction* Z_Construct_UFunction_AItem_GetItemImage()
 	{
 		struct Item_eventGetItemImage_Parms
@@ -365,6 +415,7 @@ static struct FScriptStruct_Noah_StaticRegisterNativesFSimpleItemStruct
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("ItemClass"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Item.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?\x0634? ?????? ?\x0339????\x063d?\x00f3 ????????"));
 #endif
 		}
 		return ReturnFunction;
@@ -399,7 +450,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_GetItemImage(), "GetItemImage"); // 1183534821
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_InitItem(), "InitItem"); // 14583039
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_SetMesh(), "SetMesh"); // 851018382
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AItem_SetMesh(), "SetMesh"); // 3553441791
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -482,9 +533,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FSimpleItemStruct_CRC() { return 2274722864U; }
-	UFunction* Z_Construct_UFunction_UCraft_GetCraftApiSet()
+	UFunction* Z_Construct_UFunction_UCraft_GetCraftIsSet()
 	{
-		struct Craft_eventGetCraftApiSet_Parms
+		struct Craft_eventGetCraftIsSet_Parms
 		{
 			bool ReturnValue;
 		};
@@ -492,9 +543,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetCraftApiSet"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Craft_eventGetCraftApiSet_Parms));
-			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Craft_eventGetCraftApiSet_Parms, bool);
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Craft_eventGetCraftApiSet_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Craft_eventGetCraftApiSet_Parms), sizeof(bool), true);
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetCraftIsSet"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Craft_eventGetCraftIsSet_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, Craft_eventGetCraftIsSet_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, Craft_eventGetCraftIsSet_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, Craft_eventGetCraftIsSet_Parms), sizeof(bool), true);
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -523,13 +574,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20B00080;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_UCraft_GetCraftApiSet());
+				OuterClass->LinkChild(Z_Construct_UFunction_UCraft_GetCraftIsSet());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_CraftList = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CraftList"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(CraftList, UCraft), 0x0010000000000005);
 				UProperty* NewProp_CraftList_Inner = new(EC_InternalUseOnlyConstructor, NewProp_CraftList, TEXT("CraftList"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FCraftItemStruct());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UCraft_GetCraftApiSet(), "GetCraftApiSet"); // 4105011979
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UCraft_GetCraftIsSet(), "GetCraftIsSet"); // 2387618425
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -547,148 +598,23 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UCraft(Z_Construct_UClass_UCraft, &UCraft::StaticClass, TEXT("UCraft"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UCraft);
-	UFunction* Z_Construct_UFunction_ADate_SeekSunRotator()
+	UFunction* Z_Construct_UDelegateFunction_Noah_AddItemCompleteDelegate__DelegateSignature()
 	{
-		struct Date_eventSeekSunRotator_Parms
-		{
-			float _sunDrive;
-			float _dayDuration;
-			float _maxSunHeight;
-			FRotator ReturnValue;
-		};
-		UObject* Outer=Z_Construct_UClass_ADate();
+		UObject* Outer=Z_Construct_UPackage__Script_Noah();
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SeekSunRotator"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04880401, 65535, sizeof(Date_eventSeekSunRotator_Parms));
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, Date_eventSeekSunRotator_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FRotator());
-			UProperty* NewProp__maxSunHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_maxSunHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_maxSunHeight, Date_eventSeekSunRotator_Parms), 0x0010000000000080);
-			UProperty* NewProp__dayDuration = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_dayDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_dayDuration, Date_eventSeekSunRotator_Parms), 0x0010000000000080);
-			UProperty* NewProp__sunDrive = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_sunDrive"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_sunDrive, Date_eventSeekSunRotator_Parms), 0x0010000000000080);
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AddItemCompleteDelegate__DelegateSignature"), RF_Public|RF_Transient|RF_MarkAsNative) UDelegateFunction(FObjectInitializer(), NULL, 0x00130000, 65535);
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?????? ???? ???? ??\x0121(\x0238????)?? ???\x063f\x00b4?."));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Delegate ??\x0169??"));
 #endif
 		}
 		return ReturnFunction;
 	}
-	UFunction* Z_Construct_UFunction_ADate_SunDown()
-	{
-		UObject* Outer=Z_Construct_UClass_ADate();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SunDown"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ADate_SunUp()
-	{
-		UObject* Outer=Z_Construct_UClass_ADate();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SunUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ADate_Tomorrow()
-	{
-		UObject* Outer=Z_Construct_UClass_ADate();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Tomorrow"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UClass* Z_Construct_UClass_ADate_NoRegister()
-	{
-		return ADate::StaticClass();
-	}
-	UClass* Z_Construct_UClass_ADate()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_AActor();
-			Z_Construct_UPackage__Script_Noah();
-			OuterClass = ADate::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-				OuterClass->LinkChild(Z_Construct_UFunction_ADate_SeekSunRotator());
-				OuterClass->LinkChild(Z_Construct_UFunction_ADate_SunDown());
-				OuterClass->LinkChild(Z_Construct_UFunction_ADate_SunUp());
-				OuterClass->LinkChild(Z_Construct_UFunction_ADate_Tomorrow());
-
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_SkyLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SkyLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SkyLight, ADate), 0x0010000000000005, Z_Construct_UClass_ASkyLight_NoRegister());
-				UProperty* NewProp_SkySphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SkySphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SkySphere, ADate), 0x0010000000000005, Z_Construct_UClass_AActor_NoRegister());
-				UProperty* NewProp_DirectionLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DirectionLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DirectionLight, ADate), 0x0010000000000005, Z_Construct_UClass_ADirectionalLight_NoRegister());
-				UProperty* NewProp_MaxSunHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxSunHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MaxSunHeight, ADate), 0x0010000000000005);
-				UProperty* NewProp_DayDuration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DayDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DayDuration, ADate), 0x0010000000000005);
-				UProperty* NewProp_SunDrive = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SunDrive"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SunDrive, ADate), 0x0010000000000005);
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADate_SeekSunRotator(), "SeekSunRotator"); // 3542840266
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADate_SunDown(), "SunDown"); // 3450306448
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADate_SunUp(), "SunUp"); // 118396673
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADate_Tomorrow(), "Tomorrow"); // 1466201676
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Date.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_SkyLight, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_SkyLight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_SkySphere, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_SkySphere, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_DirectionLight, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_DirectionLight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_DirectionLight, TEXT("ToolTip"), TEXT("???? ?\x05b4? ????(-1~-99)"));
-				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("ToolTip"), TEXT("?\x03f7\x7c21 ?????\x00b5? ?\x0278??? ?\x00f0?."));
-				MetaData->SetValue(NewProp_DayDuration, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_DayDuration, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-				MetaData->SetValue(NewProp_DayDuration, TEXT("ToolTip"), TEXT("???? ??\x0121"));
-				MetaData->SetValue(NewProp_SunDrive, TEXT("Category"), TEXT("DateSystem"));
-				MetaData->SetValue(NewProp_SunDrive, TEXT("ModuleRelativePath"), TEXT("Date.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ADate(Z_Construct_UClass_ADate, &ADate::StaticClass, TEXT("ADate"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ADate);
 	UFunction* Z_Construct_UFunction_UInventory_AddItem()
 	{
 		struct Inventory_eventAddItem_Parms
@@ -870,6 +796,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_CurrentWeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentWeight"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(CurrentWeight, UInventory), 0x0010000000000004);
 				UProperty* NewProp_ItemList = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ItemList"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(ItemList, UInventory), 0x0010000000000004);
 				UProperty* NewProp_ItemList_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ItemList, TEXT("ItemList"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AItem_NoRegister());
+				UProperty* NewProp_AddItemCompleteDelegate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("AddItemCompleteDelegate"), RF_Public|RF_Transient|RF_MarkAsNative) UMulticastDelegateProperty(CPP_PROPERTY_BASE(AddItemCompleteDelegate, UInventory), 0x0010000010080000, Z_Construct_UDelegateFunction_Noah_AddItemCompleteDelegate__DelegateSignature());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_AddItem(), "AddItem"); // 1515463663
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UInventory_GetItemNumberInfo(), "GetItemNumberInfo"); // 418720785
@@ -890,6 +817,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_CurrentWeight, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
 				MetaData->SetValue(NewProp_ItemList, TEXT("Category"), TEXT("Inventory"));
 				MetaData->SetValue(NewProp_ItemList, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+				MetaData->SetValue(NewProp_AddItemCompleteDelegate, TEXT("Category"), TEXT("Inventory"));
+				MetaData->SetValue(NewProp_AddItemCompleteDelegate, TEXT("ModuleRelativePath"), TEXT("Inventory.h"));
+				MetaData->SetValue(NewProp_AddItemCompleteDelegate, TEXT("ToolTip"), TEXT("Delegate ????"));
 #endif
 			}
 		}
@@ -964,6 +894,347 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMapObject(Z_Construct_UClass_AMapObject, &AMapObject::StaticClass, TEXT("AMapObject"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMapObject);
+	UEnum* Z_Construct_UEnum_Noah_EMapObjectEnum()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_Noah();
+		extern uint32 Get_Z_Construct_UEnum_Noah_EMapObjectEnum_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EMapObjectEnum"), 0, Get_Z_Construct_UEnum_Noah_EMapObjectEnum_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EMapObjectEnum"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, int64>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EMapObjectEnum::Tree")), 0));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EMapObjectEnum::Stone")), 1));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EMapObjectEnum::EMapObjectEnum_MAX")), 2));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("EMapObjectEnum");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("Stone.DisplayName"), TEXT("Stone"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("???? : ????????\x01ae?? ?\x0338??? ???\x01be??? \"BP_\"????"));
+			MetaData->SetValue(ReturnEnum, TEXT("Tree.DisplayName"), TEXT("Tree"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_Noah_EMapObjectEnum_CRC() { return 798187463U; }
+	UScriptStruct* Z_Construct_UScriptStruct_FMapObjectPlaceStruct()
+	{
+		UPackage* Outer = Z_Construct_UPackage__Script_Noah();
+		extern uint32 Get_Z_Construct_UScriptStruct_FMapObjectPlaceStruct_CRC();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("MapObjectPlaceStruct"), sizeof(FMapObjectPlaceStruct), Get_Z_Construct_UScriptStruct_FMapObjectPlaceStruct_CRC(), false);
+		if (!ReturnStruct)
+		{
+			ReturnStruct = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MapObjectPlaceStruct"), RF_Public|RF_Transient|RF_MarkAsNative) UScriptStruct(FObjectInitializer(), NULL, new UScriptStruct::TCppStructOps<FMapObjectPlaceStruct>, EStructFlags(0x00000001));
+			UProperty* NewProp_Number = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("Number"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(Number, FMapObjectPlaceStruct), 0x0010000000000005);
+			UProperty* NewProp_MapObject = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("MapObject"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(MapObject, FMapObjectPlaceStruct), 0x0010000000000005, Z_Construct_UEnum_Noah_EMapObjectEnum());
+			UProperty* NewProp_MapObject_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_MapObject, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnStruct->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnStruct->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnStruct, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnStruct, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+			MetaData->SetValue(NewProp_Number, TEXT("Category"), TEXT("MapObjectPlace"));
+			MetaData->SetValue(NewProp_Number, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+			MetaData->SetValue(NewProp_MapObject, TEXT("Category"), TEXT("MapObjectPlace"));
+			MetaData->SetValue(NewProp_MapObject, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+#endif
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FMapObjectPlaceStruct_CRC() { return 456302705U; }
+	UFunction* Z_Construct_UFunction_AMapObjectPlace_ObjectPathSeek()
+	{
+		struct MapObjectPlace_eventObjectPathSeek_Parms
+		{
+			EMapObjectEnum objectType;
+			UClass* ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AMapObjectPlace();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ObjectPathSeek"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(MapObjectPlace_eventObjectPathSeek_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(ReturnValue, MapObjectPlace_eventObjectPathSeek_Parms), 0x0010000000000580, Z_Construct_UClass_UObject_NoRegister(), Z_Construct_UClass_UBlueprintGeneratedClass_NoRegister());
+			UProperty* NewProp_objectType = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("objectType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(objectType, MapObjectPlace_eventObjectPathSeek_Parms), 0x0010000000000080, Z_Construct_UEnum_Noah_EMapObjectEnum());
+			UProperty* NewProp_objectType_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_objectType, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MapObjectPlace"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AMapObjectPlace_NoRegister()
+	{
+		return AMapObjectPlace::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AMapObjectPlace()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = AMapObjectPlace::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AMapObjectPlace_ObjectPathSeek());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bSpherePlace, AMapObjectPlace, bool);
+				UProperty* NewProp_bSpherePlace = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bSpherePlace"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bSpherePlace, AMapObjectPlace), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bSpherePlace, AMapObjectPlace), sizeof(bool), true);
+				UProperty* NewProp_MapObjectList = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MapObjectList"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(MapObjectList, AMapObjectPlace), 0x0010000000000005);
+				UProperty* NewProp_MapObjectList_Inner = new(EC_InternalUseOnlyConstructor, NewProp_MapObjectList, TEXT("MapObjectList"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FMapObjectPlaceStruct());
+				UProperty* NewProp_PlaceSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PlaceSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(PlaceSphere, AMapObjectPlace), 0x001000000008000c, Z_Construct_UClass_USphereComponent_NoRegister());
+				UProperty* NewProp_Place = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Place"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Place, AMapObjectPlace), 0x001000000008000c, Z_Construct_UClass_UBoxComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AMapObjectPlace_ObjectPathSeek(), "ObjectPathSeek"); // 2521059716
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("MapObjectPlace.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+				MetaData->SetValue(NewProp_bSpherePlace, TEXT("Category"), TEXT("MapObjectPlace"));
+				MetaData->SetValue(NewProp_bSpherePlace, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+				MetaData->SetValue(NewProp_MapObjectList, TEXT("Category"), TEXT("MapObjectPlace"));
+				MetaData->SetValue(NewProp_MapObjectList, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+				MetaData->SetValue(NewProp_PlaceSphere, TEXT("Category"), TEXT("MapObjectPlace"));
+				MetaData->SetValue(NewProp_PlaceSphere, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_PlaceSphere, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+				MetaData->SetValue(NewProp_Place, TEXT("Category"), TEXT("MapObjectPlace"));
+				MetaData->SetValue(NewProp_Place, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_Place, TEXT("ModuleRelativePath"), TEXT("MapObjectPlace.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AMapObjectPlace(Z_Construct_UClass_AMapObjectPlace, &AMapObjectPlace::StaticClass, TEXT("AMapObjectPlace"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AMapObjectPlace);
+	UFunction* Z_Construct_UFunction_AWave_UpWave()
+	{
+		UObject* Outer=Z_Construct_UClass_AWave();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("UpWave"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535, sizeof(Wave_eventUpWave_Parms));
+			UProperty* NewProp_RainValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("RainValue"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(RainValue, Wave_eventUpWave_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Wave"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AWave_NoRegister()
+	{
+		return AWave::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWave()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = AWave::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AWave_UpWave());
+
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWave_UpWave(), "UpWave"); // 626822814
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Wave.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWave(Z_Construct_UClass_AWave, &AWave::StaticClass, TEXT("AWave"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWave);
+	UFunction* Z_Construct_UFunction_ANaturalEnvironment_SeekSunRotator()
+	{
+		struct NaturalEnvironment_eventSeekSunRotator_Parms
+		{
+			float _sunDrive;
+			float _dayDuration;
+			float _maxSunHeight;
+			FRotator ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ANaturalEnvironment();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SeekSunRotator"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04880401, 65535, sizeof(NaturalEnvironment_eventSeekSunRotator_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, NaturalEnvironment_eventSeekSunRotator_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FRotator());
+			UProperty* NewProp__maxSunHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_maxSunHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_maxSunHeight, NaturalEnvironment_eventSeekSunRotator_Parms), 0x0010000000000080);
+			UProperty* NewProp__dayDuration = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_dayDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_dayDuration, NaturalEnvironment_eventSeekSunRotator_Parms), 0x0010000000000080);
+			UProperty* NewProp__sunDrive = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("_sunDrive"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(_sunDrive, NaturalEnvironment_eventSeekSunRotator_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("?????? ???? ???? ??\x0121(\x0238????)?? ???\x063f\x00b4?."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANaturalEnvironment_SunDown()
+	{
+		UObject* Outer=Z_Construct_UClass_ANaturalEnvironment();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SunDown"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANaturalEnvironment_SunUp()
+	{
+		UObject* Outer=Z_Construct_UClass_ANaturalEnvironment();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SunUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANaturalEnvironment_Tomorrow()
+	{
+		UObject* Outer=Z_Construct_UClass_ANaturalEnvironment();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Tomorrow"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("DateSystem"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ANaturalEnvironment_NoRegister()
+	{
+		return ANaturalEnvironment::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ANaturalEnvironment()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_Noah();
+			OuterClass = ANaturalEnvironment::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ANaturalEnvironment_SeekSunRotator());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANaturalEnvironment_SunDown());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANaturalEnvironment_SunUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANaturalEnvironment_Tomorrow());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_RainValue = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RainValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RainValue, ANaturalEnvironment), 0x0010000000000004);
+				UProperty* NewProp_CurveSunIntensity = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurveSunIntensity"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurveSunIntensity, ANaturalEnvironment), 0x0010000000000004, Z_Construct_UClass_UCurveFloat_NoRegister());
+				UProperty* NewProp_CurveZenithColor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurveZenithColor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurveZenithColor, ANaturalEnvironment), 0x0010000000000004, Z_Construct_UClass_UCurveLinearColor_NoRegister());
+				UProperty* NewProp_CurveHorizonColor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurveHorizonColor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurveHorizonColor, ANaturalEnvironment), 0x0010000000000004, Z_Construct_UClass_UCurveLinearColor_NoRegister());
+				UProperty* NewProp_CurveOverallColor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurveOverallColor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurveOverallColor, ANaturalEnvironment), 0x0010000000000004, Z_Construct_UClass_UCurveLinearColor_NoRegister());
+				UProperty* NewProp_CurveSkyLightColor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurveSkyLightColor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurveSkyLightColor, ANaturalEnvironment), 0x0010000000000004, Z_Construct_UClass_UCurveLinearColor_NoRegister());
+				UProperty* NewProp_Wave = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Wave"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Wave, ANaturalEnvironment), 0x0010000000000005, Z_Construct_UClass_AWave_NoRegister());
+				UProperty* NewProp_SkyLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SkyLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SkyLight, ANaturalEnvironment), 0x0010000000000005, Z_Construct_UClass_ASkyLight_NoRegister());
+				UProperty* NewProp_SkySphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SkySphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SkySphere, ANaturalEnvironment), 0x0010000000000005, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_DirectionLight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DirectionLight"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(DirectionLight, ANaturalEnvironment), 0x0010000000000005, Z_Construct_UClass_ADirectionalLight_NoRegister());
+				UProperty* NewProp_MaxSunHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxSunHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MaxSunHeight, ANaturalEnvironment), 0x0010000000000005);
+				UProperty* NewProp_DayDuration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DayDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DayDuration, ANaturalEnvironment), 0x0010000000000005);
+				UProperty* NewProp_SunDrive = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SunDrive"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SunDrive, ANaturalEnvironment), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANaturalEnvironment_SeekSunRotator(), "SeekSunRotator"); // 2253861371
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANaturalEnvironment_SunDown(), "SunDown"); // 2862505251
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANaturalEnvironment_SunUp(), "SunUp"); // 2037618026
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANaturalEnvironment_Tomorrow(), "Tomorrow"); // 1204225686
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_RainValue, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_RainValue, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_CurveSunIntensity, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_CurveSunIntensity, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_CurveZenithColor, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_CurveZenithColor, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_CurveHorizonColor, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_CurveHorizonColor, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_CurveOverallColor, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_CurveOverallColor, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_CurveSkyLightColor, TEXT("Category"), TEXT("RainSystem"));
+				MetaData->SetValue(NewProp_CurveSkyLightColor, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_Wave, TEXT("Category"), TEXT("Wave"));
+				MetaData->SetValue(NewProp_Wave, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_SkyLight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SkyLight, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_SkySphere, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SkySphere, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_DirectionLight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_DirectionLight, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_DirectionLight, TEXT("ToolTip"), TEXT("???? ?\x05b4? ????(-1~-99)"));
+				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_MaxSunHeight, TEXT("ToolTip"), TEXT("?\x03f7\x7c21 ?????\x00b5? ?\x0278??? ?\x00f0?."));
+				MetaData->SetValue(NewProp_DayDuration, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_DayDuration, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+				MetaData->SetValue(NewProp_DayDuration, TEXT("ToolTip"), TEXT("???? ??\x0121"));
+				MetaData->SetValue(NewProp_SunDrive, TEXT("Category"), TEXT("DateSystem"));
+				MetaData->SetValue(NewProp_SunDrive, TEXT("ModuleRelativePath"), TEXT("NaturalEnvironment.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ANaturalEnvironment(Z_Construct_UClass_ANaturalEnvironment, &ANaturalEnvironment::StaticClass, TEXT("ANaturalEnvironment"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ANaturalEnvironment);
 	UFunction* Z_Construct_UFunction_ANoahCharacter_DetectObject()
 	{
 		struct NoahCharacter_eventDetectObject_Parms
@@ -1359,63 +1630,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AAnimal(Z_Construct_UClass_AAnimal, &AAnimal::StaticClass, TEXT("AAnimal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAnimal);
-	UFunction* Z_Construct_UFunction_AWave_UpWave()
-	{
-		UObject* Outer=Z_Construct_UClass_AWave();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("UpWave"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535, sizeof(Wave_eventUpWave_Parms));
-			UProperty* NewProp_RainValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("RainValue"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(RainValue, Wave_eventUpWave_Parms), 0x0010000000000080);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Wave"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UClass* Z_Construct_UClass_AWave_NoRegister()
-	{
-		return AWave::StaticClass();
-	}
-	UClass* Z_Construct_UClass_AWave()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_AActor();
-			Z_Construct_UPackage__Script_Noah();
-			OuterClass = AWave::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900080;
-
-				OuterClass->LinkChild(Z_Construct_UFunction_AWave_UpWave());
-
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_WaveMeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WaveMeshComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(WaveMeshComponent, AWave), 0x001000000008000d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWave_UpWave(), "UpWave"); // 626822814
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Wave.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
-				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("Category"), TEXT("Wave"));
-				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("EditInline"), TEXT("true"));
-				MetaData->SetValue(NewProp_WaveMeshComponent, TEXT("ModuleRelativePath"), TEXT("Wave.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AWave(Z_Construct_UClass_AWave, &AWave::StaticClass, TEXT("AWave"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(AWave);
 	UPackage* Z_Construct_UPackage__Script_Noah()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -1424,12 +1638,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Noah")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x04C656A6;
-			Guid.B = 0x0CE5DC2B;
+			Guid.A = 0x3D4727FA;
+			Guid.B = 0xAD7793D7;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
 
+			Z_Construct_UDelegateFunction_Noah_AddItemCompleteDelegate__DelegateSignature();
 		}
 		return ReturnPackage;
 	}

@@ -1,3 +1,14 @@
-﻿  Target is up to date
+﻿  Parsing headers for NoahEditor
+    Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for NoahEditor in 3.0699216 seconds
+  Performing 4 actions (4 in parallel)
+  Noah.generated.cpp
+  MapObjectPlace.cpp
+C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Source\Noah\MapObjectPlace.cpp(19): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(614): note: 'USceneComponent::AttachTo' 선언을 참조하십시오.
+  [3/4] Link UE4Editor-Noah-Win64-DebugGame.dll
+  [4/4] Link UE4Editor-Noah-Win64-DebugGame.lib
+     C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp 개체를 생성하고 있습니다.
+     C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp 개체를 생성하고 있습니다.
   Deploying NoahEditor Win64 DebugGame...
-  Total build time: 0.98 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Total build time: 7.17 seconds (Local executor: 2.78 seconds)

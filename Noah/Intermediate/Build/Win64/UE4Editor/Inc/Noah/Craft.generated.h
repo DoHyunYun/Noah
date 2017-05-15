@@ -23,22 +23,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Noah_Source_Noah_Craft_h_39_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetCraftApiSet) \
+	DECLARE_FUNCTION(execGetCraftIsSet) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->GetCraftApiSet(); \
+		*(bool*)Z_Param__Result=this->GetCraftIsSet(); \
 		P_NATIVE_END; \
 	}
 
 
 #define Noah_Source_Noah_Craft_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetCraftApiSet) \
+	DECLARE_FUNCTION(execGetCraftIsSet) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->GetCraftApiSet(); \
+		*(bool*)Z_Param__Result=this->GetCraftIsSet(); \
 		P_NATIVE_END; \
 	}
 

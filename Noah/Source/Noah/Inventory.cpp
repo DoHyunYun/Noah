@@ -11,8 +11,6 @@ UInventory::UInventory() : MaxInvenSize(25), CurrentWeight(0)
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-	
-	UE_LOG(LogClass, Log, TEXT("Noah:UInventory Init"));
 }
 
 
@@ -25,8 +23,6 @@ void UInventory::BeginPlay()
 	for (int i = 0; i < MaxInvenSize; ++i) {
 		ItemList.Add(NewObject<AItem>(this));
 	}
-
-	UE_LOG(LogClass, Log, TEXT("Noah:UInventory BeginPlay"));
 }
 
 
@@ -43,6 +39,7 @@ bool UInventory::AddItem(AItem* item)
 	for (int i = 0; i < MaxInvenSize; i++) {
 		if (ItemList[i]->ItemCode == item->ItemCode) {
 			ItemList[i]->Number += item->Number;
+			AddItemCompleteDelegate.Broadcast(); //Delgate 발행. 모든 구독자들에게 이벤트를 발생.
 			return true;
 		}
 	}
@@ -52,7 +49,8 @@ bool UInventory::AddItem(AItem* item)
 		if (ItemList[i]->ItemCode == -1) {
 			AItem* temp = DuplicateObject<AItem>(item, this);
 			ItemList[i] = temp;
-			ItemList[i]->InitItem(ItemList[i]->ItemCode, item->Number);//Database에서 정보 넣기.
+			ItemList[i]->InitItem(ItemList[i]->ItemCode, item->Number); //Database에서 정보 넣기.
+			AddItemCompleteDelegate.Broadcast(); //Delgate 발행. 모든 구독자들에게 이벤트를 발생.
 			return true;
 		}
 	}
@@ -68,12 +66,14 @@ bool UInventory::RemoveItemNumber(int32 index, int32 number)
 		if (ItemList[i]->ItemCode == index) {
 			if (ItemList[i]->Number > number) {
 				ItemList[i]->Number -= number;
+				AddItemCompleteDelegate.Broadcast();
 				return true;
 			}
 			else if (ItemList[i]->Number == number) {
 				ItemList[i]->Number = 0;
 				ItemList[i]->ItemCode = -1;
 				ItemList[i]->InitItem(-1);
+				AddItemCompleteDelegate.Broadcast();
 				return true;
 			}
 			else {
@@ -92,12 +92,14 @@ bool UInventory::RemoveItemInventorySlot(int32 index, int32 number)
 
 	if (ItemList[index]->Number > number) {
 		ItemList[index]->Number -= number;
+		AddItemCompleteDelegate.Broadcast();
 		return true;
 	}
 	else {
 		ItemList[index]->Number = 0;
 		ItemList[index]->ItemCode = -1;
 		ItemList[index]->InitItem(-1);
+		AddItemCompleteDelegate.Broadcast();
 		return true;
 	}
 
@@ -112,6 +114,8 @@ bool UInventory::SwapItemIndex(int32 left, int32 right)
 		right < 0 || right >= MaxInvenSize) return false;
 
 	Swap(ItemList[left], ItemList[right]);
+
+	AddItemCompleteDelegate.Broadcast();
 	return true;
 }
 void UInventory::SortInventory()
@@ -129,6 +133,8 @@ void UInventory::SortInventory()
 			tempSlot.push(i);
 		}
 	}
+
+	AddItemCompleteDelegate.Broadcast();
 }
 
 int UInventory::GetItemNumberInfo(int _itemIndex)

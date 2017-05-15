@@ -6,6 +6,7 @@
 #include "Item.generated.h"
 
 
+//DataTable 항목에 맞춰 구조체 생성
 USTRUCT(BlueprintType)
 struct FItemStruct : public FTableRowBase
 {
@@ -60,15 +61,15 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "ItemClass")
 		AItem* InitItem(int32 itemCode, int32 number = 1);
 	UFUNCTION(BlueprintCallable, Category = "ItemClass")
-		UTexture2D* GetItemImage(FString imageName);
+		UTexture2D* GetItemImage(FString imageName); //해당 아이템 이미지텍스처 얻어오기
 	UFUNCTION(BlueprintCallable, Category = "ItemClass")
-		void SetMesh();
+		void SetMesh(); //월드상 Drop에 필요한 메쉬 생성 및 세팅
 
 public:
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
 	FItemStruct ThisItem;
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
-	int32 Number;
+	int32 Number; //개수
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")
 	int32 CurrentDurability; //현재 내구도.
 	UPROPERTY(BlueprintReadWrite, Category = "ItemClass")

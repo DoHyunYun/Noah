@@ -9,11 +9,6 @@ UCLASS()
 class NOAH_API AWave : public AActor
 {
 	GENERATED_BODY()
-
-public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Wave")
-		class UStaticMeshComponent* WaveMeshComponent;
-	
 public:	
 	// Sets default values for this actor's properties
 	AWave();

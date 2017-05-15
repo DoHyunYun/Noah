@@ -567,11 +567,9 @@
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Config\DefaultInput.ini" />
     <ClCompile Include="..\..\Source\Noah\Animal.cpp" />
-    <ClCompile Include="..\..\Source\Noah\Craft.cpp" />
     <ClInclude Include="..\..\Source\Noah\Animal.h" />
+    <ClCompile Include="..\..\Source\Noah\Craft.cpp" />
     <ClInclude Include="..\..\Source\Noah\Craft.h" />
-    <ClCompile Include="..\..\Source\Noah\Date.cpp" />
-    <ClInclude Include="..\..\Source\Noah\Date.h" />
     <ClCompile Include="..\..\Source\Noah\Inventory.cpp" />
     <ClInclude Include="..\..\Source\Noah\Inventory.h" />
     <ClCompile Include="..\..\Source\Noah\Item.cpp" />
@@ -579,7 +577,11 @@
     <ClCompile Include="..\..\Source\Noah\MapObject.cpp" />
     <ClInclude Include="..\..\Source\Noah\MapObject.h" />
     <None Include="..\..\Source\Noah\Noah.Build.cs" />
+    <ClCompile Include="..\..\Source\Noah\MapObjectPlace.cpp" />
+    <ClCompile Include="..\..\Source\Noah\NaturalEnvironment.cpp" />
     <ClCompile Include="..\..\Source\Noah\Noah.cpp" />
+    <ClInclude Include="..\..\Source\Noah\MapObjectPlace.h" />
+    <ClInclude Include="..\..\Source\Noah\NaturalEnvironment.h" />
     <ClInclude Include="..\..\Source\Noah\Noah.h" />
     <ClCompile Include="..\..\Source\Noah\NoahCharacter.cpp" />
     <ClInclude Include="..\..\Source\Noah\NoahCharacter.h" />
@@ -594,8 +596,8 @@
     <ClCompile Include="..\..\Source\Noah\NoahPlayerState.cpp" />
     <ClInclude Include="..\..\Source\Noah\NoahPlayerState.h" />
     <ClCompile Include="..\..\Source\Noah\NPC.cpp" />
-    <ClCompile Include="..\..\Source\Noah\Wave.cpp" />
     <ClInclude Include="..\..\Source\Noah\NPC.h" />
+    <ClCompile Include="..\..\Source\Noah\Wave.cpp" />
     <ClInclude Include="..\..\Source\Noah\Wave.h" />
   </ItemGroup>
   <PropertyGroup>

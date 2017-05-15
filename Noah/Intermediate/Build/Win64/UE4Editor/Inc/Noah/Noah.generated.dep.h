@@ -12,14 +12,20 @@
 #ifndef NOAH_Craft_generated_h
 	#include "Craft.h"
 #endif
-#ifndef NOAH_Date_generated_h
-	#include "Date.h"
-#endif
 #ifndef NOAH_Inventory_generated_h
 	#include "Inventory.h"
 #endif
 #ifndef NOAH_MapObject_generated_h
 	#include "MapObject.h"
+#endif
+#ifndef NOAH_MapObjectPlace_generated_h
+	#include "MapObjectPlace.h"
+#endif
+#ifndef NOAH_Wave_generated_h
+	#include "Wave.h"
+#endif
+#ifndef NOAH_NaturalEnvironment_generated_h
+	#include "NaturalEnvironment.h"
 #endif
 #ifndef NOAH_NoahCharacter_generated_h
 	#include "NoahCharacter.h"
@@ -44,7 +50,4 @@
 #endif
 #ifndef NOAH_Animal_generated_h
 	#include "Animal.h"
-#endif
-#ifndef NOAH_Wave_generated_h
-	#include "Wave.h"
 #endif

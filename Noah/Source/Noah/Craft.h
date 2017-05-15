@@ -60,5 +60,5 @@ public:
 		TArray<FCraftItemStruct> CraftList;//제작목록 배열
 
 	UFUNCTION(BlueprintCallable, Category = "ItemClass")
-		bool GetCraftApiSet();
+		bool GetCraftIsSet();
 };

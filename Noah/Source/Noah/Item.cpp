@@ -87,6 +87,7 @@ void AItem::SetMesh()
 	//예외처리
 	if (ItemCode <= 0) return;
 
+	//Mesh루트
 	FString FileName = "/Game/Resource/Mesh/";
 	FString FullName = FileName + ThisItem.WorldImgCode + "." + ThisItem.WorldImgCode;
 
@@ -100,7 +101,6 @@ void AItem::SetMesh()
 	ItemMeshComponent->SetRelativeLocation(FVector(0, 0, 0));
 	ItemMeshComponent->SetRelativeRotation(FRotator::ZeroRotator);
 	ItemMeshComponent->SetRelativeScale3D(FVector(1, 1, 1));
-	//ItemMeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	ItemMeshComponent->SetCollisionProfileName(TEXT("BlockAll"));
 	ItemMeshComponent->SetSimulatePhysics(true);
 	ItemMeshComponent->SetEnableGravity(true);

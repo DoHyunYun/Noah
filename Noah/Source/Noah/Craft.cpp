@@ -105,7 +105,7 @@ void UCraft::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 }
 
 
-bool UCraft::GetCraftApiSet()
+bool UCraft::GetCraftIsSet()
 {
 	return IsSet;
 }
