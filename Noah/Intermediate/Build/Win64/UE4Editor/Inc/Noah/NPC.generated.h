@@ -13,7 +13,7 @@ enum class ENPCStateEnum : uint8;
 #endif
 #define NOAH_NPC_generated_h
 
-#define Noah_Source_Noah_NPC_h_22_RPC_WRAPPERS \
+#define Noah_Source_Noah_NPC_h_23_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execNPCStateUpdate) \
 	{ \
@@ -34,7 +34,7 @@ enum class ENPCStateEnum : uint8;
 	}
 
 
-#define Noah_Source_Noah_NPC_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Noah_Source_Noah_NPC_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execNPCStateUpdate) \
 	{ \
@@ -55,7 +55,16 @@ enum class ENPCStateEnum : uint8;
 	}
 
 
-#define Noah_Source_Noah_NPC_h_22_INCLASS_NO_PURE_DECLS \
+#define Noah_Source_Noah_NPC_h_23_EVENT_PARMS \
+	struct NPC_eventDamaged_Parms \
+	{ \
+		float damage; \
+	};
+
+
+extern NOAH_API  FName NOAH_Damaged;
+#define Noah_Source_Noah_NPC_h_23_CALLBACK_WRAPPERS
+#define Noah_Source_Noah_NPC_h_23_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesANPC(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_ANPC(); \
@@ -66,7 +75,7 @@ enum class ENPCStateEnum : uint8;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_NPC_h_22_INCLASS \
+#define Noah_Source_Noah_NPC_h_23_INCLASS \
 	private: \
 	static void StaticRegisterNativesANPC(); \
 	friend NOAH_API class UClass* Z_Construct_UClass_ANPC(); \
@@ -77,7 +86,7 @@ enum class ENPCStateEnum : uint8;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Noah_Source_Noah_NPC_h_22_STANDARD_CONSTRUCTORS \
+#define Noah_Source_Noah_NPC_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANPC(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANPC) \
@@ -90,7 +99,7 @@ private: \
 public:
 
 
-#define Noah_Source_Noah_NPC_h_22_ENHANCED_CONSTRUCTORS \
+#define Noah_Source_Noah_NPC_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANPC(ANPC&&); \
@@ -101,26 +110,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANPC); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANPC)
 
 
-#define Noah_Source_Noah_NPC_h_22_PRIVATE_PROPERTY_OFFSET
-#define Noah_Source_Noah_NPC_h_19_PROLOG
-#define Noah_Source_Noah_NPC_h_22_GENERATED_BODY_LEGACY \
+#define Noah_Source_Noah_NPC_h_23_PRIVATE_PROPERTY_OFFSET
+#define Noah_Source_Noah_NPC_h_20_PROLOG \
+	Noah_Source_Noah_NPC_h_23_EVENT_PARMS
+
+
+#define Noah_Source_Noah_NPC_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_NPC_h_22_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_NPC_h_22_RPC_WRAPPERS \
-	Noah_Source_Noah_NPC_h_22_INCLASS \
-	Noah_Source_Noah_NPC_h_22_STANDARD_CONSTRUCTORS \
+	Noah_Source_Noah_NPC_h_23_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_NPC_h_23_RPC_WRAPPERS \
+	Noah_Source_Noah_NPC_h_23_CALLBACK_WRAPPERS \
+	Noah_Source_Noah_NPC_h_23_INCLASS \
+	Noah_Source_Noah_NPC_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Noah_Source_Noah_NPC_h_22_GENERATED_BODY \
+#define Noah_Source_Noah_NPC_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Noah_Source_Noah_NPC_h_22_PRIVATE_PROPERTY_OFFSET \
-	Noah_Source_Noah_NPC_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	Noah_Source_Noah_NPC_h_22_INCLASS_NO_PURE_DECLS \
-	Noah_Source_Noah_NPC_h_22_ENHANCED_CONSTRUCTORS \
+	Noah_Source_Noah_NPC_h_23_PRIVATE_PROPERTY_OFFSET \
+	Noah_Source_Noah_NPC_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	Noah_Source_Noah_NPC_h_23_CALLBACK_WRAPPERS \
+	Noah_Source_Noah_NPC_h_23_INCLASS_NO_PURE_DECLS \
+	Noah_Source_Noah_NPC_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -134,5 +148,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(ENPCStateEnum::VE_Trace) \
 	op(ENPCStateEnum::VE_Attack) \
 	op(ENPCStateEnum::VE_Run) \
-	op(ENPCStateEnum::VE_RunAway) 
+	op(ENPCStateEnum::VE_RunAway) \
+	op(ENPCStateEnum::VE_Dead) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

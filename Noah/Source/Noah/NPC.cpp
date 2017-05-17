@@ -5,10 +5,11 @@
 
 
 // Sets default values
-ANPC::ANPC() : Health(100.f)
+ANPC::ANPC() : Health(10.f), Inventory(nullptr)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	Inventory = CreateDefaultSubobject<UInventory>(TEXT("Inventory"));
 }
 
 // Called when the game starts or when spawned
@@ -43,6 +44,16 @@ bool ANPC::FindStateList(ENPCStateEnum state)
 ENPCStateEnum ANPC::NPCStateUpdate(APawn* target)
 {
 	float distance = FVector::Dist(target->GetActorLocation(), this->GetActorLocation());
+	
+	if (Health <= 0) {
+		return ENPCStateEnum::VE_Dead;
+	}
+
+	if (NPCStateList.Find(ENPCStateEnum::VE_RunAway) != -1) {
+		if (Health <= 7) {
+			return ENPCStateEnum::VE_RunAway;
+		}
+	}
 
 	if (NPCStateList.Find(ENPCStateEnum::VE_Attack) != -1) {
 		if (distance <= 200) {
@@ -55,6 +66,8 @@ ENPCStateEnum ANPC::NPCStateUpdate(APawn* target)
 			return ENPCStateEnum::VE_Trace;
 		}
 	}
+	
+	
 
 	return ENPCStateEnum::VE_Idle;
 }

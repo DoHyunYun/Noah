@@ -12,6 +12,7 @@ PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1Noah() {}
 FName NOAH_AddDay = FName(TEXT("AddDay"));
+FName NOAH_Damaged = FName(TEXT("Damaged"));
 FName NOAH_SunDown = FName(TEXT("SunDown"));
 FName NOAH_SunUp = FName(TEXT("SunUp"));
 FName NOAH_Tomorrow = FName(TEXT("Tomorrow"));
@@ -210,16 +211,22 @@ static class UEnum* ENPCStateEnum_StaticEnum()
 	return Singleton;
 }
 static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ENPCStateEnum(ENPCStateEnum_StaticEnum, TEXT("/Script/Noah"), TEXT("ENPCStateEnum"), false, nullptr, nullptr);
+	void ANPC::Damaged(float damage)
+	{
+		NPC_eventDamaged_Parms Parms;
+		Parms.damage=damage;
+		ProcessEvent(FindFunctionChecked(NOAH_Damaged),&Parms);
+	}
 	void ANPC::StaticRegisterNativesANPC()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ANPC::StaticClass(), "FindStateList",(Native)&ANPC::execFindStateList);
 		FNativeFunctionRegistrar::RegisterFunction(ANPC::StaticClass(), "NPCStateUpdate",(Native)&ANPC::execNPCStateUpdate);
 	}
-	IMPLEMENT_CLASS(ANPC, 1813613658);
+	IMPLEMENT_CLASS(ANPC, 1533267951);
 	void AAnimal::StaticRegisterNativesAAnimal()
 	{
 	}
-	IMPLEMENT_CLASS(AAnimal, 1335569149);
+	IMPLEMENT_CLASS(AAnimal, 2046404920);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
@@ -301,6 +308,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ENPCStateEnum(ENPCStateE
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerState_NoRegister();
 	NOAH_API class UClass* Z_Construct_UClass_ANoahPlayerState();
 	NOAH_API class UEnum* Z_Construct_UEnum_Noah_ENPCStateEnum();
+	NOAH_API class UFunction* Z_Construct_UFunction_ANPC_Damaged();
 	NOAH_API class UFunction* Z_Construct_UFunction_ANPC_FindStateList();
 	NOAH_API class UFunction* Z_Construct_UFunction_ANPC_NPCStateUpdate();
 	NOAH_API class UClass* Z_Construct_UClass_ANPC_NoRegister();
@@ -1598,7 +1606,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_Attack")), 2));
 			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_Run")), 3));
 			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_RunAway")), 4));
-			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_MAX")), 5));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_Dead")), 5));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("ENPCStateEnum::VE_MAX")), 6));
 			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
 			ReturnEnum->CppType = TEXT("ENPCStateEnum");
 #if WITH_METADATA
@@ -1606,6 +1615,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
 			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("NPC.h"));
 			MetaData->SetValue(ReturnEnum, TEXT("VE_Attack.DisplayName"), TEXT("Attack"));
+			MetaData->SetValue(ReturnEnum, TEXT("VE_Dead.DisplayName"), TEXT("Dead"));
 			MetaData->SetValue(ReturnEnum, TEXT("VE_Idle.DisplayName"), TEXT("Idle"));
 			MetaData->SetValue(ReturnEnum, TEXT("VE_Run.DisplayName"), TEXT("Run"));
 			MetaData->SetValue(ReturnEnum, TEXT("VE_RunAway.DisplayName"), TEXT("RunAway"));
@@ -1614,7 +1624,25 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnEnum;
 	}
-	uint32 Get_Z_Construct_UEnum_Noah_ENPCStateEnum_CRC() { return 572606900U; }
+	uint32 Get_Z_Construct_UEnum_Noah_ENPCStateEnum_CRC() { return 3998691121U; }
+	UFunction* Z_Construct_UFunction_ANPC_Damaged()
+	{
+		UObject* Outer=Z_Construct_UClass_ANPC();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Damaged"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535, sizeof(NPC_eventDamaged_Parms));
+			UProperty* NewProp_damage = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("damage"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(damage, NPC_eventDamaged_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("NPC"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPC.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ANPC_FindStateList()
 	{
 		struct NPC_eventFindStateList_Parms
@@ -1683,10 +1711,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPC_Damaged());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPC_FindStateList());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPC_NPCStateUpdate());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_Inventory = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Inventory"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Inventory, ANPC), 0x001000000008000c, Z_Construct_UClass_UInventory_NoRegister());
 				UProperty* NewProp_Health = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Health"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Health, ANPC), 0x0010000000000004);
 				UProperty* NewProp_CurrentNPCState = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentNPCState"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(CurrentNPCState, ANPC), 0x0010000000000004, Z_Construct_UEnum_Noah_ENPCStateEnum());
 				UProperty* NewProp_CurrentNPCState_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_CurrentNPCState, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
@@ -1694,6 +1724,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_NPCStateList_Inner = new(EC_InternalUseOnlyConstructor, NewProp_NPCStateList, TEXT("NPCStateList"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UEnum_Noah_ENPCStateEnum());
 				UProperty* NewProp_NPCStateList_Inner_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_NPCStateList_Inner, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPC_Damaged(), "Damaged"); // 327329673
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPC_FindStateList(), "FindStateList"); // 1225296430
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPC_NPCStateUpdate(), "NPCStateUpdate"); // 24847819
 				OuterClass->StaticLink();
@@ -1702,6 +1733,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("NPC.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("NPC.h"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("Category"), TEXT("NPC"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_Inventory, TEXT("ModuleRelativePath"), TEXT("NPC.h"));
 				MetaData->SetValue(NewProp_Health, TEXT("Category"), TEXT("NPC"));
 				MetaData->SetValue(NewProp_Health, TEXT("ModuleRelativePath"), TEXT("NPC.h"));
 				MetaData->SetValue(NewProp_CurrentNPCState, TEXT("Category"), TEXT("NPC"));
@@ -1756,8 +1790,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/Noah")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x76843DF0;
-			Guid.B = 0x7C559074;
+			Guid.A = 0x9FFFFF19;
+			Guid.B = 0x0146F9ED;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

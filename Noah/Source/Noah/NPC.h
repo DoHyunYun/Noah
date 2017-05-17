@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Character.h"
+#include "Inventory.h"
 #include "NPC.generated.h"
 
 UENUM(BlueprintType)
@@ -12,8 +13,8 @@ enum class ENPCStateEnum : uint8
 	VE_Trace	UMETA(DisplayName = "Trace"),
 	VE_Attack	UMETA(DisplayName = "Attack"),
 	VE_Run		UMETA(DisplayName = "Run"),
-	VE_RunAway	UMETA(DisplayName = "RunAway")/*,
-	VE_Dead		UMETA(DisplayName = "Dead")*/
+	VE_RunAway	UMETA(DisplayName = "RunAway"),
+	VE_Dead		UMETA(DisplayName = "Dead")
 };
 
 UCLASS()
@@ -27,6 +28,8 @@ public:
 		ENPCStateEnum CurrentNPCState;
 	UPROPERTY(BlueprintReadWrite, Category = "NPC")
 		float Health;
+	UPROPERTY(BlueprintReadWrite, Category = "NPC")
+		UInventory* Inventory;
 public:
 	// Sets default values for this character's properties
 	ANPC();
@@ -46,4 +49,6 @@ public:
 		bool FindStateList(ENPCStateEnum state);
 	UFUNCTION(BlueprintCallable, Category = "NPC")
 		ENPCStateEnum NPCStateUpdate(APawn* target);
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "NPC")
+		void Damaged(float damage);
 };

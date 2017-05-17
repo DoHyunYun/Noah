@@ -1,15 +1,30 @@
-﻿  Performing full C++ include scan (building a new target)
-  Parsing headers for NoahEditor
-    Running UnrealHeaderTool "C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Noah.uproject" "C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\NoahEditor\DebugGame\NoahEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for NoahEditor in 5.6028395 seconds
-  Performing 6 actions (4 in parallel)
-  [4/6] Resource PCLaunch.rc
+﻿  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-1557-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-1557-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-2907-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-2907-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-5100-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-5100-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6349-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6349-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6934-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6934-Win64-DebugGame.pdb".
+  Unable to delete old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6934-Win64-DebugGame.pdb". Error: 'C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-6934-Win64-DebugGame.pdb' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-7898-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-7898-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-8975-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-8975-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-9036-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-9036-Win64-DebugGame.pdb".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-9449-Win64-DebugGame.dll".
+  Deleting old hot reload file: "C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-9449-Win64-DebugGame.pdb".
+  Failed to delete file 'C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-Win64-DebugGame.pdb'
+      Exception: 'C:\Users\DohyunYun\Desktop\NoahProject\Noah\Binaries\Win64\UE4Editor-Noah-Win64-DebugGame.pdb' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+  Attempting to retry...
+  Performing 3 actions (4 in parallel)
   NPC.cpp
-  Animal.cpp
-  Noah.generated.cpp
-  [5/6] Link UE4Editor-Noah-Win64-DebugGame.dll
-  [6/6] Link UE4Editor-Noah-Win64-DebugGame.lib
-     C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp 개체를 생성하고 있습니다.
-     C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\GP 170503\Noah-master\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp 개체를 생성하고 있습니다.
+  [2/3] Link UE4Editor-Noah-Win64-DebugGame.dll
+  [3/3] Link UE4Editor-Noah-Win64-DebugGame.lib
+     C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.exp 개체를 생성하고 있습니다.
+     C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.lib 라이브러리 및 C:\Users\DohyunYun\Desktop\NoahProject\Noah\Intermediate\Build\Win64\UE4Editor\DebugGame\UE4Editor-Noah-Win64-DebugGame.suppressed.exp 개체를 생성하고 있습니다.
   Deploying NoahEditor Win64 DebugGame...
-  Total build time: 11.66 seconds (Local executor: 3.07 seconds)
+  Total build time: 5.13 seconds (Local executor: 2.49 seconds)

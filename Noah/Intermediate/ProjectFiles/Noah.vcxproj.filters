@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Noah.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{1A298B35-C487-40A9-A018-18ECDF5124FA}</UniqueIdentifier>
+			<UniqueIdentifier>{28EAD397-D240-49BC-AF14-EA62D00A82A7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Noah.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{249CEF7D-6AC4-4546-9A87-6FE5B834635A}</UniqueIdentifier>
+			<UniqueIdentifier>{4F8C82FF-0B7B-4FFA-9C76-0F05C4C2AD4A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Noah">
-			<UniqueIdentifier>{407B7D41-882F-4EA4-A0F9-C3535DA601D2}</UniqueIdentifier>
+			<UniqueIdentifier>{06293BFF-D385-4BC4-8688-7D4EF919BA39}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Noah\Animal.cpp">
 			<Filter>Source\Noah</Filter>
