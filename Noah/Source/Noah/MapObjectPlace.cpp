@@ -52,9 +52,9 @@ UBlueprintGeneratedClass* AMapObjectPlace::ObjectPathSeek(EMapObjectEnum objectT
 void AMapObjectPlace::FindRandomPlaceLine(bool bPlaceType, FVector& startLine, FVector& endLine)
 {
 	if (bPlaceType == true) { //Sphere 영역에 Spawn한다면.
-								//임의의 거리와 방향을 구해준다..
-		FVector dest(FMath::FRandRange(0.f, PlaceSphere->GetScaledSphereRadius()), 0, 0);
-		FVector dir = dest.RotateAngleAxis(FMath::FRandRange(0.f, 360.f), FVector(0, 0, 1));
+		//임의의 거리와 방향을 구해준다..
+		FVector distance(FMath::FRandRange(0.f, PlaceSphere->GetScaledSphereRadius()), 0, 0);
+		FVector dir = distance.RotateAngleAxis(FMath::FRandRange(0.f, 360.f), FVector(0, 0, 1));
 
 		startLine = FVector(this->GetActorLocation().X + dir.X, this->GetActorLocation().Y + dir.Y,
 			this->GetActorLocation().Z + Place->GetScaledBoxExtent().Z);

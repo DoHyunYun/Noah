@@ -5,11 +5,10 @@
 
 
 // Sets default values
-ANPC::ANPC()
+ANPC::ANPC() : Health(100.f)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
@@ -33,3 +32,29 @@ void ANPC::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+bool ANPC::FindStateList(ENPCStateEnum state)
+{
+	if (NPCStateList.Find(state) != -1) {
+		return true;
+	}
+	return false;
+}
+
+ENPCStateEnum ANPC::NPCStateUpdate(APawn* target)
+{
+	float distance = FVector::Dist(target->GetActorLocation(), this->GetActorLocation());
+
+	if (NPCStateList.Find(ENPCStateEnum::VE_Attack) != -1) {
+		if (distance <= 200) {
+			return ENPCStateEnum::VE_Attack;
+		}
+	}
+
+	if (NPCStateList.Find(ENPCStateEnum::VE_Trace) != -1) {
+		if (distance <= 1500) {
+			return ENPCStateEnum::VE_Trace;
+		}
+	}
+
+	return ENPCStateEnum::VE_Idle;
+}
